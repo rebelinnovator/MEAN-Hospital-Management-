@@ -1,0 +1,29 @@
+<div id="panel-D" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="availability">
+  <div class="card-header" role="tab" id="heading-D">
+    <h5 class="mb-0">
+      <a class="collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-D">
+        {{ 'Availability' | translate }}
+      </a>
+    </h5>
+  </div>
+  <div id="collapse-D" class="collapse show" role="tabpanel" data-parent="#content" aria-labelledby="heading-D">
+    <div class="single-profile-page">
+      <div class="single-page-block">
+        <h4>{{ 'Availability' | translate }}</h4>
+        <div *ngFor="let available of availabilityArray">
+          <p>
+            {{'Every' | translate}} {{ days[available.from_day]| translate }}
+            <br />{{ available.from_time  }} - {{ available.to_time }}
+          </p>
+          <hr />
+        </div>
+      </div>
+      <div class="single-page-block">
+        <h4>{{ 'Locations (Service Coverage)' | translate }}</h4>
+        <div *ngFor="let locations of locationsArray">
+          <p>{{ locations.name | translate}}<br /></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

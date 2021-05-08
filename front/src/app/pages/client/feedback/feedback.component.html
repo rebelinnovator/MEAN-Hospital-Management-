@@ -1,0 +1,66 @@
+<section class="profile-review-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="profile-review-inner">
+          <h1>
+            {{ 'Let us know your feedback!' | translate }}
+          </h1>
+          <form [formGroup]="regularForm" (ngSubmit)="onReactiveFormSubmit()">
+            <div class="form-group">
+              <label>{{ 'Please give us your rating' | translate }}</label>
+              <div class="new-rating-block flex-row-reverse">
+                <input type="radio" id="star5" name="rating" value="5" formControlName="rating" /><label
+                  class="full-rate" for="star5"><span>{{ 'Love It' | translate }}</span></label>
+                <input type="radio" id="star4half" name="rating" value="4.5" formControlName="rating" /><label
+                  class="half-rate" for="star4half"></label>
+                <input type="radio" id="star4" name="rating" value="4" formControlName="rating" /><label
+                  class="full-rate" for="star4"><span>{{ 'Like It' | translate }}</span></label>
+                <input type="radio" id="star3half" name="rating" value="3.5" formControlName="rating" /><label
+                  class="half-rate" for="star3half"></label>
+                <input type="radio" id="star3" name="rating" value="3" formControlName="rating" /><label
+                  class="full-rate" for="star3"><span>{{ 'Ok' | translate }}</span></label>
+                <input type="radio" id="star2half" name="rating" value="2.5" formControlName="rating" /><label
+                  class="half-rate" for="star2half"></label>
+                <input type="radio" id="star2" name="rating" value="2" formControlName="rating" /><label
+                  class="full-rate" for="star2"><span>{{ 'Don’t Like It' | translate }}</span></label>
+                <input type="radio" id="star1half" name="rating" value="1.5" formControlName="rating" /><label
+                  class="half-rate" for="star1half"></label>
+                <input type="radio" id="star1" name="rating" value="1" formControlName="rating" /><label
+                  class="full-rate" for="star1"><span>{{ 'Hate It' | translate }}</span></label>
+                <input type="radio" id="starhalf" name="rating" value="0.5" formControlName="rating" /><label
+                  class="half-rate" for="starhalf"></label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>{{ 'Positives' | translate }}</label>
+              <textarea class="form-control" maxlength="250" formControlName="positive_feedback"></textarea>
+              <app-control-message fieldName="{{ 'Positive Feedbacks' | translate }}"
+                [control]="regularForm.controls['positive_feedback']">
+              </app-control-message>
+            </div>
+            <div class="form-group">
+              <label>{{ 'Negatives' | translate }}</label>
+              <textarea class="form-control" maxlength="250"
+                placeholder="{{'If there is no negative feedback, please leave this blank.' | translate}}"
+                formControlName="negative_feedback"></textarea>
+              <app-control-message fieldName="{{ 'Negative Feedbacks' | translate }}"
+                [control]="regularForm.controls['negative_feedback']">
+              </app-control-message>
+            </div>
+            <div class="group-btn">
+              <button type="submit">
+                {{ 'Submit' | translate }}
+                <img src="assets/images/hand-icon.svg" />
+              </button>
+              <a href="javascript:void(0)" [routerLink]="['/']" class="btn disabled" style="pointer-events: all;">
+                {{ 'Cancel' | translate }}
+                <img src="assets/images/close-white-icon.svg" />
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

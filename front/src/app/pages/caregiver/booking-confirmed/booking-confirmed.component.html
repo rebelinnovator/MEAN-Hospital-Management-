@@ -1,0 +1,35 @@
+<div class="main-content">
+  <section class="caregivers-section register-frm thankyou email-layout">
+    <div class="container">
+      <div class="row">
+        <div class="caregivers-inner col-md-12">
+          <div class="left-block">
+            <h2 class="text-center">
+              {{ 'Your appointment will be confirmed very shortly!' | translate }}
+            </h2>
+            <ng-container *ngIf="caregiverType != '5'">
+              <p class="text-center">
+                {{ 'Would you need another caregiver to help out ?' | translate }}
+              </p>
+              <p class="text-center">
+                {{ 'Please book another caregiver if so !' | translate }}
+              </p>
+            </ng-container>
+            <ng-container *ngIf="caregiverType == '5'">
+              <p class="text-center">
+                {{ "Please prepare the following in the Care Receiver's home for the out-patient escort to pick up: 1) Care Receiver's HKID" | translate }}
+                <br>
+                {{ "2) Consultation Letter 3) Consultation Fee 4) Taxi Fare for both ways." | translate }}
+                <br>
+                {{ "The out-patient escort would leave the change and receipt at the Care Receiver's home." | translate }}
+              </p>
+            </ng-container>
+            <a href="javascript:void(0);" [routerLink]="['/']" class="btn">
+              {{ 'Back to homepage' | translate }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

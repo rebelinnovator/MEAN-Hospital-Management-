@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>great britain flag</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="15" cy="15" r="15"></circle>
+    </defs>
+    <g id="great-britain-flag" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="united-kingdom" transform="translate(1.000000, 1.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#D8D8D8" xlink:href="#path-1"></use>
+            <g mask="url(#mask-2)" fill-rule="nonzero">
+                <rect id="Rectangle" fill="#F0F0F0" x="0" y="0" width="30" height="30"></rect>
+                <polygon id="Path" fill="#D80027" points="0 17.8125 12.1875 17.8125 12.1875 30 17.8125 30 17.8125 17.8125 30 17.8125 30 12.1875 17.8125 12.1875 17.8125 0 12.1875 0 12.1875 12.1875 0 12.1875"></polygon>
+                <g id="Group" transform="translate(19.545455, 19.545455)" fill="#0052B4">
+                    <polygon id="Path" points="4.31731844 0.0533240223 10.4545455 6.19055104 10.4545455 0.0533240223"></polygon>
+                    <polygon id="Path" points="0.0533240223 0.0533240223 10.4545455 10.4545455 10.4545455 7.51325546 2.99461402 0.0533240223"></polygon>
+                    <polygon id="Path" points="7.6840325 10.4545455 0.0533240223 2.8230777 0.0533240223 10.4545455"></polygon>
+                </g>
+                <polygon id="Path" fill="#F0F0F0" points="19.5454545 19.5454545 30 30 30 27.0436309 22.5018237 19.5454545"></polygon>
+                <polygon id="Path" fill="#D80027" points="19.5454545 19.5454545 30 30 30 27.0436309 22.5018237 19.5454545"></polygon>
+                <g id="Group" transform="translate(0.000000, 19.545455)" fill="#0052B4">
+                    <polygon id="Path" points="4.69006094 0.0533240223 0 4.74338497 0 0.0533240223"></polygon>
+                    <polygon id="Path" points="10.4010462 1.37597004 10.4010462 10.4543702 1.32334688 10.4543702"></polygon>
+                </g>
+                <polygon id="Path" fill="#D80027" points="7.49812652 19.5454545 0 27.0436398 0 30 0 30 10.4545455 19.5454545"></polygon>
+                <g id="Group" fill="#0052B4">
+                    <polygon id="Path" points="6.13722702 10.4012214 0 4.26399441 0 10.4012214"></polygon>
+                    <polygon id="Path" points="10.4012214 10.4012214 0 0 0 2.94128999 7.45993144 10.4012214"></polygon>
+                    <polygon id="Path" points="2.77051295 0 10.4012214 7.63140934 10.4012214 0"></polygon>
+                </g>
+                <polygon id="Path" fill="#F0F0F0" points="10.4545455 10.4545455 0 0 0 2.95636913 7.49817633 10.4545455"></polygon>
+                <polygon id="Path" fill="#D80027" points="10.4545455 10.4545455 0 0 0 2.95636913 7.49817633 10.4545455"></polygon>
+                <g id="Group" transform="translate(19.545455, 0.000000)" fill="#0052B4">
+                    <polygon id="Path" points="5.76448451 10.4012214 10.4545455 5.71116049 10.4545455 10.4012214"></polygon>
+                    <polygon id="Path" points="0.0534992382 9.07857542 0.0534992382 0.000175215846 9.13119858 0.000175215846"></polygon>
+                </g>
+                <polygon id="Path" fill="#D80027" points="22.5018735 10.4545455 30 2.95636023 30 0 30 0 19.5454545 10.4545455"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

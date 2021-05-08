@@ -1,0 +1,189 @@
+<div id="panel-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="personal">
+  <div class="card-header" role="tab" id="heading-A">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" aria-expanded="true" aria-controls="collapse-A">
+        {{ 'Accont User Info' | translate }}
+      </a>
+    </h5>
+  </div>
+  <div id="collapse-A" class="collapse show" data-parent="#content" role="tabpanel" aria-labelledby="heading-A">
+    <form [formGroup]="regularForm" (ngSubmit)="onReactiveFormSubmit()">
+      <div class="wizard-form">
+        <div class="title-block">
+          <h3>
+            {{ 'Please tell us a bit about yourself (Account User)' | translate }}
+          </h3>
+          <p>
+            {{
+              'Account user refers to the person who books the appointment for care receiver. (e.g. Child of the elderly)' | translate
+            }}
+          </p>
+        </div>
+        <div class="form-blocks">
+          <div class="single-form-block">
+            <div class="single-block full">
+              <div class="form-group">
+                <label class="readonlyClr">
+                  {{ 'Salute' | translate }}
+                </label>
+                <div class="check-radio">
+                  <div class="single-radio">
+                    <input type="radio" id="mr" value="1" formControlName="salute" class="readonlyClr"
+                      onclick="return false;" />
+                    <label for="mr" class="readonlyClr">
+                      {{ 'Mr' | translate }}
+                    </label>
+                  </div>
+                  <div class="single-radio">
+                    <input type="radio" id="ms" value="2" formControlName="salute" class="readonlyClr"
+                      onclick="return false;" />
+                    <label for="ms" class="readonlyClr">
+                      {{ 'Ms' | translate }}
+                    </label>
+                  </div>
+                  <app-control-message fieldName="{{ 'Salute' | translate }}"
+                    [control]="regularForm.controls['salute']">
+                  </app-control-message>
+                </div>
+              </div>
+            </div>
+            <div class="single-block">
+              <div class="form-group">
+                <label class="readonlyClr">
+                  {{ 'First Name' | translate }}
+                </label>
+                <input type="text" class="form-control readonlyClr" formControlName="first_name" readonly />
+                <app-control-message fieldName="{{ 'First Name' | translate }}"
+                  [control]="regularForm.controls['first_name']">
+                </app-control-message>
+              </div>
+              <div class="form-group">
+                <label class="readonlyClr">
+                  {{ 'Last Name' | translate }}
+                </label>
+                <input type="text" class="form-control readonlyClr" formControlName="last_name" readonly />
+                <app-control-message fieldName="{{ 'Last Name' | translate }}"
+                  [control]="regularForm.controls['last_name']">
+                </app-control-message>
+              </div>
+            </div>
+            <div class="single-block">
+              <div class="form-group">
+                <label class="readonlyClr">
+                  {{ 'Email Address' | translate }}
+                </label>
+                <input type="text" class="form-control readonlyClr" formControlName="email" readonly />
+                <app-control-message fieldName="{{ 'Email Address' | translate }}"
+                  [control]="regularForm.controls['email']">
+                </app-control-message>
+              </div>
+              <div class="form-group">
+                <label>
+                  {{ 'Home Telephone Number' | translate }}
+                </label>
+                <input type="text" class="form-control" placeholder="{{ 'Watch out for typos' | translate }}"
+                  maxlength="10" formControlName="home_telephone_number" />
+                <app-control-message fieldName="{{ 'Home Telephone Number' | translate }}"
+                  [control]="regularForm.controls['home_telephone_number']">
+                </app-control-message>
+              </div>
+            </div>
+            <div class="single-block">
+              <div class="form-group">
+                <label>
+                  {{ 'Mobile and WhatsApp Number' | translate }}
+                </label>
+                <input type="text" class="form-control" placeholder="{{ 'Watch out for typos' | translate }}"
+                  maxlength="8" formControlName="mobile_number" />
+                <app-control-message fieldName="{{ 'Mobile Number' | translate }}"
+                  [control]="regularForm.controls['mobile_number']">
+                </app-control-message>
+              </div>
+            </div>
+          </div>
+          <div class="single-form-block">
+            <div class="single-block full">
+              <div class="form-group">
+                <label class="readonlyClr">
+                  {{ 'Your relationship with service user' | translate }}
+                </label>
+                <div class="check-radio check-radio2">
+                  <div class="single-radio">
+                    <input type="radio" class="readonlyClr" id="user" value="1"
+                      formControlName="relation_with_service_user" onclick="return false;" />
+                    <label for="user" class="readonlyClr">
+                      {{ 'I am the service user' | translate }}
+                    </label>
+                  </div>
+                  <div class="single-radio">
+                    <input type="radio" class="readonlyClr" id="father" value="2"
+                      formControlName="relation_with_service_user" onclick="return false;" />
+                    <label for="father" class="readonlyClr">
+                      {{ 'Father' | translate }}
+                    </label>
+                  </div>
+                  <div class="single-radio">
+                    <input type="radio" class="readonlyClr" id="mother" value="3"
+                      formControlName="relation_with_service_user" onclick="return false;" />
+                    <label for="mother" class="readonlyClr">
+                      {{ 'Mother' | translate }}
+                    </label>
+                  </div>
+                  <div class="single-radio">
+                    <input type="radio" class="readonlyClr" id="relative" value="4"
+                      formControlName="relation_with_service_user" onclick="return false;" />
+                    <label for="relative" class="readonlyClr">
+                      {{ 'Relative' | translate }}
+                    </label>
+                  </div>
+                  <div class="single-radio">
+                    <input type="radio" class="readonlyClr" id="friend" value="5"
+                      formControlName="relation_with_service_user" onclick="return false;" />
+                    <label for="friend" class="readonlyClr">
+                      {{ 'Friend' | translate }}
+                    </label>
+                  </div>
+                </div>
+                <app-control-message fieldName="{{ 'Relationship with service user' | translate }}"
+                  [control]="regularForm.controls['relation_with_service_user']">
+                </app-control-message>
+              </div>
+            </div>
+            <div class="single-block full">
+              <div class="form-group">
+                <label class="readonlyClr">
+                  {{ 'Preferred Language of Communication' | translate }}
+                </label>
+                <div class="check-radio check-radio2">
+                  <div class="single-radio">
+                    <input type="radio" class="readonlyClr" id="chinese" value="1"
+                      formControlName="preferred_communication_language" onclick="return false;" />
+                    <label for="chinese" class="readonlyClr">
+                      {{ 'Chinese' | translate }}
+                    </label>
+                  </div>
+                  <div class="single-radio">
+                    <input type="radio" class="readonlyClr" id="english" value="2"
+                      formControlName="preferred_communication_language" onclick="return false;" />
+                    <label for="english" class="readonlyClr">
+                      {{ 'English' | translate }}
+                    </label>
+                  </div>
+                </div>
+                <app-control-message fieldName="{{ 'Preferred Communication Language' | translate }}"
+                  [control]="regularForm.controls['preferred_communication_language']">
+                </app-control-message>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-block">
+          <button type="submit" class="btn">
+            {{ 'Save' | translate }}
+            <img src="assets/images/right-arrow.svg" alt=" " />
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Landing-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Caregiver-landing-step-1" transform="translate(-1026.000000, -3149.000000)">
+            <g id="Group-16" transform="translate(1026.000000, 3149.000000)">
+                <circle id="Oval-Copy-11" fill="#07A0E9" cx="13" cy="13" r="13"></circle>
+                <g id="Group-9" transform="translate(7.000000, 9.444445)" stroke="#FFFFFF" stroke-linecap="round" stroke-width="1.5">
+                    <polyline id="Path-2-Copy-4" stroke-linejoin="round" transform="translate(10.499987, 3.499998) scale(-1, 1) rotate(90.000000) translate(-10.499987, -3.499998) " points="6.99998665 1.55555403 10.4999866 5.44444287 13.9999866 1.55555403"></polyline>
+                    <line x1="11" y1="3.55555534" x2="0" y2="3.55555534" id="Line-2"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

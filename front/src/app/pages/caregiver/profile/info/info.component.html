@@ -1,0 +1,69 @@
+<div id="panel-B" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="info">
+  <div class="card-header" role="tab" id="heading-B">
+    <h5 class="mb-0">
+      <a class="collapsed" data-toggle="collapse" routerLink="/pages/caregiver/profile-view/info/{{ registrationNo }}"
+        aria-expanded="false" aria-controls="collapse-B">
+        {{ 'Info' | translate }}
+      </a>
+    </h5>
+  </div>
+  <div id="collapse-B" class="collapse show" data-parent="#content" role="tabpanel" aria-labelledby="heading-B">
+    <div class="single-profile-page">
+      <div class="single-page-block">
+        <h4>{{ 'Skills' | translate }}</h4>
+        <strong *ngIf="personalCareArray.length > 0 ">{{ 'Personal Care' | translate }}</strong>
+        <ul *ngFor="let care of personalCareArray">
+          <li>-{{ care | translate}}</li>
+        </ul>
+        <strong *ngIf="specialCareArray.length > 0 ">{{ 'Special Care' | translate }}</strong>
+        <ul *ngFor="let care of specialCareArray">
+          <li>-{{ care | translate }}</li>
+        </ul>
+        <ng-container *ngIf="caregiverType == '1' || caregiverType == '2'">
+          <br />
+        </ng-container>
+        <small *ngIf="caregiverType == '1' || caregiverType == '2'">
+          {{'* (if present) Must be carried by nurses' | translate}}
+        </small>
+        <ng-container *ngIf="showEmployer == '1'">
+          <hr />
+          <h4 *ngIf="currentEmployer.name">
+            {{ 'Current Employer' | translate }}
+          </h4>
+          <p *ngIf="!showCurrentEmployerEmpty">
+            {{ currentEmployer.name }}, <br />
+            {{ workType[currentEmployer.work_type - 1] }}{{ ',' | translate }}<br />{{
+            currentEmployer.from_year
+          }}
+            {{ '- Present' | translate }}<br />
+            <ng-container *ngIf="yearsOfExperience > 0">
+              {{ yearsOfExperience }}{{ 'year(s)' | translate }}&nbsp;&nbsp;
+            </ng-container>
+            <ng-container *ngIf="monthsOfExperience > 0">
+              {{ monthsOfExperience }}{{ 'month(s)' | translate }}
+            </ng-container>
+          </p>
+          <h4 *ngIf="previousEmployerArray.length">
+            {{ 'Previous Employer' | translate }}
+          </h4>
+          <div *ngFor="let employer of previousEmployerArray; let i = index">
+            <p>
+              {{ employer.name }},<br />
+              {{ workType[employer.work_type - 1] }},<br />{{
+              employer.from_year
+            }}
+              - {{ employer.to_year }}<br />
+              <ng-container *ngIf="employer.years_experience > 0">
+                {{ employer.years_experience }} {{ 'year(s)' | translate }}
+              </ng-container>
+              <ng-container *ngIf="employer.months_experience > 0">
+                {{ employer.months_experience }} {{ 'month(s)' | translate }}
+              </ng-container>
+            </p>
+            <hr />
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

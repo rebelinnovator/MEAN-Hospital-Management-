@@ -1,0 +1,171 @@
+<div class="main-content">
+  <section class="onboaring-process-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="main-tab-block" *ngIf="profileMode">
+            <ul id="tabs" class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link" [routerLink]="['/caregiver/profile/personal-info']"
+                  routerLinkActive="active">{{ 'Personal Information' | translate }}
+                  <img src="assets/images/tab-right-arrow.svg" alt=" " />
+                  <img src="assets/images/active-tab-right-arrow.svg" class="active" /></a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link" [routerLink]="['/caregiver/profile/work-info']"
+                  routerLinkActive="active">{{ 'Work Experience and Education' | translate }}
+                  <img src="assets/images/tab-right-arrow.svg" alt=" " />
+                  <img src="assets/images/active-tab-right-arrow.svg" class="active" alt=" " /></a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link" [routerLink]="['/caregiver/profile/skillset']"
+                  routerLinkActive="active">{{ 'Skillset' | translate }}
+                  <img src="assets/images/tab-right-arrow.svg" alt=" " />
+                  <img src="assets/images/active-tab-right-arrow.svg" class="active" alt=" " /></a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link" [routerLink]="['/caregiver/profile/availability']"
+                  routerLinkActive="active">{{ 'Availability' | translate }}
+                  <img src="assets/images/tab-right-arrow.svg" alt=" " />
+                  <img src="assets/images/active-tab-right-arrow.svg" class="active" alt=" " /></a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link" [routerLink]="['/caregiver/profile/charges']"
+                  routerLinkActive="active">{{ 'Charges' | translate }}
+                  <img src="assets/images/tab-right-arrow.svg" alt=" " />
+                  <img src="assets/images/active-tab-right-arrow.svg" class="active" alt=" " /></a>
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0);" class="nav-link" [routerLink]="['/caregiver/profile/referral-bonus']"
+                  routerLinkActive="active">{{ 'Referral Bonus' | translate }}
+                  <img src="assets/images/tab-right-arrow.svg" alt=" " />
+                  <img src="assets/images/active-tab-right-arrow.svg" class="active" alt=" " /></a>
+              </li>
+            </ul>
+            <div id="content" class="tab-content caregiver-onboard-profile" role="tablist">
+              <select class="form-control mobile-dropdown" [(ngModel)]="currentDropdownValue"
+                (change)="redirect($event)">
+                <option value="Personal">{{'Personal Information' | translate}}</option>
+                <option value="Work">{{'Work Experience and Education' | translate}}</option>
+                <option value="Skillset">{{'Skillset' | translate}}</option>
+                <option value="Availability">{{'Availability'| translate}}</option>
+                <option value="Charges">{{'Charges' | translate}}</option>
+                <option value="Referral">{{'Referral Bonus'| translate}}</option>
+              </select>
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+          <div class="wizard-tabs" *ngIf="!profileMode">
+            <div class="steps">
+              <ul id="tabs" class="nav nav-tabs" role="tablist">
+                <li class="nav-item" [ngClass]="{
+                    done: global.currentOnBoardStep >= 1
+                  }">
+                  <a id="personal" href="javascript:void(0);" [routerLink]="['/caregiver/onboard/personal-info']"
+                    routerLinkActive="active" class="nav-link " data-toggle="tab" role="tab">
+                    <span class="number">{{ '1' | translate }}</span>
+                    <small class="step-title"><span>{{ 'Step1' | translate }}</span>
+                      {{ 'Personal Information' | translate }}</small>
+                  </a>
+                </li>
+                <li class="nav-item" [ngClass]="{
+                    done:
+                      global.currentOnBoardStep >= 2 ||
+                      currentUrlSection === 'profile'
+                  }">
+                  <a id="work" href="javascript:void(0);" [routerLink]="['/caregiver/onboard/work-info']"
+                    routerLinkActive="active" class="nav-link" data-toggle="tab" role="tab">
+                    <span class="number">{{ '2' | translate }}</span>
+                    <small class="step-title"><span>{{ 'Step2' | translate }}</span>
+                      {{ 'Work Experience and Education' | translate }}</small>
+                  </a>
+                </li>
+                <li class="nav-item" [ngClass]="{
+                    done:
+                      global.currentOnBoardStep >= 3 ||
+                      currentUrlSection === 'profile'
+                  }">
+                  <a id="skill" href="javascript:void(0);" [routerLink]="['/caregiver/onboard/skillset']"
+                    routerLinkActive="active" class="nav-link" data-toggle="tab" role="tab">
+                    <span class="number">{{ '3' | translate }}</span>
+                    <small class="step-title"><span>{{ 'Step3' | translate }}</span>
+                      {{ 'Skillset' | translate }}</small>
+                  </a>
+                </li>
+                <li class="nav-item" [ngClass]="{
+                    done:
+                      global.currentOnBoardStep >= 4 ||
+                      currentUrlSection === 'profile'
+                  }">
+                  <a id="availability" href="javascript:void(0);" [routerLink]="['/caregiver/onboard/availability']"
+                    routerLinkActive="active" class="nav-link" data-toggle="tab" role="tab">
+                    <span class="number">{{ '4' | translate }}</span>
+                    <small class="step-title"><span>{{ 'Step4' | translate }}</span>
+                      {{ 'Availability' | translate }}</small>
+                  </a>
+                </li>
+                <li class="nav-item" [ngClass]="{
+                    done:
+                      global.currentOnBoardStep >= 5 ||
+                      currentUrlSection === 'profile'
+                  }">
+                  <a id="charges" href="javascript:void(0);" [routerLink]="['/caregiver/onboard/charges']"
+                    routerLinkActive="active" class="nav-link" data-toggle="tab" role="tab">
+                    <span class="number">{{ '5' | translate }}</span>
+                    <small class="step-title"><span>{{ 'Step5' | translate }}</span>
+                      {{ 'Charges' | translate }}</small>
+                  </a>
+                </li>
+                <li class="nav-item" [ngClass]="{
+                    done:
+                      global.currentOnBoardStep >= 6 ||
+                      currentUrlSection === 'profile'
+                  }">
+                  <a id="documents" href="javascript:void(0);" [routerLink]="['/caregiver/onboard/documents']"
+                    routerLinkActive="active" class="nav-link" data-toggle="tab" role="tab">
+                    <span class="number">{{ '6' | translate }}</span>
+                    <small class="step-title"><span>{{ 'Step6' | translate }}</span>
+                      {{ 'Documents' | translate }}</small>
+                  </a>
+                </li>
+                <li class="nav-item" [ngClass]="{
+                    done:
+                      global.currentOnBoardStep >= 7 ||
+                      currentUrlSection === 'profile'
+                  }">
+                  <a id="terms" href="javascript:void(0);" [routerLink]="['/caregiver/onboard/terms-and-condition']"
+                    routerLinkActive="active" class="nav-link" data-toggle="tab" role="tab">
+                    <span class="number">{{ '7' | translate }}</span>
+                    <small class="step-title"><span>{{ 'Step7' | translate }}</span>
+                      {{
+                        'Agreement and Terms and Condition' | translate
+                      }}</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div id="content" class="tab-content" role="tablist">
+              <select class="form-control mobile-dropdown" (change)="redirectOnboard($event)">
+                <option value="Personal" [selected]="currentDropdownValue === 'Personal'">
+                  {{'Personal Information' | translate}}</option>
+                <option value="Work" [selected]="currentDropdownValue === 'Work'">
+                  {{'Work Experience and Education' | translate}}</option>
+                <option value="Skillset" [selected]="currentDropdownValue === 'Skillset'">
+                  {{'Skillset' | translate}}</option>
+                <option value="Availability" [selected]="currentDropdownValue === 'Availability'">
+                  {{'Availability'| translate}}</option>
+                <option value="Charges" [selected]="currentDropdownValue === 'Charges'">
+                  {{'Charges' | translate}}</option>
+                <option value="Documents" [selected]="currentDropdownValue === 'Documents'">
+                  {{'Documents'| translate}}</option>
+                <option value="Terms" [selected]="currentDropdownValue === 'Terms'">
+                  {{'Agreement and Terms and Condition'| translate}}</option>
+              </select>
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

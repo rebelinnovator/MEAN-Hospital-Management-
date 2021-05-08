@@ -1,0 +1,49 @@
+<div id="panel-F" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="bonus">
+  <div class="card-header" role="tab" id="heading-D">
+    <h5 class="mb-0">
+      <a class="collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-D">
+        {{ 'Referral Bonus' | translate }}
+      </a>
+    </h5>
+  </div>
+  <div id="collapse-D" class="collapse" role="tabpanel" data-parent="#content" aria-labelledby="heading-D">
+    <div class="wizard-form">
+      <div class="title-block">
+        <h3>{{ 'Referral Bonus' | translate }}</h3>
+        <p>{{ 'No referral bonus when the platform doesn\'t take service fee!' | translate }}</p>
+        <!-- <p>{{ 'Your referral bonus details' | translate }}</p> -->
+      </div>
+      <div class="form-blocks">
+        <div class="bonus-block">
+          <!-- <small>
+            {{ 'To find out our referral policy, please' | translate }}
+            <a href="javscript:void(0)" target="_blank">{{
+              'Click here!' | translate
+            }}</a>
+          </small> -->
+          <ul class="bullet-green">
+            <li>
+              {{ 'Due*' | translate }}
+              <p>{{ userData.due | currency }}</p>
+            </li>
+            <li>
+              {{ 'Earned' | translate }}
+              <p>{{ userData.earned | currency }}</p>
+            </li>
+            <li>
+              {{ 'Paid' | translate }}
+              <p>{{ userData.paid | currency }}</p>
+            </li>
+            <li>
+              {{ 'Number of Caregivers Referred' | translate }}
+              <p>{{ userData.caregivers_reffered }}</p>
+            </li>
+          </ul>
+          <small>
+            {{ '* We pay when due amount is above $100' | translate }}
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

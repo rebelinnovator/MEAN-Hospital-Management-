@@ -1,0 +1,117 @@
+<div class="main-content">
+  <section class="caregivers-section register-frm">
+    <div class="container">
+      <div class="row">
+        <div class="caregivers-inner col-md-5 offset-md-1" *ngIf="!showActivateAccount">
+          <div class="left-block">
+            <h2 class="text-center">{{ 'Join as a Caregiver' | translate }}</h2>
+            <p class="text-center new-small-font">
+              {{ 'Join us if you are RN / EN / HW / PCW / Out-Patient Escort.' | translate }}
+            </p>
+            <p class="text-center new-small-font ">
+              <span class="orange-color">
+                {{'Set your display name;' | translate}}
+              </span> {{ 'set your service fee.'| translate}}
+            </p>
+            <div class="reg-frm">
+              <form [formGroup]="caregiverRegisterForm" (ngSubmit)="caregiverRegister()">
+                <div class=" form-group" [ngClass]="{
+                    'error-msg': (email.dirty || email.touched) && email.errors
+                  }">
+                  <label for="email">{{ 'Email Address' | translate }} </label>
+                  <input type="email" formControlName="email" class="form-control" placeholder="abc@gmail.com"
+                    id="email" autocomplete="off" tabindex="1" />
+                  <app-control-message fieldName="{{'Email Address' | translate}}"
+                    [control]="caregiverRegisterForm.controls['email']">
+                  </app-control-message>
+                </div>
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (password.dirty || password.touched) && password.errors
+                  }">
+                  <label for="password">{{ 'Password' | translate }}
+                    <span *ngIf="score != 0">{{ 'Strength:' | translate }}
+                      <span *ngIf="score == 1" class="weak">{{
+                        'Weak' | translate
+                      }}</span>
+                      <span *ngIf="score == 2" class="average">{{
+                        'Average' | translate
+                      }}</span>
+                      <span *ngIf="score >= 3" class="strong">{{
+                        'Strong' | translate
+                      }}</span>
+                    </span>
+                  </label>
+                  <input tabindex="2" type="{{ passType }}" (keyup)="passwordStrength($event)" class="form-control"
+                    placeholder="******" id="password" formControlName="password" autocomplete="off" />
+                  <a href="javascript:void(0);" (click)="toggleShow()" class="eye-icon"><img [src]="passwordIcon" />
+                  </a>
+                  <app-control-message fieldName="{{'Password' | translate}}"
+                    [control]="caregiverRegisterForm.controls['password']">
+                  </app-control-message>
+                </div>
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (cnfmpassword.dirty || cnfmpassword.touched) &&
+                      cnfmpassword.errors
+                  }">
+                  <label for="cnfmpassword">{{ 'Confirm Password' | translate }}
+                  </label>
+                  <input type="password" tabindex="3" class="form-control" placeholder="******" id="cnfmpassword"
+                    formControlName="cnfmpassword" autocomplete="off" />
+                  <app-control-message fieldName="{{'Confirm Password' | translate}}"
+                    [control]="caregiverRegisterForm.controls['cnfmpassword']">
+                  </app-control-message>
+                </div>
+                <div class="form-group">
+                  <p>
+                    {{ 'By clicking Join, you agree to our' | translate }}
+                    <a [routerLink]="['/auth/privacy-policy']" target="_blank"
+                      href="javascript:void(0);">{{ 'Privacy Policy.' | translate }}</a>
+                  </p>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  {{ 'Join' | translate }}
+                </button>
+                <div class="form-group">
+                  <p class="text-center">
+                    {{ 'Already have an account?' | translate }}
+                    <a [routerLink]="['/auth/caregiver-login']" href="javascript:void(0);">{{ 'LOGIN' | translate }}</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="caregivers-inner col-md-5 offset-md-1" *ngIf="showActivateAccount">
+          <div class="left-block">
+            <h2 class="text-center">
+              {{ 'Activate your account' | translate }}
+            </h2>
+            <p class="text-center">
+              {{
+                'We have sent a link to your email address. Please don’t forget to check your junk mail folder.'
+                  | translate
+              }}
+            </p>
+            <div class="reg-frm">
+              <p class="text-center">
+                {{ 'Did not get the link?' | translate }}
+                <a href="javascript:void(0);"
+                  (click)="activateAccountMailSendAgain()">{{ 'SEND AGAIN' | translate }}</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-image right-side-image-background video-blocks">
+        <iframe src="https://www.youtube.com/embed/WyHaYoni_NM">
+        </iframe>
+        <!-- <video class="video-block" controls>
+          <source src="assets/videos/caregiver-register.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video> -->
+      </div>
+    </div>
+  </section>
+</div>

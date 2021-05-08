@@ -1,0 +1,280 @@
+<div id="panel-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="personal">
+  <div class="card-header" role="tab" id="heading-A">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" aria-expanded="true" aria-controls="collapse-A">
+        {{ 'Personal Information' | translate }}
+      </a>
+    </h5>
+  </div>
+  <div id="collapse-A" class="collapse show" data-parent="#content" role="tabpanel" aria-labelledby="heading-A">
+    <form [formGroup]="personalInfoForm" (ngSubmit)="addPersonalInfo()">
+      <div class="single-wizard">
+        <div class="wizard-form">
+          <div class="title-block">
+            <h5 *ngIf="!profileMode">
+              {{
+                'Have questions about this form? Please whatsapp' | translate
+              }}
+              <a href="tel:+85263640301">{{ '6364 0301' | translate }}</a>
+              {{ 'and let us help you!' | translate }}
+            </h5>
+            <h4>{{ 'Step 1' | translate }}</h4>
+            <h3>{{ 'Please tell us a bit about yourself' | translate }}</h3>
+            <p>
+              {{
+                'Your nickname and registered no. will be shown on the platform. Your Name and HKID are strictly confidential and will not be shown on platform.'
+                  | translate
+              }}
+            </p>
+          </div>
+          <div class="form-blocks">
+            <div class="single-form-block">
+              <div class="single-block">
+                <p>
+                  {{ 'Registered No.:' | translate }}
+                  {{ convertString(registeredNumber) | translate }}
+                </p>
+              </div>
+              <div class="single-block full">
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (personalInfoForm.controls['salute'].dirty ||
+                        personalInfoForm.controls['salute'].touched) &&
+                      personalInfoForm.controls['salute'].errors
+                  }">
+                  <label>{{ 'Salute' | translate }}
+                    <!-- <sup class="text-danger">*</sup> -->
+                  </label>
+                  <div class="check-radio">
+                    <div class="single-radio">
+                      <input type="radio" id="mr" formControlName="salute" name="salute" value="1" />
+                      <label for="mr">{{ 'Mr' | translate }}</label>
+                    </div>
+                    <div class="single-radio">
+                      <input type="radio" id="ms" formControlName="salute" name="salute" value="2" />
+                      <label for="ms">{{ 'Ms' | translate }}</label>
+                    </div>
+                    <app-control-message fieldName="{{ 'Salute' | translate }}"
+                      [control]="personalInfoForm.controls['salute']"></app-control-message>
+                  </div>
+                </div>
+              </div>
+              <div class="single-block">
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (personalInfoForm.controls['chinese_name'].dirty ||
+                        personalInfoForm.controls['chinese_name'].touched) &&
+                      personalInfoForm.controls['chinese_name'].errors
+                  }">
+                  <label>{{ 'Chinese Name' | translate }}
+                    <span>({{ 'Same as HKID Card' | translate }})</span></label>
+                  <input type="text" class="form-control" formControlName="chinese_name" maxlength="30" />
+                  <app-control-message fieldName="{{ 'Chinese Name' | translate }}"
+                    [control]="personalInfoForm.controls['chinese_name']"></app-control-message>
+                </div>
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (personalInfoForm.controls['english_name'].dirty ||
+                        personalInfoForm.controls['english_name'].touched) &&
+                      personalInfoForm.controls['english_name'].errors
+                  }">
+                  <label>{{ 'English Name' | translate }}
+                    <span>({{ 'Same as HKID Card' | translate }})</span></label>
+                  <input type="text" class="form-control" formControlName="english_name" maxlength="30" />
+                  <app-control-message fieldName="{{ 'English Name' | translate }}"
+                    [control]="personalInfoForm.controls['english_name']"></app-control-message>
+                </div>
+              </div>
+              <div class="single-block">
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (personalInfoForm.controls['nick_name'].dirty ||
+                        personalInfoForm.controls['nick_name'].touched) &&
+                      personalInfoForm.controls['nick_name'].errors
+                  }">
+                  <label>{{ 'Nickname on platform (Chinese recommended)' | translate }}</label>
+                  <!-- <label>{{ 'Nickname (will be shown on platform)' | translate }}</label> -->
+                  <input type="text" class="form-control" formControlName="nick_name" maxlength="20" />
+                  <app-control-message fieldName="{{ 'Nickname' | translate }}"
+                    [control]="personalInfoForm.controls['nick_name']"></app-control-message>
+                </div>
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (personalInfoForm.controls['email'].dirty ||
+                        personalInfoForm.controls['email'].touched) &&
+                      personalInfoForm.controls['email'].errors
+                  }">
+                  <label>{{ 'Email Address' | translate }}
+                    <!-- <sup class="text-danger">*</sup> -->
+                  </label>
+                  <input disabled type="email" class="form-control" formControlName="email" />
+                  <app-control-message fieldName="{{ 'Email Address' | translate }}"
+                    [control]="personalInfoForm.controls['email']"></app-control-message>
+                </div>
+              </div>
+              <div class="single-block">
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (personalInfoForm.controls['hkid_card_no'].dirty ||
+                        personalInfoForm.controls['hkid_card_no'].touched) &&
+                      personalInfoForm.controls['hkid_card_no'].errors
+                  }">
+                  <label>{{ 'HKID Card No. (4 Digits Only)' | translate }}</label>
+                  <input maxlength="4" type="text" class="form-control" formControlName="hkid_card_no" />
+                  <app-control-message fieldName="{{ 'HKID Card No.' | translate }}"
+                    [control]="personalInfoForm.controls['hkid_card_no']"></app-control-message>
+                </div>
+                <div class="form-group date" [ngClass]="{
+                    'error-msg':
+                      (personalInfoForm.controls['dob'].dirty ||
+                        personalInfoForm.controls['dob'].touched) &&
+                      personalInfoForm.controls['dob'].errors
+                  }">
+                  <label>{{ 'Date of Birth' | translate }}</label>
+                  <input type="text" class="form-control" formControlName="dob" ngbDatepicker [minDate]="minDate"
+                    [maxDate]="maxDate" #d="ngbDatepicker" (click)="d.toggle()" />
+                  <app-control-message fieldName="{{ 'Date of Birth' | translate }}"
+                    [control]="personalInfoForm.controls['dob']"></app-control-message>
+                </div>
+              </div>
+            </div>
+            <div class="single-form-block">
+              <div class="single-block full">
+                <div class="form-group">
+                  <label>{{ 'Language' | translate }}</label>
+                  <div class="checkbox-block">
+                    <div class="custom-checkbox" *ngFor="
+                        let language of personalInfoForm.get('language')[
+                          'controls'
+                        ];
+                        let i = index
+                      " [formGroup]="language">
+                      <input id="language_{{ i }}" type="checkbox" [formControl]="language.get('selected')"
+                        class="form-check-input" (change)="showOthers()" />
+                      <label for="language_{{ i }}">
+                        {{ language.get('name').value | translate }}</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-block full" *ngIf="showOtherLanguageOption">
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (otherLanguageName.dirty || otherLanguageName.touched) &&
+                      otherLanguageName.errors
+                  }">
+                  <label>{{
+                    'Please specify other language' | translate
+                  }}</label>
+                  <input type="text" [formControl]="otherLanguageName" maxlength="30" class="form-control" [ngClass]="{
+                      'error-msg':
+                        (personalInfoForm.controls['otherLanguageName'].dirty ||
+                          personalInfoForm.controls['otherLanguageName']
+                            .touched) &&
+                        personalInfoForm.controls['otherLanguageName'].errors
+                    }" />
+                  <app-control-message fieldName="{{ 'Other language' | translate }}"
+                    [control]="personalInfoForm.controls['otherLanguageName']"></app-control-message>
+                </div>
+              </div>
+              <div class="single-block full">
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (personalInfoForm.controls['caregiver_type'].dirty ||
+                        personalInfoForm.controls['caregiver_type'].touched) &&
+                      personalInfoForm.controls['caregiver_type'].errors
+                  }">
+                  <label>{{ 'Caregiver Type' | translate }}
+                    <!-- <sup class="text-danger">*</sup> -->
+                  </label>
+                  <select class="form-control" formControlName="caregiver_type">
+                    <optgroup *ngFor="let grp of caregiverType" label="{{ grp.group | translate }}">
+                      <option *ngFor="let type of grp.types" [value]="type.id">{{ type.name | translate }}</option>
+                    </optgroup>
+                  </select>
+                  <app-control-message fieldName="{{ 'Caregiver Type' | translate }}"
+                    [control]="personalInfoForm.controls['caregiver_type']"></app-control-message>
+                </div>
+              </div>
+              <div class="single-block">
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (personalInfoForm.controls['mobile_number'].dirty ||
+                        personalInfoForm.controls['mobile_number'].touched) &&
+                      personalInfoForm.controls['mobile_number'].errors
+                  }">
+                  <label>{{ 'Mobile and WhatsApp Number' | translate }}</label>
+                  <input type="text" class="form-control" formControlName="mobile_number"
+                    placeholder="{{ 'Watch out for typos' | translate }}" maxlength="8" minlength="8" />
+                  <app-control-message fieldName="{{ 'Mobile and WhatsApp Number' | translate }}"
+                    [control]="personalInfoForm.controls['mobile_number']"></app-control-message>
+                </div>
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (personalInfoForm.controls['refferers_email'].dirty ||
+                        personalInfoForm.controls['refferers_email'].touched) &&
+                      personalInfoForm.controls['refferers_email'].errors
+                  }">
+                  <label>{{ "Referrer's Email Address" | translate }}
+                    <span>{{ "(Optional)" | translate }}</span></label>
+                  <input type="email" class="form-control" formControlName="refferers_email" />
+                  <app-control-message fieldName="{{ 'Referrers Email Address' | translate }}"
+                    [control]="personalInfoForm.controls['refferers_email']"></app-control-message>
+                </div>
+              </div>
+              <div class="single-block full">
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (personalInfoForm.controls[
+                        'preferred_communication_language'
+                      ].dirty ||
+                        personalInfoForm.controls[
+                          'preferred_communication_language'
+                        ].touched) &&
+                      personalInfoForm.controls[
+                        'preferred_communication_language'
+                      ].errors
+                  }">
+                  <label>{{
+                    'Preferred Language of Communication' | translate
+                  }}</label>
+                  <div class="check-radio check-radio2">
+                    <div class="single-radio">
+                      <input type="radio" id="chinese" formControlName="preferred_communication_language"
+                        name="preferred_communication_language" value="1" />
+                      <label for="chinese">{{ 'Chinese' | translate }}</label>
+                    </div>
+                    <div class="single-radio">
+                      <input type="radio" id="english" formControlName="preferred_communication_language"
+                        name="preferred_communication_language" value="2" />
+                      <label for="english">{{ 'English' | translate }}</label>
+                    </div>
+                  </div>
+                  <app-control-message fieldName="{{
+                      'Preferred Language of Communication' | translate
+                    }}" [control]="
+                      personalInfoForm.controls[
+                        'preferred_communication_language'
+                      ]
+                    "></app-control-message>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-block" *ngIf="!profileMode">
+            <button type="submit" class="btn">
+              {{ 'Next' | translate }}
+              <img src="assets/images/right-arrow.svg" alt=" " />
+            </button>
+          </div>
+          <div class="btn-block" *ngIf="profileMode">
+            <button type="submit" class="btn">
+              {{ 'Save' | translate }}
+              <img src="assets/images/down-arrow-icon.svg" alt=" " />
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="main-content">
+  <section class="onboaring-process-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="main-tab-block">
+            <ul id="tabs" class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a id="overview" href="javascript:void(0);" routerLink="/pages/caregiver/profile-view/overview/{{ id }}"
+                  routerLinkActive="active" class="nav-link" data-toggle="tab" role="tab">{{ 'Overview' | translate }}
+                  <img src="../../../../../assets/images/tab-right-arrow.svg" alt=" " />
+                  <img src="../../../../../assets/images/active-tab-right-arrow.svg" class="active" alt=" " /></a>
+              </li>
+              <li class="nav-item">
+                <a id="info" href="javascript:void(0);" routerLink="/pages/caregiver/profile-view/info/{{ id }}"
+                  routerLinkActive="active" class="nav-link" data-toggle="tab" role="tab">{{ 'Info' | translate }}
+                  <img src="../../../../../assets/images/tab-right-arrow.svg" alt=" " />
+                  <img src="../../../../../assets/images/active-tab-right-arrow.svg" class="active" alt=" " /></a>
+              </li>
+              <li class="nav-item">
+                <a id="reviews" href="javascript:void(0);" routerLink="/pages/caregiver/profile-view/review/{{ id }}"
+                  routerLinkActive="active" class="nav-link" data-toggle="tab" role="tab">{{ 'Reviews' | translate }}
+                  <img src="../../../../../assets/images/tab-right-arrow.svg" alt=" " />
+                  <img src="../../../../../assets/images/active-tab-right-arrow.svg" class="active" alt=" " /></a>
+              </li>
+              <li class="nav-item">
+                <a id="availability" href="javascript:void(0);" routerLink="/pages/caregiver/profile-view/availability/{{
+                    id
+                  }}" routerLinkActive="active" class="nav-link" data-toggle="tab"
+                  role="tab">{{ 'Availability' | translate }}
+                  <img src="../../../../../assets/images/tab-right-arrow.svg" alt=" " />
+                  <img src="../../../../../assets/images/active-tab-right-arrow.svg" class="active" alt=" " /></a>
+              </li>
+            </ul>
+            <div id="content" class="tab-content" role="tablist">
+              <select class="form-control mobile-dropdown" (change)="redirect($event)">
+                <option value="Overview">{{'Overview' | translate}}</option>
+                <option value="Info">{{'Info'| translate}}</option>
+                <option value="Reviews">{{'Reviews'| translate}}</option>
+                <option value="Availability">{{'Availability'| translate}}</option>
+              </select>
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

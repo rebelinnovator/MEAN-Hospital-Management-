@@ -1,0 +1,527 @@
+<div class="main-content">
+  <section class="caregivers-section">
+    <div class="container">
+      <div class="row">
+        <div class="caregivers-inner">
+          <div class="left-block">
+            <h2 class="homeBiggerText">
+              {{ 'Free client and caregiver registration!' | translate }}
+              <span
+                [ngClass]="{'chinese-font': global.currentLanguage === 'zh'}">{{ '0 Commission until 31 August!' | translate }}</span>
+            </h2>
+            <div class="caregiver-block" *ngIf="!showSearchForm">
+              <div class="single-block">
+                <div class="left-text">
+                  <h4>{{ 'I need a caregiver' | translate }}</h4>
+                  <p [ngClass]="{'chinese-font': global.currentLanguage === 'zh'}">
+                    {{'Free search for the care you need'| translate  }}
+                    <!-- {{ 'Start your free search for care' | translate }}<br />
+                    {{ 'in your area.' | translate }} -->
+                  </p>
+                </div>
+                <div class="right-btn">
+                  <a [ngClass]="{'chinese-font': global.currentLanguage === 'zh'}" href="javascript:void(0);"
+                    class="btn find-care" (click)="showSearchForm = !showSearchForm">{{ 'Find Care' | translate }}
+                    <img src="assets/images/find-care-icon.svg" alt=" " /></a>
+                </div>
+              </div>
+              <div class="single-block">
+                <div class="left-text">
+                  <h4>{{ 'I want a care job' | translate }}</h4>
+                  <p [ngClass]="{'chinese-font': global.currentLanguage === 'zh'}">
+                    {{'Create a free profile and let jobs find you' | translate }}
+                    <!-- {{ 'Create a free profile and search' | translate }} <br />
+                    {{ 'for jobs.' | translate }} -->
+                  </p>
+                </div>
+                <div class="right-btn">
+                  <button [ngClass]="{'chinese-font': global.currentLanguage === 'zh'}" type="button"
+                    [disabled]="isUserLoggedIn" [routerLink]="['/auth/caregiver-register']" class="btn">
+                    {{ 'Find Jobs' | translate }}
+                    <img src="assets/images/find-jobs-icon.svg" alt=" " />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="find-care-form" *ngIf="showSearchForm">
+              <form [formGroup]="caregiverSearchForm" (ngSubmit)="caregiverSearch()">
+                <div class="single-block">
+                  <div class="form-input">
+                    <label>{{'Search by' | translate}}</label>
+                    <select class="form-control" formControlName="caregiver_type"
+                      (change)="searchInputChanged($event, 'caregiver_type')">
+                      <option value="">{{
+                        'Select caregiver type' | translate
+                      }}</option>
+                      <option value="{{ type.id }}" *ngFor="let type of careGiverType">{{ type.name | translate }}
+                      </option>
+                    </select>
+                  </div>
+                  <span>{{ 'or' | translate }}</span>
+                  <div class="form-input">
+                    <input type="text" class="form-control" formControlName="registration_no"
+                      placeholder="{{ 'Caregiver Registered No.' | translate }}" />
+                  </div>
+                </div>
+                <div class="single-block" *ngIf="showServices && isSearched">
+                  <div class="form-input">
+                    <label>{{ 'Select Services' | translate }}</label>
+                    <angular2-multiselect [data]="personalCareArray" formControlName="personal_care_skills"
+                      [settings]="settingsPersonalCare" class="form-control multiselect-form">
+                    </angular2-multiselect>
+                  </div>
+                  <div class="form-input">
+                    <angular2-multiselect [data]="specialCareArray" formControlName="special_care_skills"
+                      [settings]="settingsSpecialCare" class="form-control multiselect-form">
+                    </angular2-multiselect>
+                  </div>
+                </div>
+                <small *ngIf="showNurseMessage && isSearched">{{'*Must be carried out by nurses' | translate}}</small>
+                <div class="single-block">
+                  <div class="form-input">
+                    <label>{{ 'Select Date' | translate }}</label>
+                    <input type="text" class="form-control date" formControlName="date" ngbDatepicker #d="ngbDatepicker"
+                      [minDate]="minDate" [maxDate]="maxDate" (click)="d.toggle()"
+                      placeholder="{{ 'Choose Date' | translate }}" />
+                    <app-control-message fieldName="{{ 'Date' | translate }}"
+                      [control]="caregiverSearchForm.controls['date']"></app-control-message>
+                  </div>
+                </div>
+                <div class="single-block">
+                  <div class="form-input">
+                    <label>{{ 'Start Time' | translate }}</label>
+                    <!--<div class="single-date-input">
+                         <select class="form-control" formControlName="start_time">
+                          <option value="{{hour}}" *ngFor="let hour of hoursArray">{{hour}}</option>
+                        </select> 
+                        <input type="number" class="form-control" formControlName="start_time" placeholder="10" />
+                        <select class="form-control" formControlName="start_meridian">
+                          <option value="AM">{{ 'AM' | translate }}</option>
+                          <option value="PM">{{ 'PM' | translate }}</option>
+                        </select>
+                        <app-control-message fieldName="{{ 'Start Time' | translate }}"
+                          [control]="caregiverSearchForm.controls['start_time']"></app-control-message>
+                      </div>-->
+                    <div class="multi-select-box">
+                      <select class="form-control" formControlName="start_time">
+                        <option value="">{{'HH' | translate}}</option>
+                        <option value="{{hour}}" *ngFor="let hour of hoursArray">{{hour | translate }}</option>
+                      </select>
+                      <app-control-message fieldName="{{ 'Start Time' | translate }}"
+                        [control]="caregiverSearchForm.controls['start_time']"></app-control-message>
+                      <select class="form-control" formControlName="start_minutes">
+                        <option value="">{{'MM' | translate}}</option>
+                        <option value="00">{{'00' | translate}}</option>
+                        <option value="30">{{'30' | translate}}</option>
+                      </select>
+                      <app-control-message fieldName="{{ 'Start Minutes' | translate }}"
+                        [control]="caregiverSearchForm.controls['start_minutes']"></app-control-message>
+                      <select class="form-control" formControlName="start_meridian">
+                        <option value="AM">{{'AM' | translate}}</option>
+                        <option value="PM">{{'PM' | translate}}</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-input">
+                    <label>{{ 'End Time' | translate }}</label>
+                    <!--<div class="single-date-input">
+                        <input type="number" class="form-control" formControlName="end_time" placeholder="10" />
+                        <select class="form-control" formControlName="end_meridian">
+                          <option value="AM">{{ 'AM' | translate }}</option>
+                          <option value="PM">{{ 'PM' | translate }}</option>
+                        </select>
+                        <app-control-message fieldName="{{ 'End Time' | translate }}"
+                          [control]="caregiverSearchForm.controls['end_time']"></app-control-message>
+                      </div>-->
+                    <div class="multi-select-box">
+                      <select class="form-control" formControlName="end_time" (change)="endTimeChanged()">
+                        <option value="">{{'HH' | translate}}</option>
+                        <option value="{{hour}}" *ngFor="let hour of hoursArray">{{hour | translate }}</option>
+                      </select>
+                      <app-control-message fieldName="{{ 'End Time' | translate }}"
+                        [control]="caregiverSearchForm.controls['end_time']"></app-control-message>
+                      <select class="form-control" formControlName="end_minutes" (change)="endTimeChanged()">
+                        <option value="">{{'MM' | translate }}</option>
+                        <option value="00">{{'00' | translate }}</option>
+                        <option value="30" *ngIf="showThirtyMinute">{{'30' | translate }}</option>
+                      </select>
+                      <app-control-message fieldName="{{ 'End Minutes' | translate }}"
+                        [control]="caregiverSearchForm.controls['end_minutes']"></app-control-message>
+                      <select class="form-control" formControlName="end_meridian" (change)="endTimeChanged()">
+                        <option value="AM">{{'AM' | translate}}</option>
+                        <option value="PM">{{'PM' | translate}}</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-block">
+                  <input type="submit" value="{{'Search Caregiver' | translate}}" />
+                  <a href="javascript:void(0);" (click)="resetAndClose()" class="btn">{{'Back'| translate}}
+                    <img src="assets/images/close-white-icon.svg" alt=" " /></a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--<div class="right-image" style="background-image: url(assets/images/home-image.jpg);"></div> -->
+        <div class="right-image right-side-image-background video-blocks">
+          <iframe src="https://www.youtube.com/embed/N5a2qR6LK7Y">
+          </iframe>
+          <!-- <video class="video-block" controls>
+            <source src="assets/videos/home-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="container">
+      <div class="about-inner">
+        <h1>
+          {{ "Hong Kong's" | translate }}<span>{{ 'First' | translate }}</span>{{ ' Online Caregiver Platform' | translate }}
+        </h1>
+        <p>
+          {{ 'We are here to connect those who need home care with those who wish to provide healthcare services.'| translate}}
+          <br /><br />
+          <!-- <strong>
+            {{ 'From now until XYZ, clients and caregivers can use the platform for free.  It only takes 10 minutes to register.' | translate }}
+          </strong> -->
+          <strong>
+            {{'From now until 31 August, clients and caregivers can use the platform for free! It only takes 10 minutes to register. Yes, it is that simple.' | translate }}
+          </strong>
+        </p>
+        <a href="javascript:void(0)" [routerLink]="['/pages/about']" class="btn">
+          {{ 'About Us' | translate }}
+          <img src="assets/images/about-btn-icon.svg" alt=" " /></a>
+      </div>
+      <div class="about-blocks">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="single-block">
+              <figure>
+                <img src="assets/images/caregiver-verified-icon.svg" alt=" " />
+              </figure>
+              <h4>{{ 'All Caregivers verified' | translate }} </h4>
+              <p>
+                {{ 'We verify work experience and education of all caregivers.'| translate}}
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single-block">
+              <figure>
+                <img src="assets/images/caregiver-background-icon.svg" alt=" " />
+              </figure>
+              <h4>{{ 'Transparent Caregiver Background' | translate }}</h4>
+              <p>
+                {{ 'You will see full background of caregivers with verified ratings and services.'| translate}}
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="single-block">
+              <figure>
+                <img src="assets/images/quick-appoinment-icon.svg" alt=" " />
+              </figure>
+              <h4>{{ 'Quick Appointment Confirmation' | translate }}</h4>
+              <p>
+                {{ 'Appointment can be confirmed as quickly as 2 hours.'| translate}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="caregiver-type-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>{{ 'Which type of caregiver should I choose?' | translate }}</h2>
+          <div class="type-tabs" id="caregiver-type-section">
+            <ul id="tabs" class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a (click)="getSkills('1')" href="javascript:void(0);" [ngClass]="{ active: currentSkillSet === '1'  }"
+                  class="nav-link">{{
+                    'Registered or Enrolled Nurse' | translate
+                  }}</a>
+              </li>
+              <li class="nav-item">
+                <a (click)="getSkills('3')" [ngClass]="{ active: currentSkillSet === '3'  }" href="javascript:void(0);"
+                  class="nav-link">{{ 'Health Worker' | translate }}</a>
+              </li>
+              <li class="nav-item">
+                <a (click)="getSkills('4')" [ngClass]="{ active: currentSkillSet === '4'   }" href="javascript:void(0);"
+                  class="nav-link">{{ 'Personal Care Worker' | translate }}</a>
+              </li>
+              <li class="nav-item">
+                <a (click)="getSkills('5')" [ngClass]="{ active: currentSkillSet === '5' }" href="javascript:void(0);"
+                  class="nav-link">
+                  {{ 'Out-Patient Escort Person' | translate }}</a>
+              </li>
+            </ul>
+            <div id="content" class="tab-content" role="tablist">
+              <select class="form-control mobile-dropdown" (change)="redirect($event)">
+                <option value="Registered" [selected]="currentSkillsSection === 'Registered'">
+                  {{ 'Registered or Enrolled Nurse' | translate }}</option>
+                <option value="Worker" [selected]="currentSkillsSection === 'Worker'">{{ 'Health Worker' | translate }}
+                </option>
+                <option value="Personal" [selected]="currentSkillsSection === 'Personal'">
+                  {{ 'Personal Care Worker' | translate }}</option>
+                <option value="Escort" [selected]="currentSkillsSection === 'Escort'">
+                  {{ 'Out-Patient Escort Person' | translate }}</option>
+              </select>
+              <div id="pane-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="tab-A">
+                <div class="card-header" role="tab" id="heading-A">
+                  <h5 class="mb-0" *ngIf="currentSkillsSection === 'Registered'">
+                    <a data-toggle="collapse" aria-expanded="true" aria-controls="collapse-A">
+                      {{ 'Registered or Enrolled Nurse' | translate }}
+                    </a>
+                  </h5>
+                  <h5 class="mb-0" *ngIf="currentSkillsSection === 'Worker'">
+                    <a data-toggle="collapse" aria-expanded="true" aria-controls="collapse-B">
+                      {{ 'Health Worker' | translate }}
+                    </a>
+                  </h5>
+                  <h5 class="mb-0" *ngIf="currentSkillsSection === 'Personal'">
+                    <a data-toggle="collapse" aria-expanded="true" aria-controls="collapse-C">
+                      {{ 'Personal Care Worker' | translate }}
+                    </a>
+                  </h5>
+                  <h5 class="mb-0" *ngIf="currentSkillsSection === 'Escort'">
+                    <a data-toggle="collapse" aria-expanded="true" aria-controls="collapse-C">
+                      {{ 'Out-Patient Escort Person' | translate }}
+                    </a>
+                  </h5>
+                </div>
+
+                <div class="collapse show">
+                  <div class="care-main-block">
+                    <div class="mb-3">
+                      <ng-container *ngIf="currentSkillSet === '1' ">
+                        {{'Registered Nurse: At least 3 years | Enrolled Nurse: At least 2 years of full-time nursing training' | translate}}
+                        <br />
+                        {{'Must be registered and enrolled under the Nursing Council of Hong Kong' |translate}}
+                      </ng-container>
+                      <ng-container *ngIf="currentSkillSet === '3' ">
+                        {{'Must have completed at least a Health Worker training course approved by the Social and Welfare Department' | translate}}
+                      </ng-container>
+                      <ng-container *ngIf="currentSkillSet === '4' ">
+                        {{'Must have completed at least a Personal Care Worker course approved by a recognised institute' | translate}}
+                      </ng-container>
+                      <ng-container *ngIf="currentSkillSet === '5' ">
+                        {{'Must have completed at least an Out-Patient Escort course approved by a recognised institute' | translate}}
+                      </ng-container>
+                      <br />
+                    </div>
+                    <div class="care-block">
+                      <div class="single-block" *ngIf="personalCareArrayToShow">
+                        <h3 *ngIf="personalCareArrayToShow?.length > 0">
+                          {{ 'Personal Care' | translate }}
+                        </h3>
+                        <ul *ngIf="personalCareArrayToShow?.length > 0">
+                          <li *ngFor="let personalCare of personalCareArrayToShow">
+                            <ng-template #popContent>
+                              <div
+                                [innerHTML]="global.currentLanguage == 'en' ? personalCare.en_explanation : personalCare.ch_explanation">
+                              </div>
+                            </ng-template>
+                            {{ personalCare.english_title | translate }}
+                            <a href="javascript:void(0)" *ngIf="personalCare.en_explanation" placement="bottom"
+                              [ngbPopover]="popContent" popoverTitle="{{ personalCare.english_title | translate }}">
+                              <i class="fa fa-question"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="single-block" *ngIf="specialCareArrayToShow">
+                        <h3 *ngIf="specialCareArrayToShow.length > 0">
+                          {{ 'Special Care' | translate }}
+                        </h3>
+                        <ul *ngIf="specialCareArrayToShow.length > 0">
+                          <li *ngFor="let specialCare of specialCareArrayToShow">
+                            <ng-template #popContent>
+                              <div
+                                [innerHTML]="global.currentLanguage == 'en' ? specialCare.en_explanation : specialCare.ch_explanation">
+                              </div>
+                            </ng-template>
+                            {{ specialCare.english_title | translate }}
+                            <a href="javascript:void(0)" *ngIf="specialCare.en_explanation" placement="bottom"
+                              [ngbPopover]="popContent" popoverTitle="{{ specialCare.english_title | translate }}">
+                              <i class="fa fa-question"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <ng-container *ngIf="currentSkillSet !== '3' && currentSkillSet !== '4' && currentSkillSet !== '5'">
+                      {{ '*Must be carried out by nurses' | translate}}
+                    </ng-container>
+                    <ng-container *ngIf="specialCareArrayToShow">
+                      <div class="all-view" *ngIf="specialCareArrayToShow.length > 0">
+                        <a href="javascript:void(0)" class="btn-link" *ngIf="showAllButton"
+                          (click)="setArray(0)">{{ 'Click to show all' | translate }}
+                        </a>
+                        <a href="javascript:void(0)" class="btn-link" *ngIf="!showAllButton"
+                          (click)="setArray(1)">{{ 'Show less' | translate }}</a>
+                      </div>
+                    </ng-container>
+                    <ng-container *ngIf="specialCareArrayToShow">
+                      <div *ngIf="!specialCareArrayToShow.length">
+                        <br />
+                      </div>
+                    </ng-container>
+                    <div class="search-btn">
+                      <a href="javascript:void(0);" class="btn"
+                        [ngClass]="{'chinese-padding': global.currentLanguage ==='zh'}"
+                        [routerLink]="['/pages/caregiver/search']">{{ 'Search Caregiver' | translate }}
+                        <img src="assets/images/user-icon.svg" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="after-register-section">
+    <div class="container">
+      <h2>{{ 'After you register' | translate }}</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="single-block">
+            <figure>
+              <img src="assets/images/appoint-search.svg" alt=" " />
+            </figure>
+            <h4>{{ 'Search and Appoint' | translate }}</h4>
+            <p>
+              {{ 'Select caregiver type, services, date and time to find the caregiver who match your needs'| translate}}
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="single-block">
+            <figure>
+              <img src="assets/images/payment.svg" alt=" " />
+            </figure>
+            <h4>{{ 'Payment' | translate }}</h4>
+            <p>
+              {{ 'Transer funds to PureCare to confirm appointment with caregiver.' | translate }}
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="single-block">
+            <figure>
+              <img src="assets/images/feedback.svg" alt=" " />
+            </figure>
+            <h4>{{ 'Service and Feedback' | translate }}</h4>
+            <p>
+              {{ 'Caregiver comes to provide service and you can provide ratings and reviews after the service.' | translate}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial-section">
+    <div class="container">
+      <h2>{{ 'Loved by Our Clients' | translate }}</h2>
+      <div class="ct-sec">
+        <a class="left carousel-control" href="javascript:void(0)" (click)="owlCar.prev()">
+          <img src="assets/images/left-a.svg" alt="" />
+        </a>
+        <a class="right carousel-control" href="javascript:void(0)" (click)="owlCar.next()">
+          <img src="assets/images/right-a.svg" alt="" />
+        </a>
+      </div>
+      <owl-carousel-o [options]="customOptions" #owlCar>
+        <ng-template carouselSlide>
+          <blockquote>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info">
+                  <h6>{{ 'Eva Wong' | translate }}</h6>
+                  <small>{{ 'Accountant' | translate }}</small>
+                </div>
+                <p>
+                  {{ 'The registration is quick and easy! I created the account in less than 10 mins and can select a good caregiver! Loved it!' | translate }}
+                </p>
+              </div>
+            </div>
+          </blockquote>
+        </ng-template>
+        <ng-template carouselSlide>
+          <blockquote>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info">
+                  <h6>{{ 'Frank Ching' | translate }}</h6>
+                  <small>{{ 'Teacher' | translate }}</small>
+                </div>
+                <p>
+                  {{ 'I can view the caregiver background and review! I know you vet all caregivers thoroughly before you get them onboarded.' | translate}}
+                </p>
+              </div>
+            </div>
+          </blockquote>
+        </ng-template>
+        <ng-template carouselSlide>
+          <blockquote>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info">
+                  <h6>{{ 'Joey Su' | translate }}</h6>
+                  <small>{{ 'Lawyer' | translate }}</small>
+                </div>
+                <p>
+                  {{ 'It only took Pure Care 2 hours to match me with the caregiver and the customer service was great too - answered my questions immediately!' | translate }}
+                </p>
+              </div>
+            </div>
+          </blockquote>
+        </ng-template>
+      </owl-carousel-o>
+    </div>
+  </section>
+
+  <section class="cloud-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="cloud-inner">
+            <figure>
+              <img src="assets/images/digital-ocean-logo.png" alt="" class="digital-ocean-logo" />
+            </figure>
+            <div class="text-block">
+              <h4>{{ 'Top Cloud Provider' | translate }}</h4>
+              <p>
+                {{'Pure Care’s platform is run on Digital Ocean cloud to give you a high level of security and stabillty.' | translate}}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="cloud-inner">
+            <figure>
+              <img src="assets/images/mozilla-logo.png" alt="" />
+            </figure>
+            <div class="text-block">
+              <h4>{{ 'Highest Security' | translate }}</h4>
+              <p>
+                {{ 'Pure Care adheres to the highest security standards to ensure clients and caregivers data are stored securely.' | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

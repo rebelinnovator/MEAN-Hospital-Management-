@@ -1,0 +1,137 @@
+<div id="panel-F" class="card tab-pane fade show active " role="tabpanel" aria-labelledby="documents">
+  <div class="card-header" role="tab" id="heading-F">
+    <h5 class="mb-0">
+      <a class="collapsed" data-toggle="collapse show" aria-expanded="false" aria-controls="collapse-F">
+        {{ 'Documents' | translate }}
+      </a>
+    </h5>
+  </div>
+  <div id="collapse-F" class="collapse" role="tabpanel" data-parent="#content" aria-labelledby="heading-F">
+    <div class="single-wizard">
+      <div class="wizard-form">
+        <div class="title-block">
+          <h5>
+            {{ 'Have questions about this form? Please whatsapp' | translate }}
+            <a href="tel:+85263640301">{{ '6364 0301' | translate }}</a>
+            {{ 'and let us help you!' | translate }}
+          </h5>
+          <h4>{{ 'Step 6' | translate }}</h4>
+          <h3>{{ 'Email or whatsapp your douments' | translate }}</h3>
+          <p>
+            {{ 'All info given to us is strictly confidential and is only used for registration purposes.' | translate }}
+          </p>
+        </div>
+        <div class="content-block documents-block">
+          <p class="orange-color">
+            {{'In order to onboard you seamlessly, please read the following very carefully.'| translate}}</p>
+          <p class="orange-color">
+            {{'If convenient, it may be easier to provide the documents now, as this would be the last time you see the list of required documents in the sign-up form.'| translate}}
+          </p>
+          <p>{{ 'Please email or whatsapp the following to' | translate}}
+            <a href="mailto:info@purecare.com.hk" target="_blank">{{'info@purecare.com.hk' | translate}}</a> or
+            <a href="tel:+85263640301">{{ '6364 0301' | translate }}</a>.
+            {{
+              'We will process your registration in 24 hours after we receive all of your documents.'
+                | translate
+            }}
+          </p>
+          <h5>{{ 'Hong Kong Identity Card' | translate }}</h5>
+          <h5>{{ 'Proof of Work Experience' | translate }}</h5>
+          <ul>
+            <li>
+              {{'- Public / Private Hospital / Elderly Home / NGO:' | translate}}
+            </li>
+            <li>{{'Payslip(s) (Only need to show name, pay point (if any) and HKID (first 4 digits)'| translate}}</li>
+            <li>{{'- Freelance: None'| translate}}</li>
+            <li>
+              {{'We will not contact your employers.'| translate}}
+            </li>
+          </ul>
+          <!-- <h5>
+            {{
+              'Proof of present address issued less than 3 months (bank / credit card statement, utility / mobile phone bill)'
+                | translate
+            }}
+          </h5> -->
+          <!-- <h5>{{ 'Payslips or Employment Contracts' | translate }}<span class="orange-color">
+              {{'- please pay attention - it can be a bit tricky' | translate}}</span>
+          </h5> -->
+          <!-- <ul>
+            <li>
+              {{'Current Employer: Contract or first payslip and last (or most recent) payslip' | translate}}
+            </li>
+            <li>
+              {{'Previous Employer: Contract or first payslip and last (or most recent) payslip or resignation letter' | translate}}
+            </li>
+            <li>
+              <ol>
+                <li>
+                  {{"1. If you don't have the last payslip, your years of work experience = contract or first payslip to most recent payslip" | translate}}
+                </li>
+                <li>
+                  {{"2. Please provide them regardless of whether you'd like to show employer name(s) on the platform"| translate}}
+                </li>
+                <li>
+                  {{'3. Please feel free to hide the salary figures. We will not contact your employer(s).'| translate}}
+                </li>
+              </ol>
+            </li>
+          </ul> -->
+          <h5> {{'Professional Certificates'|translate}}</h5>
+          <ul>
+            <p>{{ 'RN / EN:' | translate }}</p>
+            <li>
+              {{ '- A Certificate of Registration (Part 1) (RN)' | translate }}
+            </li>
+            <li>
+              {{ '- A Certificate of Enrolment (Part 1) (EN)' | translate }}
+            </li>
+            <li>
+              {{
+                '- A valid Practicing Certificate issued by the Nursing Council of Hong Kong'
+                  | translate
+              }}
+            </li>
+          </ul>
+          <p>{{ 'HW:' | translate }}</p>
+          <ul>
+            <li>
+              {{
+                '- Health Worker Training Courses approved by the Social and Welfare Department'
+                  | translate
+              }}
+            </li>
+          </ul>
+          <p>{{ 'PCW:' | translate }}</p>
+          <ul>
+            <li>
+              {{
+                '- Personal Care Worker certificate issued by an accredited institution in Hong Kong'
+                  | translate
+              }}
+            </li>
+          </ul>
+          <p>{{ 'Out-Patient Escort:' | translate }}</p>
+          <ul>
+            <li>
+              {{ '- Out-Patient Escort Foundation Certificate OR' | translate }}
+            </li>
+            <li>
+              {{
+                '- Elderly Caregiver Foundation Certificate issued by an accredited institution in Hong Kong'
+                  | translate
+              }}
+            </li>
+          </ul>
+          <p>{{'If you mentioned that you have other certificates in Step 2, please send them to us.' | translate}}</p>
+        </div>
+        <div class="btn-block">
+          <a href="javascript:void(0);" (click)="redirectionPrevious()" class="btn">{{ 'Previous' | translate }}
+            <img src="assets/images/left-arrow.svg" alt=" " /></a>
+          <a href="javascript:void(0);" (click)="redirection()" class="btn">{{ 'Next' | translate }}
+            <img src="assets/images/right-arrow.svg" alt=" " /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

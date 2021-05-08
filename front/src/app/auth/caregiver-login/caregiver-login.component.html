@@ -1,0 +1,68 @@
+<div class="main-content">
+  <section class="caregivers-section register-frm">
+    <div class="container">
+      <div class="row">
+        <div class="caregivers-inner col-md-6">
+          <div class="left-block">
+            <h2 class="text-center">{{ 'Caregiver Login' | translate }}</h2>
+            <p class="text-center">
+              {{
+                'You set your service fee. We pay you 12 hours after the service!'
+                  | translate
+              }}<br />
+              {{ 'No commission charged during promotion!' | translate }}
+            </p>
+            <div class="reg-frm">
+              <form [formGroup]="caregiverLoginForm" (ngSubmit)="login()">
+                <div class="form-group" [ngClass]="{
+                    'error-msg': (email.dirty || email.touched) && email.errors
+                  }">
+                  <label for="email">{{ 'Email Address' | translate }}</label>
+                  <input type="email" formControlName="email" class="form-control" placeholder="abc@gmail.com"
+                    id="email" autocomplete="off" />
+                  <app-control-message fieldName="{{'Email Address' | translate }}"
+                    [control]="caregiverLoginForm.controls['email']">
+                  </app-control-message>
+                </div>
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (password.dirty || password.touched) && password.errors
+                  }">
+                  <label for="pwd">{{ 'Password' | translate }}</label>
+                  <input type="{{ passType }}" class="form-control" placeholder="******" id="pwd"
+                    formControlName="password" autocomplete="off" />
+                  <a href="javascript:void(0);" (click)="toggleShow()" class="eye-icon"><img [src]="passwordIcon" />
+                  </a>
+                  <app-control-message fieldName="{{'Password' | translate}}"
+                    [control]="caregiverLoginForm.controls['password']">
+                  </app-control-message>
+                </div>
+                <div class="form-check">
+                  <div class="custom-checkbox">
+                    <input id="remember" formControlName="rememberMe" type="checkbox" class="form-check-input" />
+                    <label for="remember">{{
+                      'Remember Me' | translate
+                    }}</label>
+                  </div>
+                  <a href="javascript:void(0);" (click)="forgotPassword()">
+                    {{ 'Forgot password' | translate }}</a>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  {{ 'Login' | translate }}
+                </button>
+                <div class="form-group">
+                  <p class="text-center">
+                    {{ 'Don’t have an account yet?' | translate }}
+                    <a href="javascriopt:void(0);" [routerLink]="['/auth/caregiver-register']">
+                      {{ 'SIGN UP' | translate }}</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="right-image forgot-password"></div>
+      </div>
+    </div>
+  </section>
+</div>

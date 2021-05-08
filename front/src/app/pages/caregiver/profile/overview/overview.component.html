@@ -1,0 +1,51 @@
+<div id="panel-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="overview">
+  <div class="card-header" role="tab" id="heading-A">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" routerLink="/pages/caregiver/profile-view/overview/{{ registrationNo }}"
+        aria-expanded="true" aria-controls="collapse-A">
+        {{ 'Overview' | translate }}
+      </a>
+    </h5>
+  </div>
+  <div id="collapse-A" class="collapse show" data-parent="#content" role="tabpanel" aria-labelledby="heading-A">
+    <div class="single-profile-page">
+      <div class="single-page-block">
+        <h2>
+          {{ 'Registered No.:' | translate }}
+          {{ overviewDetails.registration_no }}&nbsp;&nbsp; |
+          <img *ngIf="overviewDetails?.user?.salute == 1" src="assets/images/Male.svg" />
+          <img *ngIf="overviewDetails?.user?.salute == 2" src="assets/images/Female.svg" />
+        </h2>
+
+        <h4>{{ 'Caregiver Type' | translate }}</h4>
+        <p class="black-color">{{ overviewDetails.caregiver_type | translate }}</p>
+
+        <h4>{{ 'Rating and Reviews' | translate }}</h4>
+        <div class="page-rate">
+          <ng-template #t let-fill="fill">
+            <span class="star" [class.full]="fill === 100">
+              <span class="half" [style.width.%]="fill">&#9733;</span>&#9733;
+            </span>
+          </ng-template>
+          <ngb-rating [rate]="overviewDetails.avgRating" [starTemplate]="t" [readonly]="true" [max]="5"></ngb-rating>
+          <a href="javascript:void(0)" [routerLink]="[
+              '/pages/caregiver/profile-view/review/' +
+                overviewDetails.registration_no
+            ]">
+            ({{ overviewDetails?.__meta__?.feedbacks_count }} {{'Reviews' | translate}})
+          </a>
+        </div>
+
+        <h4>{{ 'Languages' | translate }}</h4>
+        <div class="languages">
+          <span *ngFor="let language of overviewDetails.languages">
+            {{ language.language }}
+          </span>
+        </div>
+
+        <h4>{{ 'About me' | translate }}</h4>
+        <p class="black-color">{{ overviewDetails.self_introduction }}</p>
+      </div>
+    </div>
+  </div>
+</div>

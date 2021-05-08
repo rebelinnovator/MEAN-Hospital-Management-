@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "Pure-Care-API",
+      "script": "server.js",
+      "watch": true,
+      "ignore_watch": ["node_modules", "public", "logs", ".git"],
+      "instances": 1,
+      "exec_mode": "fork_mode",
+      "env": {
+        "ENV_PATH": ".env",
+        "NODE_ENV": "development"
+      },
+      "env_production": {
+        "ENV_PATH": ".env.prod",
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+<div id="panel-C" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="skill">
+  <div class="card-header" role="tab" id="heading-C">
+    <h5 class="mb-0">
+      <a class="collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-C">
+        {{ 'Skillset' | translate }}
+      </a>
+    </h5>
+  </div>
+  <div id="collapse-C" class="collapse show" role="tabpanel" data-parent="#content" aria-labelledby="heading-C">
+    <form [formGroup]="skillSetForm" (ngSubmit)="addSkillSet()">
+      <div class="single-wizard">
+        <div class="wizard-form">
+          <div class="title-block">
+            <h5 *ngIf="!profileMode">
+              {{
+                'Have questions about this form? Please whatsapp' | translate
+              }}
+              <a href="tel:+85263640301">{{ '6364 0301' | translate }}</a>
+              {{ 'and let us help you!' | translate }}
+            </h5>
+            <h4>{{ 'Step 3' | translate }}</h4>
+            <h3>{{ 'Skillset' | translate }}</h3>
+            <p>
+              {{
+                'Clients can find you according to your skillset.' | translate
+              }}
+            </p>
+          </div>
+          <div class="form-blocks">
+            <div class="single-form-block">
+              <div class="single-block full">
+                <div class="form-group">
+                  <label>{{ 'Self Introduction' | translate }}
+                    <span>({{ 'Optional' | translate }})</span></label>
+                  <textarea class="form-control" maxlength="300" formControlName="self_introduction" [ngClass]="{
+                      'error-msg':
+                        (skillSetForm.controls['self_introduction'].dirty ||
+                          skillSetForm.controls['self_introduction'].touched) &&
+                        skillSetForm.controls['self_introduction'].errors
+                    }"></textarea>
+                  <small>({{
+                      'Fewer than 50 words. Please don’t compare yourself with or criticise others'
+                        | translate
+                    }})</small>
+                  <app-control-message fieldName="{{ 'Introduction' | translate }}"
+                    [control]="skillSetForm.controls['self_introduction']"></app-control-message>
+                </div>
+              </div>
+              <div class="skill-block">
+                <label>{{ 'Your Skills' | translate }}</label>
+                <p class="orange-color">
+                  {{
+                    "Please only tick what you know. Clients would give you a poor rating if you claim you know how to do something but don't!"
+                      | translate
+                  }}
+                </p>
+                <div class="skill-main">
+                  <div class="single-skill" *ngIf="personalCareArray.length > 0">
+                    <div class="single-skill-inner">
+                      <label class="label-title">{{
+                        'Personal Care' | translate
+                      }}</label>
+                      <ul>
+                        <li *ngFor="
+                            let personalCare of skillSetForm.get(
+                              'personal_care'
+                            )['controls'];
+                            let i = index
+                          " [formGroup]="personalCare">
+                          <div class="custom-checkbox">
+                            <input id="personalCare_{{ i }}" type="checkbox"
+                              [formControl]="personalCare.get('selected')" class="form-check-input" />
+                            <label for="personalCare_{{ i }}">
+                              {{ personalCare.get('name').value | translate }}
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="single-skill" *ngIf="personalCareArray.length == 0">
+                    <div class="single-skill-inner">
+                      <label class="label-title">{{
+                        'Personal Care' | translate
+                      }}</label>
+                      <ul>
+                        <li>
+                          <!-- <div class="text-center">
+                            <label>{{ 'No Skills Found' | translate }}</label>
+                          </div> -->
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="single-skill" *ngIf="specialCareArray.length > 0">
+                    <div class="single-skill-inner">
+                      <label class="label-title">{{
+                        'Special Care' | translate
+                      }}</label>
+                      <ul>
+                        <li *ngFor="
+                            let specialCare of skillSetForm.get('special_care')[
+                              'controls'
+                            ];
+                            let j = index
+                          " [formGroup]="specialCare">
+                          <div class="custom-checkbox">
+                            <input id="specialCare_{{ j }}" type="checkbox" [formControl]="specialCare.get('selected')"
+                              class="form-check-input" />
+                            <label for="specialCare_{{ j }}">
+                              {{ specialCare.get('name').value | translate }}
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="single-skill" *ngIf="specialCareArray.length == 0">
+                    <div class="single-skill-inner">
+                      <label class="label-title">{{
+                        'Special Care' | translate
+                      }}</label>
+                      <ul>
+                        <li>
+                          <!-- <div class="text-center">
+                            <label>{{ 'No Skills Found' | translate }}</label>
+                          </div> -->
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <span class="must-carried" *ngIf="showMessage">{{'*Must be carried out by nurses' | translate}}</span>
+                <app-control-message fieldName="{{ 'Your Skills' | translate }}"
+                  [control]="skillSetForm.controls['skills']"></app-control-message>
+              </div>
+            </div>
+
+          </div>
+          <div class="btn-block" *ngIf="!profileMode">
+            <a href="javascript:void(0);" [routerLink]="['/caregiver/onboard/work-info']" class="btn"
+              (click)="layoutComponent.changeDropDownValueFromComponent('Work')">{{ 'Previous' | translate }}
+              <img src="assets/images/left-arrow.svg" alt=" " /></a>
+            <button type="submit" class="btn">
+              {{ 'Next' | translate }}
+              <img src="assets/images/right-arrow.svg" alt=" " />
+            </button>
+          </div>
+          <div class="btn-block" *ngIf="profileMode">
+            <button type="submit" class="btn">
+              {{ 'Save' | translate }}
+              <img src="assets/images/down-arrow-icon.svg" alt=" " />
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

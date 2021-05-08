@@ -1,0 +1,131 @@
+<section class="confirm-appo-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>{{ 'Previous' | translate }}</h1>
+        <div class="app-tabs">
+          <ul id="tabs" class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a id="confirmed" href="javascript:void(0)" class="nav-link"
+                [class]="pendingStatus === 'completed' ? 'active' : ''" data-toggle="tab"
+                (click)="updateStatus('completed')" role="tab">
+                {{ 'Completed' | translate }}
+              </a>
+            </li>
+            <li class="nav-item">
+              <a id="pending" href="javascript:void(0)" class="nav-link"
+                [class]="pendingStatus === 'cancelled' ? 'active' : ''" data-toggle="tab"
+                (click)="updateStatus('cancelled')" role="tab">
+                {{ 'Cancelled' | translate }}
+              </a>
+            </li>
+          </ul>
+          <div id="content" class="tab-content" role="tablist">
+            <select class="form-control mobile-dropdown" (change)="redirect($event)">
+              <option value="completed">{{ 'Completed' | translate }}</option>
+              <option value="cancelled">{{ 'Cancelled' | translate }}</option>
+            </select>
+            <div id="pane-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="confirmed">
+              <div class="card-header" role="tab" id="heading-A">
+                <h5 class="mb-0" *ngIf="ariaLabelText === 'Completed'">
+                  <a data-toggle="collapse" aria-expanded="true" aria-controls="collapse-A">
+                    {{ 'Completed' | translate }}
+                  </a>
+                </h5>
+                <h5 class="mb-0" *ngIf="ariaLabelText === 'Cancelled'">
+                  <a data-toggle="collapse" aria-expanded="true" aria-controls="collapse-A">
+                    {{ 'Cancelled' | translate }}
+                  </a>
+                </h5>
+              </div>
+
+              <div id="collapse-A" class="collapse show" data-parent="#content" role="tabpanel"
+                aria-labelledby="heading-A">
+                <div class="app-main-block">
+                  <div class="single-main-block" *ngFor="let appointment of appointmentData; let i = index">
+                    <div class="number">{{ i + 1 }}</div>
+                    <div class="single-app four-block">
+                      <div class="single-block">
+                        <h6>{{ 'Registered Name' | translate }}</h6>
+                        <p>
+                          <a href="javascript:void(0)" target="_blank"
+                            [routerLink]="['/pages/caregiver/profile-view/overview/' + appointment.caregiverDetail[0].caregiver.registration_no]">
+                            {{
+                              (appointment?.caregiverDetail)[0]?.caregiver
+                                ?.nick_name || '-'
+                            }}
+                          </a>
+                        </p>
+                      </div>
+                      <div class="single-block">
+                        <h6>{{ 'Registered No.' | translate }}</h6>
+                        <p>
+                          <a href="javascript:void(0)" target="_blank"
+                            [routerLink]="['/pages/caregiver/profile-view/overview/' + appointment.caregiverDetail[0].caregiver.registration_no]">
+                            {{
+                              (appointment?.caregiverDetail)[0]?.caregiver
+                                ?.registration_no || '-'
+                            }}
+                          </a>
+                        </p>
+                      </div>
+                      <div class="single-block">
+                        <h6>{{ 'Total Amount' | translate }}</h6>
+                        <p>
+                          {{ (appointment?.caregiverDetail)[0]?.total_amount | currency }}
+                        </p>
+                      </div>
+                      <div class="single-block">
+                        <h6 *ngIf="pendingStatus === 'completed'">{{ 'Payment Status' | translate }}</h6>
+                        <h6 *ngIf="pendingStatus === 'cancelled'">{{ 'Status' | translate }}</h6>
+                        <p>{{ appointment?.statusToShow | translate }}</p>
+                      </div>
+                    </div>
+                    <div class="single-app three-block">
+                      <div class="single-block">
+                        <h6>{{ 'Appointment Date' | translate }}</h6>
+                        <p>{{ appointment?.date | date: 'dd MMMM,yyyy' }}</p>
+                      </div>
+                      <div class="single-block">
+                        <h6>{{ 'Duration' | translate }}</h6>
+                        <p>{{ appointment?.duration || '-' }} {{'hour(s)' | translate}}</p>
+                      </div>
+                      <div class="single-block">
+                        <h6>{{ 'Caregiver Type' | translate }}</h6>
+                        <p>
+                          {{
+                            ((appointment?.caregiverDetail)[0]?.caregiver
+                              ?.caregiver_type | translate) || '-'
+                          }}
+                        </p>
+                      </div>
+                    </div>
+                    <div class="single-app one-block">
+                      <div class="single-block">
+                        <h6>{{ 'Services Selected' | translate }}</h6>
+                        <p>
+                          <ng-container *ngFor="let service of appointment?.services; let last = last">
+                            {{ service.english_title | translate }}{{ last ? '' : ',' }}
+                          </ng-container>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="load-more-btn" *ngIf="data.next">
+              <a href="javascript:void(0)" class="btn" (click)="setPage(data?.currentPage)">{{'Load More' | translate}}
+                <img src="assets/images/load-more-icon.svg" /></a>
+            </div>
+
+            <div class="load-more-btn" *ngIf="!appointmentData.length">
+              {{ 'There are no ' + pendingStatus + ' appointments' | translate }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,156 @@
+<div class="main-content">
+  <!-- content area part -->
+  <section class="main-content-section padding-btm-90">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="main-content-inner">
+            <h2 class="text-center">{{ 'Wound Care' | translate }}</h2>
+            <p>
+              {{
+                'Infection prevention, further damage minimization and wound caring are the 3 main aspects in wound care.'
+                  | translate
+              }}
+            </p>
+            <p>
+              {{
+                'The patient would experience symptoms such as pain, swelling, redness, infection or fever. Our caregivers will apply strict measures in wound dressing, change patient position regularly where necessary and avoid excessive pressure and friction on the wound.'
+                  | translate
+              }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="caregiver-type-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>{{ 'Our Services' | translate }}</h2>
+          <div class="type-tabs">
+            <div class="tab-content">
+              <div class="care-main-block">
+                <div class="care-block">
+                  <div class="single-block">
+                    <h3>{{ 'Personal Care' | translate }}</h3>
+                    <ul>
+                      <li>
+                        {{
+                          'Accompany to see Doctor / Pick up at Home / Lend an Arm / Registration / Booking / Collect Medicine'
+                            | translate
+                        }}
+                      </li>
+                      <li>{{ 'Any other on the list' | translate }}</li>
+                    </ul>
+                  </div>
+                  <div class="single-block">
+                    <h3>{{ 'Special Care' | translate }}</h3>
+                    <ul>
+                      <li>{{ 'Wound Care' | translate }}</li>
+                      <li>{{ 'Any other on the list' | translate }}</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="search-btn">
+                  <a href="javascript:void(0);" [ngClass]="{'chinese-padding': global.currentLanguage ==='zh'}"
+                    [routerLink]="['/pages/caregiver/search']" class="btn">{{ 'Search Caregiver ' | translate
+                    }}<img src="assets/images/user-icon.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="choose-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="choose-inner">
+            <h2 class="text-center">
+              {{ 'Which type of caregivers should I choose?' | translate }}
+            </h2>
+            <div class="choose-blocks">
+              <div class="single-block">
+                <div class="white-block">
+                  <figure>
+                    <img src="assets/images/enrolled-nurse-icon.svg" alt="" />
+                  </figure>
+                  <p>{{ 'Registered or Enrolled Nurse' | translate }}</p>
+                </div>
+              </div>
+              <div class="single-block">
+                <div class="white-block">
+                  <figure>
+                    <img src="assets/images/health-worker-icon.svg" alt="" />
+                  </figure>
+                  <p>{{ 'Health Worker' | translate }}</p>
+                </div>
+              </div>
+              <div class="single-block">
+                <div class="white-block">
+                  <figure>
+                    <img src="assets/images/personal-care-icon.svg" alt="" />
+                  </figure>
+                  <p>{{ 'Personal Care Worker' | translate }}</p>
+                </div>
+                <small>{{
+                  '(for patients who only need being accompanied to work around / do mild exercise/ fed/ cut nails)'
+                    | translate
+                }}</small>
+              </div>
+              <div class="single-block">
+                <div class="white-block">
+                  <figure>
+                    <img src="assets/images/escort-person-icon.svg" alt="" />
+                  </figure>
+                  <p>{{ 'Out-Patient Escort Person' | translate }}</p>
+                </div>
+                <small>{{
+                  '(for visiting the doctor only)' | translate
+                }}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-content-section padding-90">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="main-content-inner">
+            <h2 class="text-center">
+              {{ 'Why use ' | translate
+              }}<span class="blue">{{ 'Pure Care' | translate }}</span>{{ '?' | translate }}
+            </h2>
+            <p *ngIf="global.currentLanguage === 'en'">
+              {{ 'Pure Care is Hong Kong’s ' | translate
+              }}<strong><span style="color: #07e940;">{{ 'First' | translate }}</span></strong> {{ 'online caregiver platform;' | translate
+              }}
+              <strong>{{'we verify all caregivers including certificates and work experience before they are on our platform.'| translate}}</strong>
+            </p>
+            <p *ngIf="global.currentLanguage === 'zh'">
+              Pure Care 是全港<span style="color: #07e940;">首間</span>網上護理平台，<strong>我們核實每位護理員資料，包括學歷及工作經驗。</strong>
+            </p>
+            <p *ngIf="global.currentLanguage === 'en'">
+              {{
+                'By clicking just a few buttons, they would visit the care receiver’s home and provide the services needed with the knowledge of the care receiver’s medical background.'
+                  | translate
+              }}
+            </p>
+            <p *ngIf="global.currentLanguage === 'zh'">
+              護理員會事先了解所需服務及受顧者病歷，然後去受顧者家中提供服務。預約就在彈指之間。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

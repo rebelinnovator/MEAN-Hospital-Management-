@@ -1,0 +1,58 @@
+{
+  "name": "pure-care-api",
+  "version": "1.0.0",
+  "adonis-version": "4.1.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "pm2 start pm2.json",
+    "start:prod": "pm2 start pm2.json --env production && pm2 logs",
+    "precommit": "lint-staged"
+  },
+  "author": "Techuz",
+  "private": true,
+  "dependencies": {
+    "@adonisjs/ace": "^5.0.8",
+    "@adonisjs/auth": "^3.0.7",
+    "@adonisjs/bodyparser": "^2.0.5",
+    "@adonisjs/cors": "^1.0.7",
+    "@adonisjs/fold": "^4.0.9",
+    "@adonisjs/framework": "^5.0.9",
+    "@adonisjs/ignitor": "^2.0.8",
+    "@adonisjs/lucid": "^6.1.3",
+    "@adonisjs/lucid-slugify": "^1.0.3",
+    "@adonisjs/mail": "^3.0.10",
+    "@adonisjs/session": "^1.0.29",
+    "@adonisjs/shield": "^1.0.8",
+    "@adonisjs/validator": "^5.0.6",
+    "adonis-throttle": "^2.3.6",
+    "crypto-js": "^4.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-jest": "^23.8.1",
+    "eslint-plugin-json": "^2.1.0",
+    "got": "^10.7.0",
+    "http-status-codes": "^1.4.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "moment-range": "^4.0.2",
+    "moment-timezone": "^0.5.28",
+    "mysql": "^2.18.1",
+    "node-cron": "^2.0.3",
+    "prettier": "^1.19.1",
+    "rand-token": "^0.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "autoload": {
+    "App": "./app"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  }
+}

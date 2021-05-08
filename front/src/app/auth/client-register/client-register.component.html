@@ -1,0 +1,114 @@
+<div class="main-content">
+  <section class="caregivers-section register-frm">
+    <div class="container">
+      <div class="row">
+        <div class="caregivers-inner col-md-5 offset-md-1" *ngIf="!showActivateAccount">
+          <div class="left-block">
+            <h2 class="text-center">{{ 'Join as a Client' | translate }}</h2>
+            <p class="text-center">
+              {{ 'Free Registration' | translate }}
+              <strong style="font-weight: 600;">
+                {{ '0 Commission until 31 August!' | translate }}
+              </strong>
+            </p>
+            <div class="reg-frm">
+              <form [formGroup]="clientRegisterForm" (ngSubmit)="clientRegister()">
+                <div class=" form-group" [ngClass]="{
+                    'error-msg': (email.dirty || email.touched) && email.errors
+                  }">
+                  <label for="email">{{ 'Email Address' | translate }} </label>
+                  <input type="email" formControlName="email" class="form-control" placeholder="abc@gmail.com"
+                    id="email" autocomplete="off" tabindex="1" />
+                  <app-control-message fieldName="{{'Email Address' | translate}}"
+                    [control]="clientRegisterForm.controls['email']">
+                  </app-control-message>
+                </div>
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (password.dirty || password.touched) && password.errors
+                  }">
+                  <label for="password">{{ 'Password' | translate }}
+                    <span *ngIf="score != 0">{{ 'Strength:' | translate }}
+                      <span *ngIf="score == 1" class="weak">{{
+                        'Weak' | translate
+                      }}</span>
+                      <span *ngIf="score == 2" class="average">{{
+                        'Average' | translate
+                      }}</span>
+                      <span *ngIf="score >= 3" class="strong">{{
+                        'Strong' | translate
+                      }}</span>
+                    </span>
+                  </label>
+                  <input type="{{ passType }}" (keyup)="passwordStrength($event)" class="form-control"
+                    placeholder="******" id="password" formControlName="password" autocomplete="off" tabindex="2" />
+                  <a href="javascript:void(0);" (click)="toggleShow()" class="eye-icon"><img [src]="passwordIcon" />
+                  </a>
+                  <app-control-message fieldName="{{'Password' | translate}}"
+                    [control]="clientRegisterForm.controls['password']">
+                  </app-control-message>
+                </div>
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (confirmPassword.dirty || confirmPassword.touched) &&
+                      confirmPassword.errors
+                  }">
+                  <label for="confirmPassword">{{
+                    'Confirm Password' | translate
+                  }}</label>
+                  <input type="password" class="form-control" placeholder="******" id="confirmPassword"
+                    formControlName="cnfmpassword" autocomplete="off" tabindex="3" />
+                  <app-control-message fieldName="{{'Confirm Password' | translate}}"
+                    [control]="clientRegisterForm.controls['cnfmpassword']">
+                  </app-control-message>
+                </div>
+                <div class="form-group">
+                  <p>
+                    {{ 'By clicking Join, you agree to our' | translate }}
+                    <a href="javascript:void(0);" target="_blank"
+                      [routerLink]="['/auth/privacy-policy']">{{ 'Privacy Policy.' | translate }}</a>
+                  </p>
+                </div>
+                <button type="submit" class="btn btn-primary">Join</button>
+                <div class="form-group">
+                  <p class="text-center">
+                    {{ 'Already have an account?' | translate }}
+                    <a [routerLink]="['/auth/client-login']" href="javascript:void(0);">{{ 'LOGIN' | translate }}</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="caregivers-inner col-md-5 offset-md-1" *ngIf="showActivateAccount">
+          <div class="left-block">
+            <h2 class="text-center">
+              {{ 'Activate your account' | translate }}
+            </h2>
+            <p class="text-center">
+              {{
+                'We have sent a link to your email address. Please don’t forget to check your junk mail folder.'
+                  | translate
+              }}
+            </p>
+            <div class="reg-frm">
+              <p class="text-center">
+                {{ 'Did not get the link?' | translate }}
+                <a href="javascript:void(0);"
+                  (click)="activateAccountMailSendAgain()">{{ 'SEND AGAIN' | translate }}</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-image right-side-image-background video-blocks">
+        <iframe src="https://www.youtube.com/embed/7eYzxJ3Xqvg">
+        </iframe>
+        <!-- <video class="video-block" controls>
+          <source src="assets/videos/client-signup.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video> -->
+      </div>
+    </div>
+  </section>
+</div>

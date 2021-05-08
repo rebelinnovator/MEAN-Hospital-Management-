@@ -1,0 +1,305 @@
+<header class="main-header">
+  <div class="header-inner">
+    <div class="left-head">
+      <a [routerLink]="['/']" href="javascript:void(0);">
+        <img src="assets/images/logo-english.png" alt="" *ngIf="global.currentLanguage === 'en'" />
+        <img src="assets/images/logo-chinese.png" alt="" *ngIf="global.currentLanguage === 'zh'" />
+      </a>
+      <!-- <img src="assets/images/logo-chinese.png" alt="" /></a> -->
+      <!-- <img src="assets/images/logo.png" alt="" /></a> -->
+    </div>
+    <div class="right-head">
+      <div class="top-head">
+        <div class="country-head">
+          <a href="javascript:void(0);" (click)="global.switchLang()" class="lang-change">
+            <!-- <img [src]="global.languageIcon" alt="" /> -->
+            <span *ngIf="global.currentLanguage==='en'">繁</span>
+            <span *ngIf="global.currentLanguage==='zh'">Eng</span>
+          </a>
+        </div>
+      </div>
+      <div class="bottom-head">
+        <nav class="navbar navbar-expand-md">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContentXL" aria-controls="navbarSupportedContentXL"
+            [attr.aria-expanded]="addShowHide" aria-label="Toggle navigation"
+            (click)="addShowHide = !addShowHide; navButtonClicked()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContentXL"
+            [ngClass]="{ show: addShowHide === true }">
+            <ul class="navbar-nav mr-auto">
+              <!-- <li class="nav-item" *ngIf="
+                  showLogin ||
+                  (userType == 3 &&
+                    global.currentStep !== null &&
+                    global.currentStep !== 'null' &&
+                    global.currentOnBoardStep > 0) ||
+                  (userType == 2 &&
+                    caregiverOnBoardCompleted === 0 &&
+                    global.showCaregiverMyProfile === '0' &&
+                    showCaregiverMyProfile === '0')
+                "> -->
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdownXL" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="setShowCareReceiver()">
+                  {{ 'Care Receivers' | translate }}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownXL"
+                  [ngClass]="{ show: addShowCareReceiver === true }">
+                  <a class="dropdown-item" (click)="removeShowClass(); navButtonUnClicked()"
+                    [routerLink]="['/pages/stroke']" href="javascript:void(0);">
+                    {{ 'Stroke' | translate }}
+                  </a>
+                  <a class="dropdown-item" (click)="removeShowClass(); navButtonUnClicked()"
+                    [routerLink]="['/pages/dementia']" href="javascript:void(0);">
+                    {{ 'Dementia' | translate }}
+                  </a>
+                  <a class="dropdown-item" (click)="removeShowClass(); navButtonUnClicked()"
+                    [routerLink]="['/pages/diabetes']" href="javascript:void(0);">
+                    {{ 'Diabetes' | translate }}
+                  </a>
+                  <a class="dropdown-item" (click)="removeShowClass(); navButtonUnClicked()"
+                    [routerLink]="['/pages/wound']" href="javascript:void(0);">
+                    {{ 'Wound' | translate }}
+                  </a>
+                  <a class="dropdown-item" (click)="removeShowClass(); navButtonUnClicked()"
+                    [routerLink]="['/pages/post-surgery']" href="javascript:void(0);">
+                    {{ 'Post Surgery' | translate }}
+                  </a>
+                  <a class="dropdown-item" (click)="removeShowClass(); navButtonUnClicked()"
+                    [routerLink]="['/pages/palliative']" href="javascript:void(0);">
+                    {{ 'Palliative' | translate }}
+                  </a>
+                  <a class="dropdown-item" (click)="removeShowClass(); navButtonUnClicked()"
+                    [routerLink]="['/pages/mentally-challenged']" href="javascript:void(0);">
+                    {{ 'Mentally Challenged' | translate }}
+                  </a>
+                </div>
+              </li>
+              <!-- <li class="nav-item" *ngIf="
+                  (userType == 3 &&
+                    global.currentStep !== null &&
+                    global.currentStep !== 'null') ||
+                  (userType == 2 &&
+                    caregiverOnBoardCompleted === 0 &&
+                    global.showCaregiverMyProfile === '0' &&
+                    showCaregiverMyProfile === '0') || userType == 0
+                "> -->
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdownXL" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                  [ngClass]="{'chinese-font': global.currentLanguage === 'zh'}"
+                  (click)="removeShowClass(); navButtonUnClicked()"
+                  href="javascript:void(0);">
+                  {{ 'FAQs' | translate }}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownXL"
+                  [ngClass]="{ show: addShowCareReceiver === true }">
+                    <a class="dropdown-item" (click)="removeShowClass(); navButtonUnClicked()"
+                      [routerLink]="['/pages/client-faq']" href="javascript:void(0);">
+                      {{ 'Client' | translate }}
+                    </a>
+                    <a class="dropdown-item" (click)="removeShowClass(); navButtonUnClicked()"
+                      [routerLink]="['/pages/caregiver-faq']" href="javascript:void(0);">
+                      {{ 'Caregiver' | translate }}
+                    </a>
+                </div>
+              </li>
+              <li class="nav-item" *ngIf="userType != 3">
+                <a class="nav-link" (click)="removeShowClass(); navButtonUnClicked()" [routerLink]="['/pages/about']"
+                  href="javascript:void(0);">
+                  {{ 'About Us' | translate }}
+                </a>
+              </li>
+              <!-- <li class="nav-item" *ngIf="
+                  userType == 2 &&
+                  (global.showCaregiverMyProfile === '1' ||
+                    showCaregiverMyProfile === '1')
+                ">
+                <a class="nav-link" href="javascript:void(0);">
+                  {{ 'Contact Us' | translate }}
+                </a>
+              </li> -->
+              <!-- <li class="nav-item" *ngIf="
+                  userType == 3 &&
+                  (global.currentStep === null || global.currentStep === 'null')
+                ">
+                <a class="nav-link" href="javascript:void(0);">
+                  {{ 'Contact Us' | translate }}
+                </a>
+              </li> -->
+              <li class="nav-item" [ngClass]="{ active: showActiveOnboard === true }" *ngIf="
+                  !showLogin &&
+                  userType == 2 &&
+                  caregiverOnBoardCompleted == 0 &&
+                  global.showCaregiverMyProfile == 0 &&
+                  showCaregiverMyProfile == 0
+                ">
+                <a class="nav-link" (click)="removeShowClass(); navButtonUnClicked()" href="javascript:void(0);"
+                  [routerLink]="['/caregiver/onboard/personal-info']" routerLinkActive="active">
+                  {{ 'Onboard' | translate }}
+                </a>
+              </li>
+              <li class="nav-item" [ngClass]="{ active: showActive === true }" *ngIf="
+                  caregiverOnBoardCompleted === '1' ||
+                  global.showCaregiverMyProfile === '1' ||
+                  showCaregiverMyProfile === '1'
+                ">
+                <a class="nav-link" (click)="removeShowClass(); navButtonUnClicked()" href="javascript:void(0);"
+                  [routerLink]="['/caregiver/profile/personal-info']">
+                  {{ 'My Profile' | translate }}
+                </a>
+              </li>
+              <li class="nav-item" [ngClass]="{ active: showActiveOnboard === true }" *ngIf="
+                  !showLogin &&
+                  userType == 3 &&
+                  global.currentStep !== null &&
+                  global.currentStep !== 'null'
+                ">
+                <a class="nav-link" (click)="removeShowClass(); navButtonUnClicked()" href="javascript:void(0);"
+                  [routerLink]="['/client/onboard']" routerLinkActive="router-link-active">
+                  {{ 'Onboard' | translate }}
+                </a>
+              </li>
+              <li class="nav-item" [ngClass]="{ active: showActive === true }" *ngIf="
+                  !showLogin &&
+                  userType == 3 &&
+                  (global.currentStep === null || global.currentStep === 'null')
+                ">
+                <a class="nav-link" (click)="removeShowClass(); navButtonUnClicked()" (click)="removeShowClass()"
+                  href="javascript:void(0);" [routerLink]="['/client/profile']">
+                  {{ 'My Profile' | translate }}
+                </a>
+              </li>
+              <li class="nav-item dropdown" *ngIf="
+                  userType == 3 &&
+                  (global.currentStep === null ||
+                    global.currentStep === 'null' ||
+                    global.currentOnBoardStep === null ||
+                    global.currentOnBoardStep === 'null') && !showLogin
+                ">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdownXL" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" (click)="showAppointmenmts(); navButtonUnClicked()"
+                  aria-expanded="false">
+                  {{ 'Appointments' | translate }}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownXL">
+                  <a class="dropdown-item" (click)="removeShowClass(); navButtonUnClicked()"
+                    [routerLink]="['/client/appointment/upcoming']" href="javascript:void(0);">
+                    {{ 'Upcoming' | translate }}
+                  </a>
+                  <a class="dropdown-item" (click)="removeShowClass(); navButtonUnClicked()"
+                    [routerLink]="['/client/appointment/past']" href="javascript:void(0);">
+                    {{ 'Past' | translate }}
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item dropdown" *ngIf="showLogin">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdownXL" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="setShowRegister()">
+                  {{ 'Register' | translate }}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownXL"
+                  [ngClass]="{ show: addShowRegister === true }">
+                  <a class="dropdown-item" (click)="removeShowClass(); navButtonUnClicked()"
+                    [routerLink]="['/auth/client-register']" href="javascript:void(0);">
+                    {{ 'Client' | translate }}
+                  </a>
+                  <a class="dropdown-item" (click)="removeShowClass(); navButtonUnClicked()"
+                    [routerLink]="['/auth/caregiver-register']" href="javascript:void(0);">
+                    {{ 'Caregiver' | translate }}
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item dropdown" *ngIf="showLogin">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdownXL" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="setShowLogin()">
+                  {{ 'Login' | translate }}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownXL"
+                  [ngClass]="{ show: addShowLogin === true }">
+                  <a class="dropdown-item" (click)="removeShowClass(); navButtonUnClicked()"
+                    [routerLink]="['/auth/client-login']" href="javascript:void(0);">
+                    {{ 'Client' | translate }}
+                  </a>
+                  <a class="dropdown-item" (click)="removeShowClass(); navButtonUnClicked()"
+                    [routerLink]="['/auth/caregiver-login']" href="javascript:void(0);">
+                    {{ 'Caregiver' | translate }}
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="left-profile-block">
+          <div class="call-head">
+            <a href="tel:+85263640301"><img src="assets/images/whatsapp-icon.svg" />
+              {{ 'Call 6364 0301' | translate }}
+            </a>
+          </div>
+          <div class="search-head" *ngIf="caregiverOnBoardCompleted === '0'">
+            <a href="javascript:void(0);" [routerLink]="['/pages/caregiver/search']" routerLinkActive="active"
+              *ngIf="userType === 3 || userType === 0">
+              {{ 'Find Caregiver' | translate }}
+              <img src="assets/images/user-icon.svg" alt="" />
+            </a>
+          </div>
+          <div class="search-head" *ngIf="!showLogin">
+            <nav class="navbar navbar-expand-xl">
+              <div class="collapse navbar-collapse profile-navbar" id="navbarSupportedContentXL"
+                (click)="addShowHideMenu = !addShowHideMenu">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a title="{{ englishName }}" class="nav-link dropdown-toggle" href="javascript:void(0);"
+                      id="navbarDropdownXL" role="button" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false" *ngIf="
+                        !global.englishName &&
+                        englishName &&
+                        englishName !== '' &&
+                        englishName !== 'null' && !showLogin
+                      ">
+                      {{ englishName.slice(0, 10)
+                      }}<ng-container *ngIf="englishName.length > 10">...</ng-container>
+                    </a>
+                    <a title="{{ global.englishName }}" class="nav-link dropdown-toggle" href="javascript:void(0);"
+                      id="navbarDropdownXL" role="button" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false" *ngIf="
+                        global.englishName &&
+                        global.englishName !== '' &&
+                        global.englishName !== null && !showLogin
+                      ">
+                      {{ global.englishName.slice(0, 10)
+                      }}<ng-container *ngIf="global.englishName.length > 10">...
+                      </ng-container>
+                    </a>
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdownXL" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" *ngIf="
+                        (!englishName ||
+                          englishName === '' ||
+                          englishName === 'null') &&
+                        (!global.englishName ||
+                          global.englishName === '' ||
+                          global.englishName === null) && !showLogin
+                      ">
+                      {{ 'Guest' | translate }}
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownXL"
+                      [ngClass]="{ show: addShowHideMenu === true }" (click)="removeShowClass()">
+                      <a class="dropdown-item" href="javascript:void(0);" (click)="redirection()">
+                        {{ 'Change Password' | translate }}
+                      </a>
+                      <a class="dropdown-item" (click)="logout()" href="javascript:void(0);">
+                        {{ 'Logout' | translate }}
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

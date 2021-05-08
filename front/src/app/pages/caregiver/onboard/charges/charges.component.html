@@ -1,0 +1,403 @@
+<div id="panel-E" class="card tab-pane fade show active " role="tabpanel" aria-labelledby="charges">
+  <div class="card-header" role="tab" id="heading-E">
+    <h5 class="mb-0">
+      <a class="collapsed" data-toggle="collapse show" aria-expanded="false" aria-controls="collapse-E">
+        {{ 'Charges' | translate }}
+      </a>
+    </h5>
+  </div>
+  <div id="collapse-E" class="collapse" role="tabpanel" data-parent="#content" aria-labelledby="heading-E">
+    <div class="single-wizard">
+      <div class="wizard-form">
+        <div class="title-block">
+          <h5 *ngIf="!profileMode">
+            {{ 'Have questions about this form? Please whatsapp' | translate }}
+            <a href="tel:+85263640301">{{ '6364 0301' | translate }}</a>
+            {{ 'and let us help you!' | translate }}
+          </h5>
+          <h4>{{ 'Step 5' | translate }}</h4>
+          <h3>{{ 'Your Charges' | translate }}</h3>
+          <p>
+            {{
+              'You set your service fee. No Commission during promotion!'
+                | translate
+            }}
+          </p>
+        </div>
+        <div class="form-blocks">
+          <form [formGroup]="CaregiverChargesForm" (ngSubmit)="addUpdateCharges()">
+            <div class="single-form-block">
+              <div class="single-block table-block">
+                <label>{{ 'Charges' | translate }}</label>
+                <table class="table table-responsive" cellspacing="10">
+                  <thead>
+                    <tr>
+                      <th class="row" scope="row">{{ 'Hours' | translate }}</th>
+                      <td sco pe="col">{{ '1' | translate }}</td>
+                      <td scope="col">{{ '2' | translate }}</td>
+                      <td scope="col">{{ '3' | translate }}</td>
+                      <td scope="col">{{ '4' | translate }}</td>
+                      <td scope="col">{{ '5' | translate }}</td>
+                      <td scope="col">{{ '6' | translate }}</td>
+                      <td scope="col">{{ '7' | translate }}</td>
+                      <td scope="col">{{ '8' | translate }}</td>
+                      <td scope="col">{{ '9' | translate }}</td>
+                      <td scope="col">{{ '10' | translate }}</td>
+                      <td scope="col">{{ '11' | translate }}</td>
+                      <td scope="col">{{ '12' | translate }}</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngIf="isHourlyRateRequired">
+                      <th>
+                        <span class="error-text warning-msg ng-star-inserted"> 
+                          {{ 'Please input all hourly rates' | translate }}
+                        </span>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="row" scope="row">
+                        {{ 'Hourly Rate' | translate }}
+                      </th>
+                      <td *ngFor="
+                          let hourlyRate of CaregiverChargesForm.get(
+                            'hourly_rate'
+                          )['controls'];
+                          let i = index
+                        " [attr.colspan]="i == 6 ? '6' : '1'" [formGroup]="hourlyRate">
+                        <input type="number" (keypress)="numberOnly($event)" id="hourlyRate_{{ i }}"
+                          [formControl]="hourlyRate.get('price')" (keyup)="changeMode($event, i)" autocomplete="off" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="row" scope="row">
+                        {{ 'Total Rate' | translate }}
+                      </th>
+                      <td>
+                        <span *ngIf="editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][0].value.price * 1
+                          ) | translate
+                        }}</span>
+                        <span *ngIf="!editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][0].value * 1
+                          ) | translate
+                        }}</span>
+                      </td>
+                      <td>
+                        <span *ngIf="editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][1].value.price * 2
+                          ) | translate
+                        }}</span>
+                        <span *ngIf="!editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][1].value * 2
+                          ) | translate
+                        }}</span>
+                      </td>
+                      <td>
+                        <span *ngIf="editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][2].value.price * 3
+                          ) | translate
+                        }}</span>
+                        <span *ngIf="!editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][2].value * 3
+                          ) | translate
+                        }}</span>
+                      </td>
+                      <td>
+                        <span *ngIf="editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][3].value.price * 4
+                          ) | translate
+                        }}</span>
+                        <span *ngIf="!editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][3].value * 4
+                          ) | translate
+                        }}</span>
+                      </td>
+                      <td>
+                        <span *ngIf="editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][4].value.price * 5
+                          ) | translate
+                        }}</span>
+                        <span *ngIf="!editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][4].value * 5
+                          ) | translate
+                        }}</span>
+                      </td>
+                      <td>
+                        <span *ngIf="editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][5].value.price * 6
+                          ) | translate
+                        }}</span>
+                        <span *ngIf="!editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][5].value * 6
+                          ) | translate
+                        }}</span>
+                      </td>
+                      <td>
+                        <span *ngIf="editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][6].value.price * 7
+                          ) | translate
+                        }}</span>
+                        <span *ngIf="!editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][6].value * 7
+                          ) | translate
+                        }}</span>
+                      </td>
+                      <td>
+                        <span *ngIf="editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][6].value.price * 8
+                          ) | translate
+                        }}</span>
+                        <span *ngIf="!editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][6].value * 8
+                          ) | translate
+                        }}</span>
+                      </td>
+                      <td>
+                        <span *ngIf="editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][6].value.price * 9
+                          ) | translate
+                        }}</span>
+                        <span *ngIf="!editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][6].value * 9
+                          ) | translate
+                        }}</span>
+                      </td>
+                      <td>
+                        <span *ngIf="editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][6].value.price * 10
+                          ) | translate
+                        }}</span>
+                        <span *ngIf="!editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][6].value * 10
+                          ) | translate
+                        }}</span>
+                      </td>
+                      <td>
+                        <span *ngIf="editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][6].value.price * 11
+                          ) | translate
+                        }}</span>
+                        <span *ngIf="!editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][6].value * 11
+                          ) | translate
+                        }}</span>
+                      </td>
+                      <td>
+                        <span *ngIf="editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][6].value.price * 12
+                          ) | translate
+                        }}</span>
+                        <span *ngIf="!editMode">{{
+                          convertString(
+                            CaregiverChargesForm.get('hourly_rate')[
+                              'controls'
+                            ][6].value * 12
+                          ) | translate
+                        }}</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="large">
+                {{ 'Not sure about how much to charge?' | translate }}
+                <a href="javascript:void(0);" href="assets/recommended-charges.pdf"
+                  target="_blank">{{ 'Click here' | translate }}</a>
+              </p>
+            </div>
+            <div class="single-form-block">
+              <p>
+                {{
+                  'We receive all client payment first and pay you after appointment. Yes, We pay 24/7.'
+                    | translate
+                }}
+              </p>
+              <div class="single-block">
+                <h4>{{ 'Method of Receiving Payment' | translate }}</h4>
+              </div>
+              <div class="single-block full">
+                <div class="form-group">
+                  <div class="checkbox-block">
+                    <div class="custom-checkbox">
+                      <input id="transfer" (change)="eventCheck('transfer')" type="checkbox" class="form-check-input"
+                        formControlName="payment_method_online" autocomplete="off" />
+                      <label for="transfer">{{ 'Online transfer - Preferred. Pay within 12 hours*'| translate}}</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-block">
+                <div class="form-group">
+                  <label>{{ 'FPS - Mobile Number' | translate }}</label>
+                  <input [readonly]="
+                      !CaregiverChargesForm.get('payment_method_online').value
+                    " type="text" class="form-control" placeholder="{{ 'Watch out for typos' | translate }}"
+                    formControlName="fps_mobile_number" maxlength="8" autocomplete="off" />
+                  <app-control-message fieldName="{{ 'Mobile Number' | translate }}" [control]="
+                      CaregiverChargesForm.controls['fps_mobile_number']
+                    ">
+                  </app-control-message>
+                </div>
+
+                <div class="form-group">
+                  <label>{{ 'Bank Name' | translate }}</label>
+                  <input [readonly]="
+                      !CaregiverChargesForm.get('payment_method_online').value
+                    " type="text" class="form-control" value="{{ this.CaregiverChargesForm.value.bank_name }}"
+                    maxlength="50" placeholder="{{ 'Watch out for typos' | translate }}" formControlName="bank_name"
+                    autocomplete="off" />
+                  <app-control-message fieldName="{{ 'Bank Name' | translate }}"
+                    [control]="CaregiverChargesForm.controls['bank_name']">
+                  </app-control-message>
+                </div>
+              </div>
+              <div class="single-block">
+                <!-- <div class="form-group">
+                  <label>{{ 'Bank Code' | translate }}</label>
+                  <input [readonly]="
+                      !CaregiverChargesForm.get('payment_method_online').value
+                    " type="text" class="form-control" placeholder="{{ 'Watch out for typos' | translate }}"
+                    formControlName="bank_code" autocomplete="off" />
+                  <app-control-message fieldName="{{ 'Bank Code' | translate }}"
+                    [control]="CaregiverChargesForm.controls['bank_code']">
+                  </app-control-message>
+                </div> -->
+                <div class="form-group">
+                  <label>{{ 'Branch Code' | translate }}</label>
+                  <input [readonly]="
+                      !CaregiverChargesForm.get('payment_method_online').value
+                    " type="text" class="form-control" formControlName="branch_code"
+                    placeholder="{{ 'Watch out for typos' | translate }}" autocomplete="off" />
+                  <app-control-message fieldName="{{ 'Branch Code' | translate }}"
+                    [control]="CaregiverChargesForm.controls['branch_code']">
+                  </app-control-message>
+                </div>
+              </div>
+              <div class="single-block">
+                <div class="form-group">
+                  <label>{{ 'Account Number' | translate }}</label>
+                  <input [readonly]="
+                      !CaregiverChargesForm.get('payment_method_online').value
+                    " type="text" class="form-control" placeholder="{{ 'Watch out for typos' | translate }}"
+                    formControlName="account_no" autocomplete="off" />
+                  <app-control-message fieldName="{{ 'Account Number' | translate }}"
+                    [control]="CaregiverChargesForm.controls['account_no']"></app-control-message>
+                </div>
+
+                <div class="form-group">
+                  <label>{{ 'Account Name' | translate }}</label>
+                  <input [readonly]="
+                      !CaregiverChargesForm.get('payment_method_online').value
+                    " type="text" class="form-control" maxlength="20"
+                    placeholder="{{ 'Watch out for typos' | translate }}" formControlName="account_name"
+                    autocomplete="off" />
+                  <app-control-message fieldName="{{ 'Account Name' | translate }}"
+                    [control]="CaregiverChargesForm.controls['account_name']">
+                  </app-control-message>
+                </div>
+              </div>
+              <div class="single-block full">
+                <div class="form-group">
+                  <div class="checkbox-block">
+                    <div class="custom-checkbox">
+                      <input id="cheque" (change)="eventCheck('cheque')" type="checkbox" class="form-check-input"
+                        formControlName="payment_method_cheque" autocomplete="off" />
+                      <label for="cheque">{{
+                        'Cheque - Not preferred. Pay within 3 working days*. Postage cost will be charged.'
+                          | translate
+                      }}</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-block full assuming">
+                <p>{{ '* Assuming no disputes.' | translate }}</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="btn-block" *ngIf="!profileMode">
+          <a href="javascript:void(0);" [routerLink]="['/caregiver/onboard/availability']" class="btn"
+            (click)="layoutComponent.changeDropDownValueFromComponent('Availability')">{{ 'Previous' | translate }}
+            <img src="assets/images/left-arrow.svg" alt=" " /></a>
+          <a (click)="addUpdateCharges()" href="javascript:void(0);" class="btn">{{ 'Next' | translate }}
+            <img src="assets/images/right-arrow.svg" alt=" " /></a>
+        </div>
+        <div class="btn-block" *ngIf="profileMode">
+          <a (click)="addUpdateCharges()" href="javascript:void(0);" class="btn">{{ 'Save' | translate }}
+            <img src="assets/images/down-arrow-icon.svg" alt=" " /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

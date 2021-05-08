@@ -1,0 +1,116 @@
+<div class="main-content">
+  <section class="onboaring-process-section" *ngIf="!router.url.includes('thank-you')">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="wizard-tabs">
+            <div class="steps">
+              <ul id="tabs" class="nav nav-tabs" role="tablist">
+                <li class="nav-item" [class]="
+                    global.currentStep > 0 || global.currentOnBoardStep > 0
+                      ? 'done pointer'
+                      : 'notallowed'
+                  " [routerLink]="
+                    global.currentStep > 0 ? ['/client/onboard/user-info'] : []
+                  ">
+                  <a id="account" href="javascript:void(0);" [class]="global.currentOnBoardStep == 1 ? 'active' : ''"
+                    data-toggle="tab" role="tab">
+                    <span class="number">{{ '1' | translate }}</span>
+                    <small class="step-title">
+                      <span>{{ 'Step 1' | translate }}</span>
+                      {{ 'Account User Info' | translate }}
+                    </small>
+                  </a>
+                </li>
+                <li class="nav-item" [class]="
+                    global.currentStep > 1 || global.currentOnBoardStep > 1
+                      ? 'done pointer'
+                      : 'notallowed'
+                  " [routerLink]="
+                    global.currentStep > 1
+                      ? ['/client/onboard/service-info']
+                      : []
+                  ">
+                  <a id="service" href="javascript:void(0);" [class]="global.currentOnBoardStep == 2 ? 'active' : ''"
+                    data-toggle="tab" role="tab">
+                    <span class="number">{{ '2' | translate }}</span>
+                    <small class="step-title">
+                      <span>{{ 'Step 2' | translate }}</span>
+                      {{ 'Care Receiver Info' | translate }}
+                    </small>
+                  </a>
+                </li>
+                <li class="nav-item" [class]="
+                    global.currentStep > 2 || global.currentOnBoardStep > 2
+                      ? 'done pointer'
+                      : 'notallowed'
+                  " [routerLink]="
+                    global.currentStep > 2 ? ['/client/onboard/background'] : []
+                  ">
+                  <a id="background" href="javascript:void(0);" [class]="global.currentOnBoardStep == 3 ? 'active' : ''"
+                    data-toggle="tab" role="tab">
+                    <span class="number">{{ '3' | translate }}</span>
+                    <small class="step-title">
+                      <span>{{ 'Step 3' | translate }}</span>
+                      {{ 'Care Receiver Background' | translate }}
+                    </small>
+                  </a>
+                </li>
+                <li class="nav-item" [class]="
+                    global.currentStep > 3 || global.currentOnBoardStep > 3
+                      ? 'done pointer'
+                      : 'notallowed'
+                  " [routerLink]="
+                    global.currentStep > 3
+                      ? ['/client/onboard/medical-history']
+                      : []
+                  ">
+                  <a id="medical" href="javascript:void(0);" [class]="global.currentOnBoardStep == 4 ? 'active' : ''"
+                    data-toggle="tab" role="tab">
+                    <span class="number">{{ '4' | translate }}</span>
+                    <small class="step-title">
+                      <span>{{ 'Step 4' | translate }}</span>
+                      {{ 'Care Receiver Medical History' | translate }}
+                    </small>
+                  </a>
+                </li>
+                <li class="nav-item" [class]="
+                    global.currentStep > 4 || global.currentOnBoardStep > 4
+                      ? 'done pointer'
+                      : 'notallowed'
+                  " [routerLink]="
+                    global.currentStep > 4
+                      ? ['/client/onboard/terms-conditions']
+                      : []
+                  ">
+                  <a id="terms" href="javascript:void(0);" [class]="global.currentOnBoardStep == 5 ? 'active' : ''"
+                    data-toggle="tab" role="tab">
+                    <span class="number">{{ '5' | translate }}</span>
+                    <small class="step-title">
+                      <span>{{ 'Step 5' | translate }}</span>
+                      {{ 'Agreement and Terms and Condition' | translate }}
+                    </small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div id="content" class="tab-content" role="tablist">
+              <select class="form-control mobile-dropdown" [(ngModel)]="currentDropdownValue"
+                (change)="redirect($event)">
+                <option value="User">{{ 'Account User Info' | translate }}</option>
+                <option value="Receiver">{{ 'Care Receiver Info' | translate }}</option>
+                <option value="Background">{{ 'Care Receiver Background' | translate }}</option>
+                <option value="Medical"> {{ 'Care Receiver Medical History' | translate }}</option>
+                <option value="Terms"> {{ 'Agreement and Terms and Condition' | translate }}</option>
+              </select>
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="onboaring-process-section" *ngIf="router.url.includes('thank-you')">
+    <router-outlet></router-outlet>
+  </section>
+</div>

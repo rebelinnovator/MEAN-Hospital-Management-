@@ -1,0 +1,438 @@
+<div id="panel-B" class="card tab-pane fade show active " role="tabpanel" aria-labelledby="work">
+  <div class="card-header" role="tab" id="heading-B">
+    <h5 class="mb-0">
+      <a class="collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-B">
+        {{ 'Work Experience and Education' | translate }}
+      </a>
+    </h5>
+  </div>
+  <div id="collapse-B" class="collapse show" data-parent="#content" role="tabpanel" aria-labelledby="heading-B">
+    <form [formGroup]="workInfoForm" (ngSubmit)="addWorkInfo()">
+      <div class="single-wizard">
+        <div class="wizard-form">
+          <div class="title-block">
+            <h5 *ngIf="!profileMode">
+              {{
+                'Have questions about this form? Please whatsapp' | translate
+              }}
+              <a href="tel:+85263640301">{{ '6364 0301' | translate }}</a>
+              {{ 'and let us help you!' | translate }}
+            </h5>
+            <h4>{{ 'Step 2' | translate }}</h4>
+            <h3>{{ 'Work Experience and Education (Chinese Only)' | translate }}</h3>
+            <p>
+              {{
+                'Clients will see the years of experience and education level. If you would like to show more info, Clients can see your current and previous employers name on the platforms.'
+                  | translate
+              }}
+            </p>
+            <p *ngIf="!profileMode" class="orange-color">
+              {{
+                'Even if you do not prefer to show your employer names, please fill in the info below as the clients can see your years of work experience.'
+                  | translate
+              }}
+            </p>
+            <p *ngIf="profileMode" class="orange-color">
+              {{'If you would like to edit work experience or education , please whatsapp or email your new contract(s) or payslip(s) to '| translate}}
+              <a href="tel:+85263640301">{{ '6364 0301' | translate }}</a> {{'or email'|translate}} <a
+                href="mailto:info@purecare.com.hk" target="_blank">info@purecare.com.hk</a>.
+              {{'Please feel free to hide the salary figure. We will update it very soon!' | translate}}
+            </p>
+          </div>
+          <div class="form-blocks">
+            <div class="single-form-block">
+              <div class="single-block">
+                <div class="form-group date" *ngIf="isRnEn" [ngClass]="{
+                    'error-msg':
+                      (workInfoForm.controls['licence_expiry_date'].dirty ||
+                        workInfoForm.controls['licence_expiry_date'].touched) &&
+                      workInfoForm.controls['licence_expiry_date'].errors
+                  }">
+                  <label>{{ 'Licence Expiry Date' | translate }}
+                    <span>({{ 'For RN/EN only' | translate }})</span></label>
+                  <input type="text" class="form-control" ngbDatepicker formControlName="licence_expiry_date"
+                    [minDate]="minDate" #d="ngbDatepicker" (click)="d.toggle()" />
+                  <app-control-message fieldName="{{ 'Licence Expiry Date' | translate }}"
+                    [control]="workInfoForm.controls['licence_expiry_date']"></app-control-message>
+                </div>
+                <div class="form-group">
+                  <label>{{
+                    'Show employer name on the platform?' | translate
+                  }}</label>
+                  <select class="form-control" formControlName="show_employer_option" [ngClass]="{
+                      'error-msg':
+                        (workInfoForm.controls['show_employer_option'].dirty ||
+                          workInfoForm.controls['show_employer_option']
+                            .touched) &&
+                        workInfoForm.controls['show_employer_option'].errors
+                    }">
+                    <option value="">{{'Please Select' | translate}}</option>
+                    <option value="1">{{ 'Yes' | translate }}</option>
+                    <option value="0">{{ 'No' | translate }}</option>
+                  </select>
+                  <app-control-message fieldName="{{ 'Display Employers' | translate }}"
+                    [control]="workInfoForm.controls['show_employer_option']"></app-control-message>
+                </div>
+              </div>
+            </div>
+            <div class="single-form-block">
+              <div class="single-block">
+                <h4>{{ 'Current Employer' | translate }}</h4>
+              </div>
+              <ng-container *ngIf="!profileMode">
+                <a *ngIf="workInfoForm.value.current_employer_id" href="javascript:void(0)"
+                  (click)="removeCurrentEmployer()" class="pull-right">
+                  {{ 'Remove' | translate }}
+                </a>
+              </ng-container>
+              <div class="single-block">
+                <div class="form-group">
+                  <label class="tool-tip">{{ 'Name of Hospital/Company' | translate }}
+                  </label>
+                  <input type="text" class="form-control" formControlName="current_employer_hospital_name"
+                    maxlength="50" [ngClass]="{
+                      'error-msg':
+                        (workInfoForm.controls['current_employer_hospital_name']
+                          .dirty ||
+                          workInfoForm.controls[
+                            'current_employer_hospital_name'
+                          ].touched) &&
+                        workInfoForm.controls['current_employer_hospital_name']
+                          .errors
+                    }" />
+                  <app-control-message fieldName="{{ 'Hospital Name' | translate }}" [control]="
+                      workInfoForm.controls['current_employer_hospital_name']
+                    "></app-control-message>
+                </div>
+                <div class="form-group">
+                  <label>{{ 'Work Type' | translate }}</label>
+                  <div class="check-radio check-radio2">
+                    <div class="single-radio">
+                      <input type="radio" id="full" formControlName="current_employer_work_type"
+                        name="current_employer_work_type" value="1" />
+                      <label for="full">{{ 'Full Time' | translate }}</label>
+                    </div>
+                    <div class="single-radio">
+                      <input type="radio" formControlName="current_employer_work_type" id="part"
+                        name="current_employer_work_type" value="2" />
+                      <label for="part">{{ 'Part Time' | translate }}</label>
+                    </div>
+                  </div>
+                  <app-control-message fieldName="{{ 'Work type' | translate }}" [control]="
+                      workInfoForm.controls['current_employer_work_type']
+                    "></app-control-message>
+                </div>
+              </div>
+              <div class="single-block">
+                <div class="form-group">
+                  <div class="form-group">
+                    <label>{{ 'From' | translate }}</label>
+                    <select class="form-control" formControlName="current_employer_month" [ngClass]="{
+                        'error-msg':
+                          (workInfoForm.controls['current_employer_month']
+                            .dirty ||
+                            workInfoForm.controls['current_employer_month']
+                              .touched) &&
+                          workInfoForm.controls['current_employer_month'].errors
+                      }" (change)="calculateExperience($event, 'month')">
+                      <option value="">{{'Please Select' | translate}}</option>
+                      <option value="{{ month.id }}" *ngFor="let month of monthsArray">{{ month.name | translate }}
+                      </option>
+                    </select>
+                    <app-control-message fieldName="{{ 'Month' | translate }}" [control]="
+                        workInfoForm.controls['current_employer_month']
+                      "></app-control-message>
+                  </div>
+                  <div class="form-group">
+                    <select class="form-control" formControlName="current_employer_year" [ngClass]="{
+                        'error-msg':
+                          (workInfoForm.controls['current_employer_year']
+                            .dirty ||
+                            workInfoForm.controls['current_employer_year']
+                              .touched) &&
+                          workInfoForm.controls['current_employer_year'].errors
+                      }" (change)="calculateExperience($event, 'year')">
+                      <option value="">{{'Please Select' | translate}}</option>
+                      <option value="{{ year }}" *ngFor="let year of years">{{
+                        year | translate
+                      }}</option>
+                    </select>
+                    <app-control-message fieldName="{{ 'Year' | translate }}"
+                      [control]="workInfoForm.controls['current_employer_year']"></app-control-message>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>{{ 'Years of Experience' | translate }}</label>
+                  <p>
+                    {{ yearsOfExperience | translate }}
+                    {{ 'Years' | translate }}
+                    {{ monthsOfExperience | translate }}
+                    {{ 'Months' | translate }}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="single-form-block">
+              <div class="single-main-block">
+                <div class="single-block">
+                  <h4 *ngIf="profileMode">{{ 'Previous Employer(s)' | translate }}</h4>
+                  <h4 *ngIf="!profileMode">{{ 'Previous Employer(s) (List from latest to oldest)' | translate }}</h4>
+                </div>
+                <div class="parent-previous-emp" formArrayName="previous_employer_details" *ngFor="
+                    let item of workInfoForm.get('previous_employer_details')[
+                      'controls'
+                    ];
+                    let i = index
+                  ">
+                  <ng-container *ngIf="!profileMode">
+                    <a *ngIf="showRemoveEmployer" href="javascript:void(0)" (click)="removePreviousEmployer(i)"
+                      class="pull-right">{{ 'Remove' | translate }}</a>
+                  </ng-container>
+
+                  <ng-container [formGroupName]="i">
+                    <div class="single-block">
+                      <div class="form-group">
+                        <label class="tool-tip">{{ 'Name of Hospital/Company (Optional)' | translate }}</label>
+                        <input type="text" formControlName="company_name" class="form-control" />
+                        <app-control-message fieldName="{{
+                            'Name of Hospital/Company' | translate
+                          }}" [control]="
+                            workInfoForm.get('previous_employer_details')[
+                              'controls'
+                            ][i].controls['company_name']
+                          "></app-control-message>
+                      </div>
+                      <div class="form-group">
+                        <label>{{ 'Work Type' | translate }}</label>
+                        <div class="check-radio check-radio2">
+                          <div class="single-radio">
+                            <input id="work_type_full_{{ i }}" type="radio" formControlName="work_type" value="1" />
+                            <label for="work_type_full_{{ i }}">{{
+                              'Full Time' | translate
+                            }}</label>
+                          </div>
+                          <div class="single-radio">
+                            <input id="work_type_part_{{ i }}" type="radio" formControlName="work_type" value="2" />
+                            <label for="work_type_part_{{ i }}">{{
+                              'Part Time' | translate
+                            }}</label>
+                          </div>
+                        </div>
+                        <app-control-message fieldName="{{ 'Work Type' | translate }}" [control]="
+                            workInfoForm.get('previous_employer_details')[
+                              'controls'
+                            ][i].controls['work_type']
+                          "></app-control-message>
+                      </div>
+                    </div>
+                    <div class="single-block">
+                      <div class="form-group">
+                        <div class="form-group">
+                          <label>{{ 'From' | translate }}</label>
+                          <select class="form-control" formControlName="from_month" (change)="
+                              checkDateValidation($event, 'from_month', i)
+                            ">
+                            <option value="">{{'Please Select' | translate}}</option>
+                            <option value="{{ month.id }}" *ngFor="let month of monthsArray">
+                              {{ month.name | translate }}</option>
+                          </select>
+                          <app-control-message fieldName="{{ 'Month' | translate }}" [control]="
+                              workInfoForm.get('previous_employer_details')[
+                                'controls'
+                              ][i].controls['from_month']
+                            "></app-control-message>
+                        </div>
+                        <div class="form-group">
+                          <select class="form-control" formControlName="from_year" (change)="
+                              checkDateValidation($event, 'from_year', i)
+                            ">
+                            <option value="">{{'Please Select' | translate}}</option>
+                            <option value="{{ year }}" *ngFor="let year of years">{{ year | translate }}</option>
+                          </select>
+                          <app-control-message fieldName="{{ 'Year' | translate }}" [control]="
+                              workInfoForm.get('previous_employer_details')[
+                                'controls'
+                              ][i].controls['from_year']
+                            "></app-control-message>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="form-group">
+                          <label>{{ 'To' | translate }}</label>
+                          <select class="form-control" formControlName="to_month" (change)="
+                              checkDateValidation($event, 'to_month', i)
+                            ">
+                            <option value="">{{'Please Select' | translate}}</option>
+                            <option value="{{ month.id }}" *ngFor="let month of monthsArray">
+                              {{ month.name | translate }}</option>
+                          </select>
+                          <app-control-message fieldName="{{ 'Month' | translate }}" [control]="
+                              workInfoForm.get('previous_employer_details')[
+                                'controls'
+                              ][i].controls['to_month']
+                            "></app-control-message>
+                        </div>
+                        <div class="form-group">
+                          <select class="form-control" formControlName="to_year"
+                            (change)="checkDateValidation($event, 'to_year', i)">
+                            <option value="">{{'Please Select' | translate}}</option>
+                            <option value="{{ year }}" *ngFor="let year of years">{{ year | translate }}</option>
+                          </select>
+                          <app-control-message fieldName="{{ 'Year' | translate }}" [control]="
+                              workInfoForm.get('previous_employer_details')[
+                                'controls'
+                              ][i].controls['to_year']
+                            "></app-control-message>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="single-block">
+                      <div class="form-group">
+                        <label>{{ 'Years of Experience' | translate }}</label>
+                        <p>
+                          {{
+                            workInfoForm.get('previous_employer_details')[
+                              'controls'
+                            ][i].controls['years_experience'].value > 0
+                              ? workInfoForm.get('previous_employer_details')[
+                                  'controls'
+                                ][i].controls['years_experience'].value
+                              : ('' | translate)
+                          }}
+                          {{
+                            (workInfoForm.get('previous_employer_details')[
+                              'controls'
+                            ][i].controls['years_experience'].value > 0
+                              ? 'year(s)'
+                              : '') | translate
+                          }}
+                          {{
+                            workInfoForm.get('previous_employer_details')[
+                              'controls'
+                            ][i].controls['months_experience'].value > 0
+                              ? workInfoForm.get('previous_employer_details')[
+                                  'controls'
+                                ][i].controls['months_experience'].value
+                              : ('' | translate)
+                          }}
+                          {{
+                            (workInfoForm.get('previous_employer_details')[
+                              'controls'
+                            ][i].controls['months_experience'].value > 0
+                              ? 'month(s)'
+                              : '') | translate
+                          }}
+                        </p>
+                      </div>
+                    </div>
+                  </ng-container>
+                </div>
+              </div>
+              <div class="add-btn">
+                <a href="javascript:void(0);" *ngIf="!profileMode && showAnotherPreviousEmployer"
+                  (click)="addPreviousEmployer()"
+                  class="btn btn-border">{{ 'Add another Previous employer' | translate }}</a>
+              </div>
+            </div>
+            <div class="single-form-block">
+
+
+              <div class="single-main-block">
+                <div class="single-block">
+                  <h4 *ngIf="profileMode">{{ 'Education' | translate }}</h4>
+                  <h4 *ngIf="!profileMode">{{ 'Education (List from latest to oldest)' | translate }}</h4>
+                </div>
+                <div formArrayName="education_details" *ngFor="
+                    let education of workInfoForm.get('education_details')[
+                      'controls'
+                    ];
+                    let j = index
+                  ">
+                  <ng-container &ngIf="!profileMode">
+                    <a *ngIf="showRemoveEducation" href="javascript:void(0)" (click)="removeEducation(j)"
+                      class="pull-right">{{'Remove' | translate}}</a>
+                  </ng-container>
+
+                  <div [formGroupName]="j">
+                    <div class="single-block">
+                      <div class="form-group">
+                        <label>{{ 'Name of Institution' | translate }}</label>
+                        <input type="text" formControlName="institute_name" class="form-control" />
+                        <app-control-message fieldName="{{ 'Name of Institution' | translate }}" [control]="
+                            workInfoForm.get('education_details')['controls'][j]
+                              .controls['institute_name']
+                          "></app-control-message>
+                      </div>
+                      <div class="form-group">
+                        <label>{{ 'Degree/Programme' | translate }}</label>
+                        <input type="text" formControlName="degree" class="form-control" />
+                        <app-control-message fieldName="{{ 'Degree/Programme' | translate }}" [control]="
+                            workInfoForm.get('education_details')['controls'][j]
+                              .controls['degree']
+                          "></app-control-message>
+                      </div>
+                    </div>
+                    <div class="single-block">
+                      <div class="form-group">
+                        <div class="form-group">
+                          <label>{{ 'Start Year' | translate }}</label>
+                          <select class="form-control" formControlName="start_year"
+                            (change)="checkEducationDateValidation($event, j)">
+                            <option value="">{{'Please Select' | translate}}</option>
+                            <option value="{{ year }}" *ngFor="let year of educationYears">{{ year | translate }}
+                            </option>
+                          </select>
+                          <app-control-message fieldName="{{ 'Start Year' | translate }}" [control]="
+                              workInfoForm.get('education_details')['controls'][
+                                j
+                              ].controls['start_year']
+                            "></app-control-message>
+                        </div>
+                        <div class="form-group">
+                          <label>{{ 'End Year' | translate }}</label>
+                          <select class="form-control" formControlName="end_year"
+                            (change)="checkEducationDateValidation($event, j)">
+                            <option value="">{{'Please Select' | translate}}</option>
+                            <option value="{{ year }}" *ngFor="let year of educationYears">{{ year | translate }}
+                            </option>
+                          </select>
+                          <app-control-message fieldName="{{ 'End Year' | translate }}" [control]="
+                              workInfoForm.get('education_details')['controls'][
+                                j
+                              ].controls['end_year']
+                            "></app-control-message>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="add-btn">
+                <a href="javascript:void(0);" *ngIf="!profileMode && showAddMoreEducation" (click)="addMoreEducation()"
+                  class="btn btn-border">{{ 'Add another Qualification' | translate }}</a>
+              </div>
+            </div>
+          </div>
+          <div class="btn-block" *ngIf="!profileMode">
+            <a href="javascript:void(0);" routerLink="/caregiver/{{ currentUrlSection }}/personal-info" class="btn"
+              (click)="layoutComponent.changeDropDownValueFromComponent('Personal')">{{ 'Previous' | translate }}
+              <img src="assets/images/left-arrow.svg" alt=" " /></a>
+            <button type="submit" class="btn">
+              {{ 'Next' | translate }}
+              <img src="assets/images/right-arrow.svg" alt=" " />
+            </button>
+          </div>
+          <div class="btn-block" *ngIf="profileMode">
+            <button type="submit" class="btn" *ngIf="profileMode">
+              {{ 'Save' | translate }}
+              <img src="assets/images/down-arrow-icon.svg" alt=" " />
+            </button>
+            <!-- <a *ngIf="profileMode" href="javascript:void(0);" routerLink="/caregiver/{{ currentUrlSection }}/skillset"
+              class="btn">{{ 'Save' | translate }}
+              <img src="assets/images/down-arrow-icon.svg" alt=" " /></a> -->
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

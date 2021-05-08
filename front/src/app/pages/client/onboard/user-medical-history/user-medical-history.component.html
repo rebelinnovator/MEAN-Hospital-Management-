@@ -1,0 +1,100 @@
+<div id="panel-D" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="medical">
+  <div class="card-header" role="tab" id="heading-D">
+    <h5 class="mb-0">
+      <a class="collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-D">
+        {{ 'Care Receiver Medical History' | translate }}
+      </a>
+    </h5>
+  </div>
+  <div id="collapse-D" class="collapse" role="tabpanel" data-parent="#content" aria-labelledby="heading-D">
+    <form [formGroup]="regularForm" (ngSubmit)="onReactiveFormSubmit()">
+      <div class="single-wizard">
+        <div class="wizard-form">
+          <div class="title-block">
+            <h5>
+              {{ 'Have questions about this form? Please whatsapp' | translate }}
+              <a href="tel:+85263640301">{{ '6364 0301' | translate }}</a>
+              {{ 'and let us help you!' | translate }}
+            </h5>
+            <h4>{{ 'Step 4' | translate }}</h4>
+            <h3>
+              {{ 'Care Receiver Medical History' | translate }}
+            </h3>
+            <p>
+              {{ 'We will share this page with the caregivers after you book them in the appointment.' | translate }}
+            </p>
+          </div>
+          <div class="form-blocks">
+            <div class="single-form-block">
+              <div class="single-main-block">
+                <div class="single-block full boarding-checkbox">
+                  <div class="form-group">
+                    <div class="checkbox-block">
+                      <div class="single-check" *ngFor="let data of illnessList">
+                        <div class="custom-checkbox">
+                          <input id="illness_{{ data.id }}" type="checkbox" class="form-check-input"
+                            [checked]="data.selected" (change)="illChange($event, data.id)" />
+                          <label for="illness_{{ data.id }}">
+                            {{ data.english_title | translate }}
+                          </label>
+
+                          <div class="more-checkbox" *ngIf="data.selected">
+                            <div class="custom-checkbox" *ngFor="let child of data.children">
+                              <input id="child_{{ data.id }}_{{ child.id }}" type="checkbox" class="form-check-input"
+                                [checked]="child.selected" (change)="illChildChange($event, data.id, child.id)" />
+                              <label for="child_{{ data.id }}_{{ child.id }}">
+                                {{ child.english_title | translate }}
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <input type="text" *ngIf="showCancerTxtBox && data.id == 2" [(ngModel)]="specificCancer"
+                          [ngModelOptions]="{ standalone: true }" maxlength="30" />
+
+                        <input type="text" *ngIf="showFractureTxtBox && data.id == 6" class="m-2"
+                          [(ngModel)]="specificFracture" [ngModelOptions]="{ standalone: true }" maxlength="30" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="single-block full">
+                  <div class="form-group">
+                    <label>
+                      {{ 'Others' | translate }}
+                      <span>{{ '(Optional)' | translate }}</span>
+                    </label>
+                    <p class="blue">
+                      {{ '1. If your required services are not in our standard services, please tell us below.' | translate }}
+                      <br />
+                      {{ 'Only nurses can carry out nursing related duties.' | translate }}
+                    </p>
+                    <p class="blue">
+                      {{ '2. If you need an Out-patient escort, please tell us' | translate }}
+                      <br />
+                      {{ "a) Appointment Date and Time b) Appointment Address c) Doctor's Name (if known)" | translate }}
+                      <br /><br />
+                    </p>
+                    <textarea class="form-control" formControlName="service_user_other_medical_history"
+                      maxlength="500"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-block">
+            <a href="javascript:void(0);" class="btn" [routerLink]="['/client/onboard/background']"
+              (click)="layout.changeDropDownValueFromComponent('Background')">
+              {{ 'Previous' | translate }}
+              <img src="assets/images/left-arrow.svg" alt=" " />
+            </a>
+            <button type="submit" class="btn">
+              {{ 'Next' | translate }}
+              <img src="assets/images/right-arrow.svg" alt=" " />
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

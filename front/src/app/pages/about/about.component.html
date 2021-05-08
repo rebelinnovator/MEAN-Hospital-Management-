@@ -1,0 +1,45 @@
+<div class="main-content">
+  <!-- content area part -->
+  <section class="main-content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="main-content-inner">
+            <h2 class="text-center">
+              <ng-container *ngIf="global.currentLanguage === 'en'"><span>{{ 'First' | translate }}</span>
+                {{ 'online caregiver platform in Hong Kong' | translate }}</ng-container>
+              <ng-container *ngIf="global.currentLanguage === 'zh'">
+                <span>{{ 'First' | translate }}</span>{{ 'online caregiver platform in Hong Kong' | translate }}
+              </ng-container>
+            </h2>
+            <p>
+              {{ 'Licensed and regulated by the Labour Department of the Hong Kong government,'| translate}}
+              {{'Pure Care quickly bridges you and the caregiver so that the caregiver can take care of the person you love.' | translate }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="main-content-inner">
+            <h2 class="text-center">{{ 'Our Story' | translate }}</h2>
+            <p>
+              {{ 'Pure Care was founded on a simple belief — Live better. We believe that everyone deserves a better quality of life regardless of age or health.' | translate }}
+            </p>
+            <p>
+              {{ 'We have created a platform to share information of elderly caring, healthy exercise, appropriate training and balanced diet.' | translate }}
+            </p>
+            <p>
+              {{ 'Pure Care believes that the challenges of taking care of those in need can be addressed with the right methods and tools.' | translate }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

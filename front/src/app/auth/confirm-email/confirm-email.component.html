@@ -1,0 +1,31 @@
+<div class="main-content">
+  <!-- content area part -->
+  <section class="caregivers-section register-frm">
+    <div class="container">
+      <div class="row">
+        <div class="caregivers-inner col-md-6">
+          <div class="left-block">
+            <h2 class="text-center">
+              {{ 'Congratulations!' | translate }} <br />
+              {{ 'Your account is now activated' | translate }}
+            </h2>
+            <p class="text-center" *ngIf="userTypeFromUrl === '2'">
+              {{ 'Please login to complete the profile. We will show your profile online after this is completed.' | translate }}
+            </p>
+            <p class="text-center" *ngIf="userTypeFromUrl === '3'">
+              {{ 'Please login to complete the profile.' | translate }}
+            </p>
+            <div class="reg-frm">
+              <p class="text-center">
+                <a href="javascript:void(0);" (click)="redirection()">{{
+                  'LOGIN' | translate
+                }}</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="right-image default-image confirm-email-bg"></div>
+      </div>
+    </div>
+  </section>
+</div>

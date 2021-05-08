@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>View-off</title>
+    <desc>Created with Sketch.</desc>
+    <g id="View-off" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="remove_red_eye---material" font-family="material" font-size="20" font-weight="normal" fill="#E6EBF2">
+            <tspan x="0" y="17"></tspan>
+        </text>
+        <line x1="1.5" y1="18.5" x2="18.5" y2="1.5" id="Line" stroke="#E6EBF2" stroke-linecap="round"></line>
+    </g>
+</svg>

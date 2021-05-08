@@ -1,0 +1,12 @@
+<div class="default-content-block">
+  <div class="container">
+    <div class="terms-blocks">
+      <h5>{{ 'Privacy Policy' | translate }}</h5>
+
+      <app-privacy-en *ngIf="global.currentLanguage === 'en'"></app-privacy-en>
+
+      <app-privacy-ch *ngIf="global.currentLanguage === 'zh'"></app-privacy-ch>
+
+    </div>
+  </div>
+</div>

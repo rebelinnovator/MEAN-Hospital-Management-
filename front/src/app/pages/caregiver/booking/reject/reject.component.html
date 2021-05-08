@@ -1,0 +1,39 @@
+<section class="caregivers-section register-frm thankyou email-layout" *ngIf="isResponse">
+  <div class="container">
+    <div class="row">
+      <div class="caregivers-inner col-md-12">
+        <div class="left-block">
+          <h2 class="text-center">
+            {{ 'No worries.' | translate }}
+          </h2>
+          <p class="text-center">
+            {{
+              'We would contact you again in future appointments!' | translate
+            }}
+          </p>
+          <a href="javascript:void(0)" [routerLink]="['/']" class="btn">
+            {{ 'Back to homepage' | translate }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="confirm-appo-section" *ngIf="!isResponse">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="app-tabs">
+          <div id="content" class="tab-content" role="tablist">
+            <div class="load-more-btn">
+              <h2 style="margin-top: 5%;">
+                {{ 'Please wait...' | translate }}
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

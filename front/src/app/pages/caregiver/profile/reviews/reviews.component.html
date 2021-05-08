@@ -1,0 +1,70 @@
+<div id="panel-C" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="reviews">
+  <div class="card-header" role="tab" id="heading-C">
+    <h5 class="mb-0">
+      <a class="collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-C">
+        {{ 'Reviews' | translate }}
+      </a>
+    </h5>
+  </div>
+  <div id="collapse-C" class="collapse show" role="tabpanel" data-parent="#content" aria-labelledby="heading-C">
+    <div class="single-profile-page">
+      <div class="single-page-block">
+        <div class="reviews-blocks">
+          <div class="dropdown-block">
+            <label>{{ 'Sort' | translate }}</label>
+            <select class="form-control" (change)="changeSorting($event)">
+              <option value="new">{{ 'Newest' | translate }}</option>
+              <option value="old">{{ 'Oldest' | translate }}</option>
+            </select>
+          </div>
+          <div class="reviews-main-block">
+            <div class="single-review" *ngFor="let review of userData">
+              <div class="top-block">
+                <div class="left-block">
+                  <h3>
+                    {{ review?.client?.first_name }}
+                    {{ review?.client?.last_name }}
+                  </h3>
+                  <small>{{'Verified Client' | translate}}</small>
+                  <p>{{ review?.created_at | date: 'dd MMMM, yyyy' }}</p>
+                </div>
+                <div class="right-block">
+                  <ng-template #t let-fill="fill">
+                    <span class="star" [class.full]="fill === 100">
+                      <span class="half" [style.width.%]="fill">&#9733;</span>&#9733;
+                    </span>
+                  </ng-template>
+
+                  <ngb-rating [rate]="review.rating" [starTemplate]="t" [readonly]="true" [max]="5">
+                  </ngb-rating>
+                  <p>{{ review?.status| translate }}</p>
+                </div>
+              </div>
+              <div class="bottom-block" *ngIf="review.positive_feedback">
+                <h5>{{ 'Positive' | translate }}</h5>
+                <p>
+                  {{ review?.positive_feedback }}
+                </p>
+              </div>
+              <div class="bottom-block" *ngIf="review.negative_feedback">
+                <h5>{{ 'Negative' | translate }}</h5>
+                <p>
+                  {{ review?.negative_feedback }}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="load-more-btn" *ngIf="data.next">
+            <a href="javascript:void(0)" class="btn" (click)="setPage(data?.currentPage)">
+              {{'Load More'|translate}}
+              <img src="assets/images/load-more-icon.svg" />
+            </a>
+          </div>
+          <div class="load-more-btn" *ngIf="!userData.length">
+            {{ 'There are no reviews yet.' | translate }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

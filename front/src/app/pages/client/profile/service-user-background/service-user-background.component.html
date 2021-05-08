@@ -1,0 +1,337 @@
+<div id="panel-C" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="background">
+  <div class="card-header" role="tab" id="heading-C">
+    <h5 class="mb-0">
+      <a class="collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-C">
+        {{ 'Care Receiver Background' | translate }}
+      </a>
+    </h5>
+  </div>
+  <div id="collapse-C" class="collapse" role="tabpanel" data-parent="#content" aria-labelledby="heading-C">
+    <form [formGroup]="regularForm" (ngSubmit)="onReactiveFormSubmit()">
+      <div class="wizard-form">
+        <div class="title-block">
+          <h3>
+            {{ 'Care Receiver Background' | translate }}
+          </h3>
+          <p>
+            {{ 'We will share this page with the caregivers after you book them in the appointment.' | translate }}
+          </p>
+        </div>
+        <div class="form-blocks">
+          <div class="single-form-block">
+            <div class="single-block full">
+              <div class="form-group">
+                <label>
+                  {{ 'Language' | translate }}
+                </label>
+                <div class="checkbox-block">
+                  <div class="custom-checkbox" *ngFor="let lang of languages">
+                    <input id="lang_{{ lang.id }}" type="checkbox" class="form-check-input" [checked]="lang.selected"
+                      (change)="langChange($event, lang.id)" />
+                    <label for="lang_{{ lang.id }}">
+                      {{ lang.name | translate }}
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-block" *ngIf="dialectLangTxtBox">
+              <div class="form-group">
+                <label>{{ 'Others' | translate }}</label>
+                <input type="text" class="form-control" formControlName="other_lang" maxlength="30" />
+                <app-control-message fieldName="{{ 'Dialect Language' | translate }}"
+                  [control]="regularForm.controls['other_lang']">
+                </app-control-message>
+              </div>
+            </div>
+            <div class="single-block">
+              <div class="form-group">
+                <div class="form-group">
+                  <label>
+                    {{ 'Weight (kg)' | translate }}
+                  </label>
+                  <input type="text" class="form-control" formControlName="service_user_weight"
+                    onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+                    maxlength="4" />
+                  <app-control-message fieldName="{{ 'Weight' | translate }}"
+                    [control]="regularForm.controls['service_user_weight']">
+                  </app-control-message>
+                </div>
+                <div class="form-group">
+                  <label>
+                    {{ 'Height (cm)' | translate }}
+                  </label>
+                  <input type="text" class="form-control" formControlName="service_user_height"
+                    onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+                    maxlength="3" />
+                  <app-control-message fieldName="{{ 'Height' | translate }}"
+                    [control]="regularForm.controls['service_user_height']">
+                  </app-control-message>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>
+                  {{ 'Diet' | translate }}
+                </label>
+                <select class="form-control" formControlName="service_user_diet">
+                  <option value="null" disabled>
+                    {{ 'Choose Diet' | translate }}
+                  </option>
+                  <option value="1">
+                    {{ 'Normal Diet' | translate }}
+                  </option>
+                  <option value="2">
+                    {{ 'Minced Diet' | translate }}
+                  </option>
+                  <option value="3">
+                    {{ 'Pureed Diet' | translate }}
+                  </option>
+                </select>
+                <app-control-message fieldName="{{ 'Diet' | translate }}"
+                  [control]="regularForm.controls['service_user_diet']">
+                </app-control-message>
+              </div>
+            </div>
+            <div class="single-block">
+              <!-- <div class="form-group">
+                <label>
+                  {{ 'Physical Ability' | translate }}
+                </label>
+                <select class="form-control" formControlName="service_user_physical_ability">
+                  <option value="null" disabled>
+                    {{ 'Choose Physical Ability' | translate }}
+                  </option>
+                  <option value="0">
+                    {{ '0' | translate }}
+                  </option>
+                  <option value="1">
+                    {{ '1' | translate }}
+                  </option>
+                  <option value="2">
+                    {{ '2' | translate }}
+                  </option>
+                  <option value="3">
+                    {{ '3' | translate }}
+                  </option>
+                  <option value="4">
+                    {{ '4' | translate }}
+                  </option>
+                  <option value="5">
+                    {{ '5' | translate }}
+                  </option>
+                </select>
+                <app-control-message fieldName="{{ 'Physical Ability' | translate }}" [control]="
+                    regularForm.controls['service_user_physical_ability']
+                  ">
+                </app-control-message>
+              </div> -->
+              <div class="form-group">
+                <label>
+                  {{ 'Eyesight' | translate }}
+                </label>
+                <select class="form-control" formControlName="service_user_eye_sight">
+                  <option value="null" disabled>
+                    {{ 'Choose Eyesight' | translate }}
+                  </option>
+                  <option value="1">
+                    {{ 'Normal Eyesight' | translate }}
+                  </option>
+                  <option value="2">
+                    {{ 'Partially visually impaired' | translate }}
+                  </option>
+                  <option value="3">
+                    {{ 'Complete visually impaired' | translate }}
+                  </option>
+                </select>
+                <app-control-message fieldName="{{ 'Eyesight' | translate }}"
+                  [control]="regularForm.controls['service_user_eye_sight']">
+                </app-control-message>
+              </div>
+              <div class="form-group">
+                <label>{{ 'Assisting Devices (Optional)' | translate }}</label>
+                <select class="form-control" formControlName="service_user_assisting_device">
+                  <option value="null">
+                    {{ 'Choose Assisting Devices' | translate }}
+                  </option>
+                  <option value="1">
+                    {{ 'Crouches' | translate }}
+                  </option>
+                  <option value="2">
+                    {{ 'Quadripods' | translate }}
+                  </option>
+                  <option value="3">
+                    {{ 'Walker' | translate }}
+                  </option>
+                  <option value="4">
+                    {{ 'Wheel Chair' | translate }}
+                  </option>
+                  <option value="4">
+                    {{ 'Bed Bound' | translate }}
+                  </option>
+                </select>
+                <app-control-message fieldName="{{ 'Assisting Devices' | translate }}" [control]="
+                    regularForm.controls['service_user_assisting_device']
+                  ">
+                </app-control-message>
+              </div>
+            </div>
+            <div class="single-block">
+              <div class="form-group">
+                <label>
+                  {{ 'Hearing' | translate }}
+                </label>
+                <select class="form-control" formControlName="service_user_hearing">
+                  <option value="null" disabled>
+                    {{ 'Choose Hearing' | translate }}
+                  </option>
+                  <option value="1">
+                    {{ 'Normal' | translate }}
+                  </option>
+                  <option value="2">
+                    {{ 'Partially impaired' | translate }}
+                  </option>
+                  <option value="3">
+                    {{ 'Complete impaired' | translate }}
+                  </option>
+                </select>
+                <app-control-message fieldName="{{ 'Hearing' | translate }}"
+                  [control]="regularForm.controls['service_user_hearing']">
+                </app-control-message>
+              </div>
+              <div class="form-group">
+                <label>
+                  {{ 'Lifting' | translate }}
+                </label>
+                <select class="form-control" formControlName="service_user_lifting" (change)="liftingChange($event)">
+                  <option value="null" disabled>
+                    {{ 'Choose Lifting' | translate }}
+                  </option>
+                  <option value="1">
+                    {{ 'No Lifting Required' | translate }}
+                  </option>
+                  <option value="2">
+                    {{ 'One Person Lifting Required' | translate }}
+                  </option>
+                  <option value="3">
+                    {{ 'Two People Lifting Required' | translate }}
+                  </option>
+                  <option value="4">
+                    {{ 'Lifting Devices Needed' | translate }}
+                  </option>
+                </select>
+                <app-control-message fieldName="{{ 'Lifting' | translate }}"
+                  [control]="regularForm.controls['service_user_lifting']">
+                </app-control-message>
+              </div>
+            </div>
+            <div class="single-block" *ngIf="liftingDeviceTxtBox">
+              <div class="form-group" style="display: none;"></div>
+              <div class="form-group">
+                <label>{{ 'Lifting Device' | translate }}</label>
+                <input type="text" class="form-control" formControlName="service_user_lifting_specific"
+                  maxlength="20" />
+                <app-control-message fieldName="{{ 'Lifting Device' | translate }}"
+                  [control]="regularForm.controls['service_user_lifting_specific']">
+                </app-control-message>
+              </div>
+            </div>
+            <div class="single-block">
+              <h4>
+                {{ 'Lower Limb Mobility (0 no strength and 5 with strength)' | translate }}
+              </h4>
+            </div>
+            <div class="single-block">
+              <div class="form-group">
+                <label>{{ 'Left Leg' | translate }}</label>
+                <ng5-slider [options]="sliderOptions" formControlName="service_user_lower_left_leg_limb_mobility">
+                </ng5-slider>
+              </div>
+              <div class=" form-group">
+                <label>{{ 'Right Leg' | translate }}</label>
+                <ng5-slider [options]="sliderOptions" formControlName="service_user_lower_right_leg_limb_mobility">
+                </ng5-slider>
+              </div>
+            </div>
+            <div class="single-block">
+              <h4>
+                {{ 'Hand Mobility (0 no strength and 5 with strength)' | translate }}
+              </h4>
+            </div>
+            <div class="single-block">
+              <div class="form-group">
+                <label>{{ 'Left Hand' | translate }}</label>
+                <ng5-slider [options]="sliderOptions" formControlName="service_user_left_hand_mobility">
+                </ng5-slider>
+              </div>
+              <div class="form-group">
+                <label>{{ 'Right Hand' | translate }}</label>
+                <ng5-slider [options]="sliderOptions" formControlName="service_user_right_hand_mobility">
+                </ng5-slider>
+              </div>
+            </div>
+            <div class="single-block full">
+              <div class="form-group">
+                <label>{{ 'Others (Optional)' | translate }}</label>
+                <div class="checkbox-block">
+                  <div class="custom-checkbox" *ngFor="let device of otherDevices">
+                    <input id="device_{{ device.id }}" type="checkbox" class="form-check-input"
+                      [checked]="device.selected" (change)="deviceChange($event, device.id)" />
+                    <label for="device_{{ device.id }}">
+                      {{ device.name | translate }}
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-block full" *ngIf="otherDrugTxtBox">
+              <div class="form-group">
+                <label>{{ 'Specific Drug' | translate }}</label>
+                <textarea class="form-control" formControlName="specific_drug" maxlength="250"></textarea>
+                <app-control-message fieldName="{{ 'Specific Drug' | translate }}"
+                  [control]="regularForm.controls['specific_drug']">
+                </app-control-message>
+              </div>
+            </div>
+            <div class="skill-block">
+              <label>
+                {{ 'Self-Care Ability' | translate }}
+              </label>
+              <div class="skill-main">
+                <div class="single-skill location-block">
+                  <div class="single-skill-inner">
+                    <ng-container *ngFor="let ability of selfcareAbilities; let i = index">
+                      <label class="label-title">
+                        {{ ability.name | translate }}
+                      </label>
+                      <ul>
+                        <li *ngFor="let sub of ability.subAbilities; let j = index">
+                          <div class="custom-checkbox">
+                            <input id="l1_{{ i }}_{{ j }}" type="checkbox" class="form-check-input"
+                              [checked]="sub.selected" (change)="selfcareChange($event, sub.id)" />
+                            <label for="l1_{{ i }}_{{ j }}">
+                              {{ sub.name | translate }}
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                    </ng-container>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-block">
+          <!-- <a href="javascript:void(0);" class="btn" [routerLink]="['/client/profile/service-user-info']">
+            {{ 'Previous' | translate }}
+            <img src="assets/images/left-arrow.svg" alt=" " />
+          </a> -->
+          <button type="submit" class="btn">
+            {{ 'Save' | translate }}
+            <img src="assets/images/right-arrow.svg" alt=" " />
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

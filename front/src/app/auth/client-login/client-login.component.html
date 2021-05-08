@@ -1,0 +1,70 @@
+<div class="main-content">
+  <!-- content area part -->
+  <section class="caregivers-section register-frm">
+    <div class="container">
+      <div class="row">
+        <div class="caregivers-inner col-md-6">
+          <div class="left-block">
+            <h2 class="text-center">{{ 'Client Login' | translate }}</h2>
+            <p class="text-center verified-text">
+              {{
+                'All caregivers are verified. Appointment is booked in just a few clicks.'
+                  | translate
+              }}
+            </p>
+
+            <div class="reg-frm">
+              <form [formGroup]="clientLoginForm" (ngSubmit)="login()">
+                <div class="form-group" [ngClass]="{
+                    'error-msg': (email.dirty || email.touched) && email.errors
+                  }">
+                  <label for="email">{{ 'Email Address' | translate }}</label>
+                  <input type="email" formControlName="email" class="form-control" placeholder="abc@gmail.com"
+                    id="email" autocomplete="off" />
+                  <app-control-message fieldName="{{'Email Address' | translate}}"
+                    [control]="clientLoginForm.controls['email']">
+                  </app-control-message>
+                </div>
+                <div class="form-group" [ngClass]="{
+                    'error-msg':
+                      (password.dirty || password.touched) && password.errors
+                  }">
+                  <label for="pwd">{{ 'Password' | translate }}</label>
+                  <input type="{{ passType }}" class="form-control" placeholder="******" id="pwd"
+                    formControlName="password" autocomplete="off" />
+
+                  <a href="javascript:void(0);" (click)="toggleShow()" class="eye-icon"><img [src]="passwordIcon" />
+                  </a>
+                  <app-control-message fieldName="{{'Password' | translate}}"
+                    [control]="clientLoginForm.controls['password']">
+                  </app-control-message>
+                </div>
+                <div class="form-check">
+                  <div class="custom-checkbox">
+                    <input id="remember" formControlName="rememberMe" type="checkbox" class="form-check-input" />
+                    <label for="remember">{{
+                      'Remember Me' | translate
+                    }}</label>
+                  </div>
+                  <a href="javascript:void(0);" (click)="forgotPassword()">
+                    {{ 'Forgot password' | translate }}</a>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  {{ 'Login' | translate }}
+                </button>
+                <div class="form-group">
+                  <p class="text-center">
+                    {{ 'Don’t have an account yet?' | translate }}
+                    <a href="javascriopt:void(0);" [routerLink]="['/auth/client-register']">
+                      {{ 'SIGN UP' | translate }}</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="right-image client-login-bg"></div>
+      </div>
+    </div>
+  </section>
+</div>

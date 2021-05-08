@@ -1,0 +1,128 @@
+<footer class="main-footer">
+  <div class="top-foot">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="single-foot">
+          <a [routerLink]="['/']" href="javascript:void(0);" class="foot-logo">
+            <!-- <img src="assets/images/logo.png" alt="" /> -->
+            <img src="assets/images/logo-english.png" alt="" *ngIf="global.currentLanguage === 'en'" />
+            <img src="assets/images/logo-chinese.png" alt="" *ngIf="global.currentLanguage === 'zh'" />
+          </a>
+          <p>{{ 'EA Licence No: 61164' | translate }}</p>
+        </div>
+        <div class="single-foot">
+          <div class="title">{{ 'Our Caregivers' | translate }}</div>
+          <ul class="foot-links">
+            <li>
+              <a href="javascript:void(0);"
+                [routerLink]="['/home/1']">{{ 'Registered or Enrolled Nurse' | translate }}</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" [routerLink]="['/home/3']">{{ 'Health Worker' | translate }}</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" [routerLink]="['/home/4']">{{ 'Personal Care Worker' | translate }}</a>
+            </li>
+            <li>
+              <a href="javascript:void(0);" [routerLink]="['/home/5']">{{ 'Out-Patient Escort Person' | translate }}</a>
+            </li>
+          </ul>
+        </div>
+        <div class="single-foot">
+          <div class="title">{{ 'Care Receivers' | translate }}</div>
+          <ul class="foot-links">
+            <li>
+              <a [routerLink]="['/pages/stroke']" href="javascript:void(0);">
+                {{ 'Stroke' | translate }}
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/pages/dementia']" href="javascript:void(0);">
+                {{ 'Dementia' | translate }}
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/pages/diabetes']" href="javascript:void(0);">
+                {{ 'Diabetes' | translate }}
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/pages/wound']" href="javascript:void(0);">
+                {{ 'Wound' | translate }}
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/pages/post-surgery']" href="javascript:void(0);">
+                {{ 'Post Surgery' | translate }}
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/pages/palliative']" href="javascript:void(0);">
+                {{ 'Palliative' | translate }}
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/pages/mentally-challenged']" href="javascript:void(0);">
+                {{ 'Mentally Challenged' | translate }}
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="single-foot">
+          <div class="title">{{ 'About' | translate }}</div>
+          <ul class="foot-links">
+            <li>
+              <a [routerLink]="['/pages/about']" href="javascript:void(0);">
+                {{ 'About Us' | translate }}
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/pages/faq']" href="javascript:void(0);">
+                {{ 'FAQs' | translate }}
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/auth/privacy-policy']" href="javascript:void(0)">
+                {{ 'Privacy' | translate }}
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="single-foot">
+          <div class="title">{{ 'Get in touch' | translate }}</div>
+          <a href="tel:+85263640301"><img src="assets/images/whatsapp-icon.svg" alt="" />
+            {{ '6364 0301' | translate }}</a>
+          <a href="mailto:info@purecare.com.hk">info@purecare.com.hk</a>
+          <p *ngIf="global.currentLanguage === 'en'">
+            Flat/Room 15, 1/F Block C <br />
+            Hong Kong Industrial Centre<br />
+            489-491 Castle Peak Road,<br />
+            Kowloon,<br />
+            Hong Kong
+          </p>
+          <p *ngIf="global.currentLanguage === 'zh'">
+            {{ 'Hong Kong' | translate }}<br />
+            {{ '489-491 Castle Peak Road, Kowloon' | translate }}<br />
+            {{ 'Hong Kong Industrial Centre' | translate }} {{ 'Flat/Room 15, 1/F Block C' | translate }} <br />
+          </p>
+          <ul class="social">
+            <li>
+              <a href="https://www.facebook.com/purecarehk" target="_blank">
+                <!-- <i class="fa fa-facebook-square" aria-hidden="true"></i> -->
+                <img src="assets/images/fb-logo.png" alt="" />
+              </a>
+            </li>
+            <!-- <li>
+              <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-foot">
+    <div class="container">
+      <p>© {{'2020 PureCare | All rights reserved' | translate}}</p>
+    </div>
+  </div>
+</footer>

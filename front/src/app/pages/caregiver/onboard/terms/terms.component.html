@@ -1,0 +1,68 @@
+<div id="panel-G" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="terms">
+  <div class="card-header" role="tab" id="heading-G">
+    <h5 class="mb-0">
+      <a class="collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-G">
+        {{ 'Agreement and Terms and Condition' | translate }}
+      </a>
+    </h5>
+  </div>
+
+
+  <div id="collapse-G" class="collapse show" role="tabpanel" data-parent="#content" aria-labelledby="heading-G">
+    <form [formGroup]="termsForm" (ngSubmit)="submitDetails()">
+      <div class=" single-wizard">
+        <div class="wizard-form">
+          <div class="title-block">
+            <h5>
+              {{ ' Have questions about this form? Please whatsapp' | translate }}
+              <a href="tel:+85263640301">{{ '6364 0301' | translate }}</a>
+              {{ 'and let us help you!' | translate }}
+            </h5>
+            <h4>{{ 'Step 7' | translate }}</h4>
+            <h3>{{ 'Agreement and Terms and Condition' | translate }}</h3>
+            <p>
+              {{ 'All info given to us is strictly confidential and is only used for registration purposes.' | translate }}
+            </p>
+          </div>
+          <div class="terms-blocks">
+
+            <app-terms-en *ngIf="global.currentLanguage === 'en'"></app-terms-en>
+
+            <app-terms-ch *ngIf="global.currentLanguage === 'zh'"></app-terms-ch>
+
+            <div class="form-blocks">
+              <div class="single-form-block">
+                <div class="single-block">
+                  <div class="form-group">
+                    <label>{{ 'HKID Full Name' | translate }}</label>
+                    <input type="text" class="form-control" formControlName="hkid_fullName" maxlength="30" [ngClass]="{
+                        'error-msg':
+                          (termsForm.controls['hkid_fullName'].dirty ||
+                            termsForm.controls['hkid_fullName'].touched) &&
+                          termsForm.controls['hkid_fullName'].errors
+                      }" />
+                    <app-control-message fieldName="{{ 'HKID Name' | translate }}"
+                      [control]="termsForm.controls['hkid_fullName']"></app-control-message>
+                  </div>
+                  <div class="form-group date">
+                    <label>{{ 'Date' | translate }}</label>
+                    <input readonly="true" type="text" class="form-control" formControlName="date" ngbDatepicker
+                      [maxDate]="maxDate" #d="ngbDatepicker" [readonly]="true" />
+                    <app-control-message fieldName="{{ 'Date' | translate }}" [control]="termsForm.controls['date']">
+                    </app-control-message>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-block">
+            <button type="submit">
+              {{ 'Submit' | translate }}
+              <img src="assets/images/hand-icon.svg" alt=" " />
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

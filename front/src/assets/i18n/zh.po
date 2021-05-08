@@ -1,0 +1,4582 @@
+msgid ""
+msgstr ""
+"mime-version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "0"
+msgstr "0"
+
+msgid "1"
+msgstr "1"
+
+msgid "2"
+msgstr "2"
+
+msgid "3"
+msgstr "3"
+
+msgid "4"
+msgstr "4"
+
+msgid "5"
+msgstr "5"
+
+msgid "6"
+msgstr "6"
+
+msgid "7"
+msgstr "7"
+
+msgid "8"
+msgstr "8"
+
+msgid "9"
+msgstr "9"
+
+msgid "10"
+msgstr "10"
+
+msgid "11"
+msgstr "11"
+
+msgid "12"
+msgstr "12"
+
+msgid "30"
+msgstr "30"
+
+msgid "500"
+msgstr "500"
+
+msgid "Name of Institution is required"
+msgstr "需要學校名稱"
+
+msgid "Degree/Programme is required"
+msgstr "需要學位/課程名稱"
+
+msgid "Start Year is required"
+msgstr "需要開始年份"
+
+msgid "End Year is required"
+msgstr "需要完成年份"
+
+msgid "Cantonese"
+msgstr "廣東話"
+
+msgid "Mandarin"
+msgstr "普通話"
+
+msgid "English"
+msgstr "英文"
+
+msgid "Select Services"
+msgstr "選擇服務"
+
+msgid "Search Services"
+msgstr "Search Services"
+
+msgid "Client Login"
+msgstr "客戶登入"
+
+msgid "Are you sure you'd like to cancel the appointment?"
+msgstr "確認取消預約?"
+
+msgid "Personal Care"
+msgstr "個人照顧"
+
+msgid "Select All"
+msgstr "Select All"
+
+msgid "UnSelect All"
+msgstr "UnSelect All"
+
+msgid "Search Personal Care"
+msgstr "Search Personal Care"
+
+msgid "Special Care"
+msgstr "特殊照顧"
+
+msgid "Search Special Care"
+msgstr "Search Special Care"
+
+msgid "Required"
+msgstr "必須填寫"
+
+msgid "Invalid email address"
+msgstr "電郵地址無效"
+
+msgid ""
+"Invalid password. Password must be 6 characters long, at least 1 capital "
+"letter, 1 small letter and 1 numeric character"
+msgstr "密碼無效. 密碼必須最少6個字符,其中最少1個大階,1個細階及1位數字."
+
+msgid "Minimum length"
+msgstr "最短"
+
+msgid "Maximum length"
+msgstr "最長"
+
+msgid "Confirm password not matching"
+msgstr "Confirm password not matching"
+
+msgid "Invalid website url"
+msgstr "不正確網頁連結"
+
+msgid "is Invalid"
+msgstr "不正確"
+
+msgid "Please enter valid number"
+msgstr "請輸入有效數字"
+
+msgid "Please enter hour between 1 to 12"
+msgstr "請輸入1至12小時"
+
+msgid "Whitespaces are not allowed"
+msgstr "不可輸入空白鍵"
+
+msgid "Only 50 words are allowed"
+msgstr "最多只可50字"
+
+msgid "Only Characters are allowed"
+msgstr "只可輸入字符"
+
+msgid "Invalid height"
+msgstr "高度無效"
+
+msgid "Invalid mobile number"
+msgstr "手提電話無效"
+
+msgid "Caregiver Login"
+msgstr "護理員登入"
+
+msgid "You set your service fee. We pay you 12 hours after the service!"
+msgstr "自訂服務收費；工作12小時內收到轉帳!"
+
+msgid "No commission charged during promotion!"
+msgstr "在推廣期內免收平台服務費！"
+
+msgid "Email Address"
+msgstr "電郵地址"
+
+msgid "Password"
+msgstr "密碼"
+
+msgid "Remember Me"
+msgstr "記住我"
+
+msgid "Forgot password"
+msgstr "忘記密碼"
+
+msgid "Login"
+msgstr "登入"
+
+msgid "Don’t have an account yet?"
+msgstr "未有帳戶?"
+
+msgid "SIGN UP"
+msgstr "登記"
+
+msgid "Join as a Caregiver"
+msgstr "加入成為謢理員"
+
+msgid "Join us if you are RN / EN / HW / PCW / Out-Patient Escort."
+msgstr "註冊護士 / 登記護士 / 保健員 / 起居照顧員 / 陪診員，歡迎加入!"
+
+msgid "Set your display name;"
+msgstr "自設顯示名稱"
+
+msgid "set your service fee."
+msgstr "自訂服務收費"
+
+msgid "Strength:"
+msgstr "強度："
+
+msgid "Weak"
+msgstr "弱"
+
+msgid "Average"
+msgstr "一般"
+
+msgid "Strong"
+msgstr "強"
+
+msgid "Confirm Password"
+msgstr "確認密碼"
+
+msgid "By clicking Join, you agree to our"
+msgstr "按下加入，你同意我們的"
+
+msgid "Privacy Policy."
+msgstr "私隱條款。"
+
+msgid "Join"
+msgstr "加入"
+
+msgid "Already have an account?"
+msgstr "已經有帳戶?"
+
+msgid "LOGIN"
+msgstr "登入"
+
+msgid "Activate your account"
+msgstr "確認你的帳戶"
+
+msgid ""
+"We have sent a link to your email address. Please don’t forget to check "
+"your junk mail folder."
+msgstr "我們已把連結寄至你的電郵地址。別忘記檢查垃圾郵箱。"
+
+msgid "Did not get the link?"
+msgstr "還未收到連結?"
+
+msgid "SEND AGAIN"
+msgstr "再次傳送"
+
+msgid "All caregivers are verified. Appointment is booked in just a few clicks."
+msgstr "所有謢理員資料已被核實。預約服務就在彈指之間。"
+
+msgid "Join as a Client"
+msgstr "加入成為客戶"
+
+msgid "Free Registration"
+msgstr "免費登記"
+
+msgid "0 Commission until 31 August!"
+msgstr "免平台服務費到8月31日!"
+
+msgid "Congratulations!"
+msgstr "恭喜！"
+
+msgid "Your account is now activated"
+msgstr "你帳戶已經啟動"
+
+msgid ""
+"Please login to complete the profile. We will show your profile online "
+"after this is completed."
+msgstr "請登入完成填寫個人資料；Pure Care稍後會上載並展示你的簡介。"
+
+msgid "Please login to complete the profile."
+msgstr "請登入完成填寫個人資料"
+
+msgid "Enter the email address to receive reset password link."
+msgstr "請填寫你的電郵地址以獲取密碼重設連結。"
+
+msgid "Send reset link"
+msgstr "發出重設連結"
+
+msgid "Back to"
+msgstr "返回"
+
+msgid "Forgot password?"
+msgstr "忘記密碼?"
+
+msgid ""
+"Password reset link is sent to your email address if this is registered "
+"with us. Please don’t forget to check your junk mail folder."
+msgstr "我們已把密碼連結寄至你的電郵地址。別忘記檢查垃圾郵箱。"
+
+msgid "Privacy Policy"
+msgstr "私隱條款"
+
+msgid "Reset your password"
+msgstr "重設密碼"
+
+msgid "New Password"
+msgstr "新密碼"
+
+msgid "Confirm New Password"
+msgstr "確認新的密碼"
+
+msgid "Reset Password"
+msgstr "重設密碼"
+
+msgid "Your password has been changed successfully."
+msgstr "你的密碼已經重設。"
+
+msgid "First"
+msgstr "首個"
+
+msgid "online caregiver platform in Hong Kong"
+msgstr "香港網上謢理平台"
+
+msgid "Licensed and regulated by the Labour Department of the Hong Kong government,"
+msgstr "受勞工處職業介紹所發牌及監管,"
+
+msgid ""
+"Pure Care quickly bridges you and the caregiver so that the caregiver can "
+"take care of the person you love."
+msgstr "Pure Care幫助客戶快捷地聯絡護理員安排上門護理服務。"
+
+msgid "Our Story"
+msgstr "我們的故事"
+
+msgid ""
+"Pure Care was founded on a simple belief — Live better. We believe that "
+"everyone deserves a better quality of life regardless of age or health."
+msgstr "Pure Care的成立是基於一個簡單的信念 ——「讓生活更美好」。我們相信，不管是年長或患病，每個人都可以值得擁有更健康、更快樂的生活。"
+
+msgid ""
+"We have created a platform to share information of elderly caring, healthy "
+"exercise, appropriate training and balanced diet."
+msgstr "我們努力經營一個平台，分享照顧長者、健康運動、適度訓練和均衡飲食的資訊。"
+
+msgid ""
+"Pure Care believes that the challenges of taking care of those in need can "
+"be addressed with the right methods and tools."
+msgstr "Pure Care相信，如果採用正確方法去照顧年長及患病，照顧者可照顧得更輕鬆。"
+
+msgid "Frequently Asked Questions"
+msgstr "常見問題"
+
+msgid "Registration"
+msgstr "登記"
+
+msgid "What docs do I need to submit?"
+msgstr "登記後，需要提交什麼文件?"
+
+msgid ""
+"Please whatsapp or email us your HKID photo (only show first 4 digits), "
+"qualifications (see client Q2) and contract or payslip (you may hide salary "
+"figures). We would review your docs in 24 hours."
+msgstr ""
+"請whatsapp或電郵香港身份證的照片（僅需顯示前4位數字）、資歷（請參閱客戶問與答第2題）以及合同或糧單（閣下可遮蔽薪金）給我們。我們於24"
+"小時內審核。"
+
+msgid "Do I need to attend an interview?"
+msgstr "需要面試嗎?"
+
+msgid "No need! Our registration is simple and easy."
+msgstr "不需的!登記過程簡單容易。"
+
+msgid "Work"
+msgstr "工作"
+
+msgid "When would I have an appointment?"
+msgstr "何時收到客戶預約?"
+
+msgid ""
+"We strive to facilitate clients to our platform but in the meantime, it "
+"depends on your skillset, charges, availability, rating and review!"
+msgstr "我們致力介紹客戶給閣下，但與此同時，這取決閣下的技能、收費、服務時間、評分和評價!"
+
+msgid "How do clients find me?"
+msgstr "客戶如何找到我?"
+
+msgid "Your profile will display in the platform for the client to select."
+msgstr "閣下的資料將顯示在平台上，以供客戶選擇。"
+
+msgid "How do I accept or decline an appointment?"
+msgstr "如何接受或拒絕預約?"
+
+msgid ""
+"Once a client selects you, we would whatsapp and email you. In the email "
+"titled “Need Your Confirmation”, please scroll to the bottom to accept or "
+"decline the appointment."
+msgstr "當客戶選擇閣下，我們將發送Whatsapp和電郵給你。在標題為“需要閣下確認”的電郵內，請拉至底部以接受或拒絕預約。"
+
+msgid "Appointment is on a first-come-first serve basis."
+msgstr "預約為先到先得。"
+
+msgid "When would I get paid after the appointment?"
+msgstr "預約後何時獲發薪金?"
+
+msgid ""
+"We would pay you within 24 hours via bank transfer or 3 calendar days via "
+"cheque, assuming there are no disputes. We pay 365 days."
+msgstr "如果沒有爭議，我們會於24小時內銀行轉帳或3日內以支票付款。我們每天付款，年中無休。"
+
+msgid "I have accepted the appointment but cannot come. What should I do?"
+msgstr "我已接受預約，但其後不能提供服務。怎麼辦?"
+
+msgid ""
+"Please whatsapp or email us immediately. The client would still give you a "
+"rating and review."
+msgstr "請立即whatsapp或電郵我們。客戶仍可就此事評分和評論。"
+
+msgid "Update Info"
+msgstr "更新資料"
+
+msgid "How do I update availability and charges?"
+msgstr "如何更新服務時間和收費?"
+
+msgid ""
+"Please login and go to step 4 to update your availability and step 5 to "
+"update your charges."
+msgstr "請登入並到第4步以更新服務時間，第5步以更新收費。"
+
+msgid "How can I update education and work experience?"
+msgstr "如何更新教育和工作經驗?"
+
+msgid ""
+"Please whatsapp or email your certificate(s) and/or contract(s) or "
+"payslip(s) to us; you may hide the salary figures. We would update the info "
+"in 24 hours."
+msgstr "請以whatsapp或電郵將證書和/或合同或糧單發送給我們；閣下可遮蔽薪金。我們會在24小時內更新"
+
+msgid "Your appointment will be confirmed very shortly!"
+msgstr "我們會盡快確認預約!"
+
+msgid "Would you need another caregiver to help out ?"
+msgstr "需要多一位護理員嗎?"
+
+msgid "Please book another caregiver if so !"
+msgstr "如需要的話，請預約另一位護理員!"
+
+msgid ""
+"Please prepare the following in the Care Receiver's home for the "
+"out-patient escort to pick up: 1) Care Receiver's HKID"
+msgstr "請於受顧者家中準備以下事項以便陪診員工作: 1)受顧者身分證"
+
+msgid "2) Consultation Letter 3) Consultation Fee 4) Taxi Fare for both ways."
+msgstr "2) 覆診紙 3)診金 4)來回的士車費 "
+
+msgid ""
+"The out-patient escort would leave the change and receipt at the Care "
+"Receiver's home."
+msgstr "陪診員會於受顧者家中留下餘下車費及收據。"
+
+msgid "Back to homepage"
+msgstr "返回主頁"
+
+msgid ""
+"We are contacting the client to request payment. We will send the "
+"confirmation email to you soon!"
+msgstr "我們正通知客戶付款。確認電郵會會付款後寄出!"
+
+msgid "Please wait..."
+msgstr "請稍後..."
+
+msgid "Oops…the appointment is already taken by another caregiver. This happens!"
+msgstr "已有護理員確認，所以是次確認未能成功!"
+
+msgid "No worries. We would contact you in future appointments!"
+msgstr "放心，以後有服務預約，我們會立即與你聯絡!"
+
+msgid "No worries."
+msgstr "放心"
+
+msgid "We would contact you again in future appointments!"
+msgstr "以後有服務預約，我們會立即與你聯絡!"
+
+msgid "Availability"
+msgstr "服務時間"
+
+msgid "Have questions about this form? Please whatsapp"
+msgstr "有疑問?請Whatsapp"
+
+msgid "6364 0301"
+msgstr "6364 0301"
+
+msgid "and let us help you!"
+msgstr "讓我們幫你！"
+
+msgid "Step 4"
+msgstr "第四步"
+
+msgid "Your Availability"
+msgstr "你可提供服務的時間"
+
+msgid "Please set availability on a daily basis."
+msgstr "請自訂每星期的服務時間。"
+
+msgid ""
+"If your work schedule changes, please remember to update it in the "
+"Caregiver Profile."
+msgstr "如時間有變，請於護理員頁面更新。"
+
+msgid "Every"
+msgstr "每星期"
+
+msgid "Please Select"
+msgstr "請選擇"
+
+msgid "From Every"
+msgstr "由每星期"
+
+msgid "Availability Details"
+msgstr "可提供服務時間的細節"
+
+msgid "To Every"
+msgstr "至每星期"
+
+msgid "Time From"
+msgstr "時間從"
+
+msgid "AM"
+msgstr "早上"
+
+msgid "PM"
+msgstr "下午"
+
+msgid "Time To"
+msgstr "到"
+
+msgid "Add another Availability"
+msgstr "加入另外可提供服務的時間"
+
+msgid "Locations"
+msgstr "地點"
+
+msgid "Places you are willing to go. Please select 5 max."
+msgstr "你願意去的地區，最多只能選擇5地區。"
+
+msgid "Kowloon"
+msgstr "九龍"
+
+msgid "Sham Shu Po"
+msgstr "深水埗"
+
+msgid "Kowloon City"
+msgstr "九龍城"
+
+msgid "Previous"
+msgstr "上一步"
+
+msgid "Next"
+msgstr "下一步"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Charges"
+msgstr "收費"
+
+msgid "Step 5"
+msgstr "第五步"
+
+msgid "Your Charges"
+msgstr "你的收費"
+
+msgid "You set your service fee. No Commission during promotion!"
+msgstr "你自訂服務收費；在推廣期內免收平台服務費！"
+
+msgid "Hours"
+msgstr "小時"
+
+msgid "Please input all hourly rates"
+msgstr "請填寫所有時數"
+
+msgid "Hourly Rate"
+msgstr "每小時的收費"
+
+msgid "Total Rate"
+msgstr "總收費"
+
+msgid "Not sure about how much to charge?"
+msgstr "不清楚收費?"
+
+msgid "Click here"
+msgstr "按此"
+
+msgid ""
+"We receive all client payment first and pay you after appointment. Yes, We "
+"pay 24/7."
+msgstr "我們會先從客戶收取費用和在服務完成後向你支付。是的,我們24/7付款。"
+
+msgid "Method of Receiving Payment"
+msgstr "收取款項的方法"
+
+msgid "Online transfer - Preferred. Pay within 12 hours*"
+msgstr "網上過數 (建議). 12小時*內付款"
+
+msgid "FPS - Mobile Number"
+msgstr "轉數快-你的電話號碼"
+
+msgid "Watch out for typos"
+msgstr "小心錯字"
+
+msgid "Mobile Number"
+msgstr "手提電話號碼"
+
+msgid "Bank Name"
+msgstr "銀行名稱"
+
+msgid "Bank Code"
+msgstr "銀行編號"
+
+msgid "Branch Code"
+msgstr "分行編號"
+
+msgid "Account Number"
+msgstr "帳戶號碼"
+
+msgid "Account Name"
+msgstr "帳戶持有人姓名"
+
+msgid ""
+"Cheque - Not preferred. Pay within 3 working days*. Postage cost will be "
+"charged."
+msgstr "支票(不推薦)。 將於三日*內支付款項,另收取郵遞費用"
+
+msgid "* Assuming no disputes."
+msgstr "*假設沒有投訴"
+
+msgid "Documents"
+msgstr "文件"
+
+msgid "Step 6"
+msgstr "第六步"
+
+msgid "Email or whatsapp your douments"
+msgstr "將你的文件以電郵或WhatsApp遞交"
+
+msgid ""
+"All info given to us is strictly confidential and is only used for "
+"registration purposes."
+msgstr "你所遞交的資料為保密及只用作登記用途。"
+
+msgid ""
+"In order to onboard you seamlessly, please read the following very "
+"carefully."
+msgstr "為了令你順利登記，請務必小心閱讀以下資料。"
+
+msgid ""
+"If convenient, it may be easier to provide the documents now, as this would "
+"be the last time you see the list of required documents in the sign-up form."
+msgstr "這是你最後一次看到所需文件；你可考慮現在一併提交所需文件。"
+
+msgid "Please email or whatsapp the following to"
+msgstr "請電郵或WhatsApp以下文件到"
+
+msgid "info@purecare.com.hk"
+msgstr "info@purecare.com.hk"
+
+msgid ""
+"We will process your registration in 24 hours after we receive all of your "
+"documents."
+msgstr "我們會於24小時內處理你的登記。"
+
+msgid "Hong Kong Identity Card"
+msgstr "香港身分證"
+
+msgid "Proof of Work Experience"
+msgstr "工作經驗證明"
+
+msgid "- Public / Private Hospital / Elderly Home / NGO:"
+msgstr "- 公立 / 私立醫院 / 護老院 / NGO: "
+
+msgid ""
+"Payslip(s) (Only need to show name, pay point (if any) and HKID (first 4 "
+"digits)"
+msgstr "糧單 (只需顯示姓名、薪級點(如有)及身份證號碼(頭4位))"
+
+msgid "- Freelance: None"
+msgstr "- 自由工作者: 不需"
+
+msgid "We will not contact your employers."
+msgstr "我們不會聯絡你的雇主。"
+
+msgid ""
+"Proof of present address issued less than 3 months (bank / credit card "
+"statement, utility / mobile phone bill)"
+msgstr "最近三個月的住址證明 (銀行/信用卡月結單, 水電費/電話號碼帳單)"
+
+msgid "Payslips or Employment Contracts"
+msgstr "薪金證明或雇用合約"
+
+msgid "- please pay attention - it can be a bit tricky"
+msgstr "– 請小心閱讀!"
+
+msgid ""
+"Current Employer: Contract or first payslip and last (or most recent) "
+"payslip"
+msgstr "現任雇主: 合約或第一張糧單及最後一張(或最近) 糧單"
+
+msgid ""
+"Previous Employer: Contract or first payslip and last (or most recent) "
+"payslip or resignation letter"
+msgstr "前任雇主: 合約或第一張糧單及最後一張(或最近) 糧單或辭職信"
+
+msgid ""
+"1. If you don't have the last payslip, your years of work experience = "
+"contract or first payslip to most recent payslip"
+msgstr "1. 如你沒有最後一張糧單，你於平台上的工作經驗 = 合約或第一張糧單到最近糧單。"
+
+msgid ""
+"2. Please provide them regardless of whether you'd like to show employer "
+"name(s) on the platform"
+msgstr "2. 不論是否於平台提供雇主名稱，請一併提供現任及前任雇主證明以計算年資。"
+
+msgid ""
+"3. Please feel free to hide the salary figures. We will not contact your "
+"employer(s)."
+msgstr "3. 歡迎隱藏合約或糧單薪金。我們不會聯絡你的雇主。"
+
+msgid "Professional Certificates"
+msgstr "專業資格"
+
+msgid "RN / EN:"
+msgstr "註冊 / 登記護士:"
+
+msgid "- A Certificate of Registration (Part 1) (RN)"
+msgstr "- A Certificate of Registration (Part 1) (RN)"
+
+msgid "- A Certificate of Enrolment (Part 1) (EN)"
+msgstr "- A Certificate of Enrolment (Part 1) (EN)"
+
+msgid "- A valid Practicing Certificate issued by the Nursing Council of Hong Kong"
+msgstr "- 香港護士管理局發出執業證明書"
+
+msgid "HW:"
+msgstr "保健員:"
+
+msgid ""
+"- Health Worker Training Courses approved by the Social and Welfare "
+"Department"
+msgstr "- 完成獲社會福利署署長批准的保健員訓練課程"
+
+msgid "PCW:"
+msgstr "起居照顧員:"
+
+msgid ""
+"- Personal Care Worker certificate issued by an accredited institution in "
+"Hong Kong"
+msgstr "- 持有本港機構發出的「起居照顧員」或相關護理證書 "
+
+msgid "Out-Patient Escort:"
+msgstr "陪診員:"
+
+msgid "- Out-Patient Escort Foundation Certificate OR"
+msgstr "- 持有本港機構發出的「陪診員基礎」或相關陪診證書 或"
+
+msgid ""
+"- Elderly Caregiver Foundation Certificate issued by an accredited "
+"institution in Hong Kong"
+msgstr "- 長者照顧基礎證書"
+
+msgid ""
+"If you mentioned that you have other certificates in Step 2, please send "
+"them to us."
+msgstr "如你於第二步填寫擁有其他資格,請發送給我們"
+
+msgid "Personal Information"
+msgstr "個人資訊"
+
+msgid "Work Experience and Education"
+msgstr "工作經驗和教育程度"
+
+msgid "Skillset"
+msgstr "技能"
+
+msgid "Referral Bonus"
+msgstr "獎賞錢"
+
+msgid "Step1"
+msgstr "第一步"
+
+msgid "Step2"
+msgstr "第二步"
+
+msgid "Step3"
+msgstr "第三步"
+
+msgid "Step4"
+msgstr "第四步"
+
+msgid "Step5"
+msgstr "第五步"
+
+msgid "Step6"
+msgstr "第六步"
+
+msgid "Step7"
+msgstr "第七步"
+
+msgid "Agreement and Terms and Condition"
+msgstr "協議和條款條件"
+
+msgid "Step 1"
+msgstr "第一步"
+
+msgid "Please tell us a bit about yourself"
+msgstr "請告訴我們你的資訊"
+
+msgid ""
+"Your nickname and registered no. will be shown on the platform. Your Name "
+"and HKID are strictly confidential and will not be shown on platform."
+msgstr "只有你的自設名稱和Pure Care的平台登記號碼會展示在我們的平台上。你的姓名和身分證號碼是絕對保密的, 並不會展示在平台上"
+
+msgid "Registered No.:"
+msgstr "平台登記號碼:"
+
+msgid "Salute"
+msgstr "稱謂"
+
+msgid "Mr"
+msgstr "先生"
+
+msgid "Ms"
+msgstr "小姐"
+
+msgid "Chinese Name"
+msgstr "中文姓名"
+
+msgid "Same as HKID Card"
+msgstr "與香港身分證的資料相符"
+
+msgid "English Name"
+msgstr "英文姓名"
+
+msgid "Nickname on platform (Chinese recommended)"
+msgstr "平台上自設名稱 (建議使用中文)"
+
+msgid "Nickname (will be shown on platform)"
+msgstr "自設名稱 (顯示在平台上)"
+
+msgid "Nickname"
+msgstr "自設稱呼"
+
+msgid "HKID Card No. (4 Digits Only)"
+msgstr "香港身分證號碼 (首4位字母數字)"
+
+msgid "HKID Card No."
+msgstr "香港身分證號碼"
+
+msgid "Date of Birth"
+msgstr "出生日期"
+
+msgid "Language"
+msgstr "語言"
+
+msgid "Please specify other language"
+msgstr "請註明其他語言的類別"
+
+msgid "Other language"
+msgstr "其他語言"
+
+msgid "Caregiver Type"
+msgstr "護理員類別"
+
+msgid "Mobile and WhatsApp Number"
+msgstr "手提電話號碼(可用作WhatsApp)"
+
+msgid "Referrer's Email Address"
+msgstr "轉介者的電郵地址"
+
+msgid "(Optional)"
+msgstr "(選填項目)"
+
+msgid "Referrers Email Address"
+msgstr "轉介者的電郵地址"
+
+msgid "Preferred Language of Communication"
+msgstr "偏好語言"
+
+msgid "Chinese"
+msgstr "中文"
+
+msgid "No referral bonus when the platform doesn't take service fee!"
+msgstr "未收取平台使用費，所以未有獎賞錢!"
+
+msgid "To find out our referral policy, please"
+msgstr "如想了解我們的獎賞錢計劃,請"
+
+msgid "Click here!"
+msgstr "點擊這裡!"
+
+msgid "Due*"
+msgstr "應支付*"
+
+msgid "Earned"
+msgstr "已賺取"
+
+msgid "Paid"
+msgstr "已支付"
+
+msgid "Number of Caregivers Referred"
+msgstr "已轉介護理員的數目"
+
+msgid "* We pay when due amount is above $100"
+msgstr "當應支付數目超過HK$100時,我們會作出轉帳"
+
+msgid "Step 3"
+msgstr "第三步"
+
+msgid "Clients can find you according to your skillset."
+msgstr "客戶可以根據你的技能來搜尋到你"
+
+msgid "Self Introduction"
+msgstr "自我介紹"
+
+msgid "Optional"
+msgstr "選填項目"
+
+msgid "Fewer than 50 words. Please don’t compare yourself with or criticise others"
+msgstr "請不要多於50字。請不要與他人作比較或攻擊他人"
+
+msgid "Introduction"
+msgstr "簡介"
+
+msgid "Your Skills"
+msgstr "你的技能"
+
+msgid ""
+"Please only tick what you know. Clients would give you a poor rating if you "
+"claim you know how to do something but don't!"
+msgstr "請只選擇你掌握的技能。注意!如你謊稱可提供某項服務, 但與事實不符, 客戶可能會給予你負面的評分！我們亦會考慮將你從平台刪除！"
+
+msgid "No Skills Found"
+msgstr "找不到技能"
+
+msgid "*Must be carried out by nurses"
+msgstr "*必須由護士處理"
+
+msgid "The websites or applications ("
+msgstr "The websites or applications ("
+
+msgid "www.purecare.com.hk"
+msgstr "www.purecare.com.hk"
+
+msgid ""
+") (hereinafter referred as the platform) owned and operated by Pure Care "
+"Hong Kong Limited (hereinafter referred as Pure Care) are a platform to "
+"connect the account user and/or service user with the Caregiver. Pure Care "
+"does not provide any nursing and/other related services (hereafter referred "
+"as the service) and is not an employer of any Caregiver."
+msgstr ""
+") (hereinafter referred as the platform) owned and operated by Pure Care "
+"Hong Kong Limited (hereinafter referred as Pure Care) are a platform to "
+"connect the account user and/or service user with the Caregiver. Pure Care "
+"does not provide any nursing and/other related services (hereafter referred "
+"as the service) and is not an employer of any Caregiver."
+
+msgid "Agreement"
+msgstr "Agreement"
+
+msgid ""
+"I wish to have my name and other information deemed appropriate by Pure "
+"Care to be included in Pure Care’s platform as being available the service. "
+"I understand that registration with Pure Care has no guarantee that I will "
+"obtain opportunities to provide the service to clients referred by Pure "
+"Care."
+msgstr ""
+"I wish to have my name and other information deemed appropriate by Pure "
+"Care to be included in Pure Care’s platform as being available the service。 "
+"I understand that registration with Pure Care has no guarantee that I will "
+"obtain opportunities to provide the service to clients referred by Pure "
+"Care。"
+
+msgid "Notes on Taxation"
+msgstr "Notes on Taxation"
+
+msgid ""
+"I hereby acknowledge that I shall bear the whole responsibility of "
+"providing true and valid information in order to fulfill the Hong Kong "
+"taxation requirements of being a self-employed person. If I earn in excess "
+"of my personal tax allowance in a single tax year, I understand that I must "
+"file a profits tax return, including all my earnings for the tax year. This "
+"is my responsibility, and not the responsibility of Pure Care."
+msgstr ""
+"I hereby acknowledge that I shall bear the whole responsibility of "
+"providing true and valid information in order to fulfill the Hong Kong "
+"taxation requirements of being a self-employed person。 If I earn in excess "
+"of my personal tax allowance in a single tax year, I understand that I must "
+"file a profits tax return, including all my earnings for the tax year。 This "
+"is my responsibility, and not the responsibility of Pure Care。"
+
+msgid ""
+"I also acknowledge that (a) acceptance of my registration with Pure Care "
+"and thereafter acceptance of any referral opportunities to provide the "
+"service to clients referred by Pure Care, do not constitute any employer / "
+"employee relationship, both expressly and impliedly between Pure Care and "
+"myself, and (b) all matters and liabilities in respect of, but not limited "
+"to, taxation, Provident Fund, Mandatory Provident Fund, long service "
+"payments, annual leave and sickness leave are acknowledged, by both "
+"parties, to be outside the scope of the relationship between Pure Care and "
+"myself. Any such liabilities will be my sole responsibility; and (c) Pure "
+"Care may retain all the information contained in this registration form "
+"until one calendar month after my notice in writing to terminate my "
+"registration with Pure Care, is properly served to Pure Care and the "
+"receipt is acknowledged by Pure Care, and (d) Pure Care may disclose any "
+"information (excluding my residential address, bank details and employer "
+"details if I indicate my intention not to do so) contained in this "
+"registration form to its clients or potential clients; and (e) after my "
+"registration, I will receive a copy of this Agreement and Terms and "
+"Conditions from Pure Care."
+msgstr ""
+"I also acknowledge that (a) acceptance of my registration with Pure Care "
+"and thereafter acceptance of any referral opportunities to provide the "
+"service to clients referred by Pure Care, do not constitute any employer / "
+"employee relationship, both expressly and impliedly between Pure Care and "
+"myself, and (b) all matters and liabilities in respect of, but not limited "
+"to, taxation, Provident Fund, Mandatory Provident Fund, long service "
+"payments, annual leave and sickness leave are acknowledged, by both "
+"parties, to be outside the scope of the relationship between Pure Care and "
+"myself. Any such liabilities will be my sole responsibility; and (c) Pure "
+"Care may retain all the information contained in this registration form "
+"until one calendar month after my notice in writing to terminate my "
+"registration with Pure Care, is properly served to Pure Care and the "
+"receipt is acknowledged by Pure Care, and (d) Pure Care may disclose any "
+"information (excluding my residential address, bank details and employer "
+"details if I indicate my intention not to do so) contained in this "
+"registration form to its clients or potential clients; and (e) after my "
+"registration, I will receive a copy of this Agreement and Terms and "
+"Conditions from Pure Care."
+
+msgid "Terms and Conditions"
+msgstr "條款細則"
+
+msgid "1. The Service"
+msgstr "1. The Service"
+
+msgid ""
+"(a) I shall provide the service required by Pure Care to Pure  Care’s "
+"clients in accordance with the Terms and Conditions of the Agreement."
+msgstr ""
+"(a) I shall provide the service required by Pure Care to Pure  Care’s "
+"clients in accordance with the Terms and Conditions of the Agreement。"
+
+msgid ""
+"(b) After accepting the service request, I shall inform Pure Care at least "
+"3 business days beforehand if I cannot report duty for the service. If the "
+"service begins less than 3 business days, I shall not cancel the service. "
+"If I fail to do so, I understand that this would lead to an administration "
+"fee charged by Pure Care, my ratings being affected on the platform and my "
+"chances of being selected by clients going forward."
+msgstr ""
+"(b) After accepting the service request, I shall inform Pure Care at least "
+"3 business days beforehand if I cannot report duty for the service. If the "
+"service begins less than 3 business days, I shall not cancel the service. "
+"If I fail to do so, I understand that this would lead to an administration "
+"fee charged by Pure Care, my ratings being affected on the platform and my "
+"chances of being selected by clients going forward."
+
+msgid ""
+"(c) I shall observe and comply with all reasonable instructions given by "
+"Pure Care."
+msgstr ""
+"(c) I shall observe and comply with all reasonable instructions given by "
+"Pure Care。"
+
+msgid "2. Personnel"
+msgstr "2. Personnel"
+
+msgid "(a) I acknowledge that I shall be efficient, sober and honest."
+msgstr "(a) I acknowledge that I shall be efficient, sober and honest。"
+
+msgid ""
+"(b) I shall be courteous and obliging and shall provide client-oriented "
+"services at all times."
+msgstr ""
+"(b) I shall be courteous and obliging and shall provide client-oriented "
+"services at all times。"
+
+msgid ""
+"(c) I shall not be a person of bad character, disorderly conduct or violent "
+"character."
+msgstr ""
+"(c) I shall not be a person of bad character, disorderly conduct or violent "
+"character。"
+
+msgid "(d) I shall wear clean and tidy clothes or uniforms during the service. "
+msgstr "(d) I shall wear clean and tidy clothes or uniforms during the service. "
+
+msgid ""
+"(e) I understand that I am eligible for a 30-min meal for 8 hours and a "
+"60-min meal for 12 hours of the service. The meal is prepared by myself but "
+"eating the meal is counted in the service time."
+msgstr ""
+"(e) I understand that I am eligible for a 30-min meal for 8 hours and a "
+"60-min meal for 12 hours of the service。 The meal is prepared by myself but "
+"eating the meal is counted in the service time。"
+
+msgid "3. Acknowledgement"
+msgstr "3. Acknowledgement"
+
+msgid ""
+"(a) I acknowledge that I am thoroughly conversant with all aspects of the "
+"Agreement including the service nature, work locations and all other "
+"relevant requirements of this Agreement. I have obtained all necessary "
+"information of any circumstances which may influence or affect this "
+"Agreement."
+msgstr ""
+"(a) I acknowledge that I am thoroughly conversant with all aspects of the "
+"Agreement including the service nature, work locations and all other "
+"relevant requirements of this Agreement。 I have obtained all necessary "
+"information of any circumstances which may influence or affect this "
+"Agreement。"
+
+msgid ""
+"(b) No neglect or failure on the part of myself to obtain any information "
+"affecting the provision of the service shall relieve me from any "
+"obligations or liabilities undertaking by it under the Agreement."
+msgstr ""
+"(b) No neglect or failure on the part of myself to obtain any information "
+"affecting the provision of the service shall relieve me from any "
+"obligations or liabilities undertaking by it under the Agreement。"
+
+msgid "4. Warranties and Undertakings"
+msgstr "4. Warranties and Undertakings"
+
+msgid "(a) I warrant and undertake to Pure Care that;"
+msgstr "(a) I warrant and undertake to Pure Care that;"
+
+msgid ""
+"(i) The service shall be performed and completed in a timely and diligent "
+"manner and I shall use all my experience, skills, care and diligence in the "
+"provision of the service."
+msgstr ""
+"(i) The service shall be performed and completed in a timely and diligent "
+"manner and I shall use all my experience, skills, care and diligence in the "
+"provision of the service。"
+
+msgid ""
+"(ii) I shall have the necessary qualifications, skills and experience to "
+"provide the service."
+msgstr ""
+"(ii) I shall have the necessary qualifications, skills and experience to "
+"provide the service。"
+
+msgid ""
+"(iii) I shall devote to my obligations hereunder such of my time, attention "
+"and skill as may be necessary for the proper performance of those "
+"obligations"
+msgstr ""
+"(iii) I shall devote to my obligations hereunder such of my time, attention "
+"and skill as may be necessary for the proper performance of those "
+"obligations"
+
+msgid ""
+"(iv) I shall comply with the reasonable requests of Pure Care and shall use "
+"my best endeavors to promote the interests of Pure Care and the clients."
+msgstr ""
+"(iv) I shall comply with the reasonable requests of Pure Care and shall use "
+"my best endeavors to promote the interests of Pure Care and the clients。"
+
+msgid ""
+"(v) all information supplied and statements made by me in relation to the "
+"service are true and accurate."
+msgstr ""
+"(v) all information supplied and statements made by me in relation to the "
+"service are true and accurate。"
+
+msgid "(b) I further warrant and represent to Pure Care that:"
+msgstr "(b) I further warrant and represent to Pure Care that:"
+
+msgid ""
+"(i) I have the necessary power and authority to enter into and perform and "
+"comply with the obligations expressed to be assumed or undertaken by me "
+"under this Agreement."
+msgstr ""
+"(i) I have the necessary power and authority to enter into and perform and "
+"comply with the obligations expressed to be assumed or undertaken by me "
+"under this Agreement。"
+
+msgid ""
+"(ii) I have complied with all legal requirements relevant to my service and "
+"to the performance of my obligations under this Agreement."
+msgstr ""
+"(ii) I have complied with all legal requirements relevant to my service and "
+"to the performance of my obligations under this Agreement。"
+
+msgid ""
+"(iii) all necessary action has been taken to carry on the service and to "
+"execute, deliver and perform my obligations under this Agreement. "
+msgstr ""
+"(iii) all necessary action has been taken to carry on the service and to "
+"execute, deliver and perform my obligations under this Agreement。 "
+
+msgid ""
+"All authorizations, approvals, consents, licenses, exemptions and other "
+"requirements of any government, administration or other authority or body "
+"in any relevant jurisdiction which are required to authorize me to carry on "
+"the service and to execute, deliver and perform my obligations under this "
+"Agreement have been duly and unconditionally obtained and are in full force "
+"and effect."
+msgstr ""
+"All authorizations, approvals, consents, licenses, exemptions and other "
+"requirements of any government, administration or other authority or body "
+"in any relevant jurisdiction which are required to authorize me to carry on "
+"the service and to execute, deliver and perform my obligations under this "
+"Agreement have been duly and unconditionally obtained and are in full force "
+"and effect。"
+
+msgid ""
+"(iv) Neither any of my properties, assets or revenues nor I have any right "
+"of immunity under the laws of place of establishment and laws of Hong Kong:"
+msgstr ""
+"(iv) Neither any of my properties, assets or revenues nor I have any right "
+"of immunity under the laws of place of establishment and laws of Hong Kong:"
+
+msgid "(iv.i) from any legal action, suit or proceeding:"
+msgstr "(iv.i) from any legal action, suit or proceeding:"
+
+msgid ""
+"(iv.ii) from the giving of any relief in any such legal action, suit or "
+"proceeding;"
+msgstr ""
+"(iv.ii) from the giving of any relief in any such legal action, suit or "
+"proceeding;"
+
+msgid "(iv.iii) from set-off or counterclaim;"
+msgstr "(iv.iii) from set-off or counterclaim;"
+
+msgid "(iv.iv) from the jurisdiction of any Hong Kong court;"
+msgstr "(iv.iv) from the jurisdiction of any Hong Kong court;"
+
+msgid ""
+"(iv.v) from the service of process, attachment upon or prior to judgment, "
+"or attachment in aid of execution of judgment; and"
+msgstr ""
+"(iv.v) from the service of process, attachment upon or prior to judgment, "
+"or attachment in aid of execution of judgment; and"
+
+msgid ""
+"(iv.vi) from the execution of a judgment, or other legal process or "
+"proceeding for the giving of any relief or for the enforcement of a "
+"judgment in any Hong Kong court or the count of the place of establishment "
+"with respect to my obligations, liabilities or any other matter under or "
+"arising out of or in connection with this Agreement."
+msgstr ""
+"(iv.vi) from the execution of a judgment, or other legal process or "
+"proceeding for the giving of any relief or for the enforcement of a "
+"judgment in any Hong Kong court or the count of the place of establishment "
+"with respect to my obligations, liabilities or any other matter under or "
+"arising out of or in connection with this Agreement。"
+
+msgid "5. Service Payment"
+msgstr "5. Service Payment"
+
+msgid ""
+"(a) Subject to other provisions of this Agreement, in consideration of my "
+"due and proper performance of the service in accordance with this "
+"Agreement, the caregiver charges paid via Pure Care shall be my caregiver "
+"charges minus Pure Care Service Fee (0 to 30% of my caregiver charges)."
+msgstr ""
+"(a) Subject to other provisions of this Agreement, in consideration of my "
+"due and proper performance of the service in accordance with this "
+"Agreement, the caregiver charges paid via Pure Care shall be my caregiver "
+"charges minus Pure Care Service Fee (0 to 30% of my caregiver charges)。"
+
+msgid ""
+"(b) The caregiver charges shall be inclusive of all fees, costs, fees and "
+"disbursements incurred by me in the performance of the service."
+msgstr ""
+"(b) The caregiver charges shall be inclusive of all fees, costs, fees and "
+"disbursements incurred by me in the performance of the service。"
+
+msgid ""
+"(c) In the event of being complained by clients, Pure Care reserves the "
+"right for not paying any caregiver charges to me until the complaint is "
+"settled."
+msgstr ""
+"(c) In the event of being complained by clients, Pure Care reserves the "
+"right for not paying any caregiver charges to me until the complaint is "
+"settled。"
+
+msgid ""
+"(d) I understand that Pure Care's role as an Agent to collect the caregiver "
+"charges on behalf of me. Pure Care may not be able to pay the caregiver "
+"charges to me if the client declines to pay the caregiver charges for any "
+"reasons. If in any event Pure Care pays the caregiver charges to me in "
+"advance of the client's payment, I should pav back to Pure Care immediately "
+"when the client declines to pay the caregiver charges for any reasons."
+msgstr ""
+"(d) I understand that Pure Care's role as an Agent to collect the caregiver "
+"charges on behalf of me。 Pure Care may not be able to pay the caregiver "
+"charges to me if the client declines to pay the caregiver charges for any "
+"reasons。 If in any event Pure Care pays the caregiver charges to me in "
+"advance of the client's payment, I should pav back to Pure Care immediately "
+"when the client declines to pay the caregiver charges for any reasons。"
+
+msgid "6. Prohibition of Direct/Indirect Engagement by Client"
+msgstr "6. Prohibition of Direct/Indirect Engagement by Client"
+
+msgid ""
+"I acknowledge and fully understand that after my registration with Pure "
+"Care, written consent must be obtained from Pure Care before accepting any "
+"offer(s) from, and/or being engaged (regardless of whether exists any "
+"employment relationship), directly or indirectly, with any Pure Care’s "
+"clients or organisations (regardless of whether such persons are acting for "
+"themselves or acting for and on behalf of other companies or organisations, "
+"including its affiliated companies or agents) introduced to me by Pure "
+"Care, in connection with provision of the service or work in similar "
+"nature. Otherwise I shall be liable for all losses and/or damages and/or "
+"administrative costs suffered by Pure Care."
+msgstr ""
+"I acknowledge and fully understand that after my registration with Pure "
+"Care, written consent must be obtained from Pure Care before accepting any "
+"offer(s) from, and/or being engaged (regardless of whether exists any "
+"employment relationship), directly or indirectly, with any Pure Care’s "
+"clients or organisations (regardless of whether such persons are acting for "
+"themselves or acting for and on behalf of other companies or organisations, "
+"including its affiliated companies or agents) introduced to me by Pure "
+"Care, in connection with provision of the service or work in similar "
+"nature。 Otherwise I shall be liable for all losses and/or damages and/or "
+"administrative costs suffered by Pure Care。"
+
+msgid ""
+"This prohibition shall subsist or shall be valid at all times until the "
+"expiry of half year from my last day of work with such client(s) introduced "
+"to me by Pure Care."
+msgstr ""
+"This prohibition shall subsist or shall be valid at all times until the "
+"expiry of half year from my last day of work with such client(s) introduced "
+"to me by Pure Care。"
+
+msgid "7. Assignment and Sub-contracting"
+msgstr "7. Assignment and Sub-contracting"
+
+msgid ""
+"I shall not assign, sub-contract or otherwise transfer or dispose of the "
+"Agreement, or any part, share or interest therein, and the performance of "
+"the Agreement by me shall be deemed to be personal to it."
+msgstr ""
+"I shall not assign, sub-contract or otherwise transfer or dispose of the "
+"Agreement, or any part, share or interest therein, and the performance of "
+"the Agreement by me shall be deemed to be personal to it。"
+
+msgid "8. Provision of Information and Contact by Pure Care"
+msgstr "8. Provision of Information and Contact by Pure Care"
+
+msgid "(a) Provision of Information"
+msgstr "(a) Provision of Information"
+
+msgid ""
+"I understand that all of my personal information provided to Pure Care "
+"(including but not limited to my Hong Kong Identity Card, residential "
+"address, qualifications, employment contracts/pay slips, skillset and bank "
+"account details) are accurate and complete. I also agree to update Pure "
+"Care if any of my personal information changes."
+msgstr ""
+"I understand that all of my personal information provided to Pure Care "
+"(including but not limited to my Hong Kong Identity Card, residential "
+"address, qualifications, employment contracts/pay slips, skillset and bank "
+"account details) are accurate and complete。 I also agree to update Pure "
+"Care if any of my personal information changes。"
+
+msgid ""
+"I understand that Pure Care reserves the right to terminate my account from "
+"the platform and/or detain any of my caregiver charges without remorse and "
+"prior notice if Pure Care suspects that I deceive Pure Care in any means."
+msgstr ""
+"I understand that Pure Care reserves the right to terminate my account from "
+"the platform and/or detain any of my caregiver charges without remorse and "
+"prior notice if Pure Care suspects that I deceive Pure Care in any means。"
+
+msgid "(b) Means of Contact"
+msgstr "(b) Means of Contact"
+
+msgid ""
+"I expressly consent to being contacted by Pure Care via phone, "
+"email,WhatsApp, SMS messaging, or any other reasonable means, at any of my "
+"contact numbers or addresses, in order that Pure Care may perform its role "
+"of connecting the client with the caregiver. For more information on the "
+"use of information, please refer to the Privacy Policy."
+msgstr ""
+"I expressly consent to being contacted by Pure Care via phone, "
+"email,WhatsApp, SMS messaging, or any other reasonable means, at any of my "
+"contact numbers or addresses, in order that Pure Care may perform its role "
+"of connecting the client with the caregiver. For more information on the "
+"use of information, please refer to the Privacy Policy."
+
+msgid "9. Extreme Weather"
+msgstr "9. Extreme Weather"
+
+msgid ""
+"The service will be suspended during typhoon number 8 or above or black "
+"rainstorm. Please reschedule the service with the client. Pure Care would "
+"pay me after the client informs Pure Care the new date and time and I "
+"complete the service."
+msgstr ""
+"The service will be suspended during typhoon number 8 or above or black "
+"rainstorm。 Please reschedule the service with the client。 Pure Care would "
+"pay me after the client informs Pure Care the new date and time and I "
+"complete the service。"
+
+msgid "10. Insurance"
+msgstr "10. Insurance"
+
+msgid ""
+"(a) I understand that Pure Care may deduct the amount so paid by Pure Care "
+"from any monies due or which may become due to me or recover the same as a "
+"debt due from Pure Care."
+msgstr ""
+"(a) I understand that Pure Care may deduct the amount so paid by Pure Care "
+"from any monies due or which may become due to me or recover the same as a "
+"debt due from Pure Care。"
+
+msgid "b"
+msgstr "b"
+
+msgid "I understand that Pure Care does not pay for any of my insurance."
+msgstr "I understand that Pure Care does not pay for any of my insurance。"
+
+msgid ""
+"(c) In the event of suffering any injury or death in the course of or "
+"arising out of the Agreement and whether there be a claim for compensation "
+"or not, my authorized representative or I shall within seven days give "
+"notice in writing of such injury or death to Pure Care."
+msgstr ""
+"(c) In the event of suffering any injury or death in the course of or "
+"arising out of the Agreement and whether there be a claim for compensation "
+"or not, my authorized representative or I shall within seven days give "
+"notice in writing of such injury or death to Pure Care。"
+
+msgid "11. Disclaimer of Liability"
+msgstr "11. Disclaimer of Liability"
+
+msgid ""
+"Neither Pure Care nor any of its employees or agents shall be under any "
+"liability whatsoever for or in respect of:"
+msgstr ""
+"Neither Pure Care nor any of its employees or agents shall be under any "
+"liability whatsoever for or in respect of:"
+
+msgid ""
+"(a) Any injury to or death of clients because of the provision of the "
+"service; or"
+msgstr ""
+"(a) Any injury to or death of clients because of the provision of the "
+"service; or"
+
+msgid "(b) Any injury to or death of myself; or"
+msgstr "(b) Any injury to or death of myself; or"
+
+msgid " (c)  Any loss of or damage to any of the caregiver’s property"
+msgstr " (c)  Any loss of or damage to any of the caregiver’s property"
+
+msgid "12. Indemnity"
+msgstr "12. Indemnity"
+
+msgid ""
+"I shall indemnify and keep indemnified Pure Care against any and all "
+"liabilities, losses, damages, costs, fees or expenses, including all costs, "
+"fees and expenses which Pure Care may pay or incur in disputing any such "
+"claim or defending or such action or;"
+msgstr ""
+"I shall indemnify and keep indemnified Pure Care against any and all "
+"liabilities, losses, damages, costs, fees or expenses, including all costs, "
+"fees and expenses which Pure Care may pay or incur in disputing any such "
+"claim or defending or such action or;"
+
+msgid "(a) the performance or breach of any provisions of this Agreement by me;"
+msgstr "(a) the performance or breach of any provisions of this Agreement by me;"
+
+msgid ""
+"(b) the negligence, recklessness, tortuous acts or willful misconduct of "
+"myself in the provision of the service;"
+msgstr ""
+"(b) the negligence, recklessness, tortuous acts or willful misconduct of "
+"myself in the provision of the service;"
+
+msgid ""
+"(c) any default, unauthorized act or willful misconduct of myself in the "
+"provision of the service;"
+msgstr ""
+"(c) any default, unauthorized act or willful misconduct of myself in the "
+"provision of the service;"
+
+msgid ""
+"(d) My non-compliance with any applicable law, regulation, order or "
+"requirement of any government agency or authority in the provision of the "
+"service."
+msgstr ""
+"(d) My non-compliance with any applicable law, regulation, order or "
+"requirement of any government agency or authority in the provision of the "
+"service。"
+
+msgid "13. Privacy"
+msgstr "13. Privacy"
+
+msgid ""
+"(a) I agree not to take any photographs or record audio or video of the "
+"client."
+msgstr ""
+"(a) I agree not to take any photographs or record audio or video of the "
+"client。"
+
+msgid ""
+"(b) All client information is confidential, and I may not publish any "
+"personally identifiable data including but not limited to names or other "
+"account information, from Pure Care."
+msgstr ""
+"(b) All client information is confidential, and I may not publish any "
+"personally identifiable data including but not limited to names or other "
+"account information, from Pure Care。"
+
+msgid ""
+"(c) I acknowledge that a violation of the foregoing could result in "
+"significant damages, and I agree that I am liable to Pure Care for any such "
+"damages, and will indemnify Pure Care in the event of any third-party "
+"claims against Pure Care based on or arising from my violation of the "
+"foregoing. Additionally, Pure Care reserves the right, in its sole "
+"discretion, to immediately terminate my account from the platform without "
+"remorse and prior notice and to initiate without notice appropriate legal "
+"actions and/or proceedings to seek appropriate remedies and/or damages, "
+"including but not limited to lost revenue, repairs, legal fees and other "
+"expenses, for my misuse or suspected misuse of the platform."
+msgstr ""
+"(c) I acknowledge that a violation of the foregoing could result in "
+"significant damages, and I agree that I am liable to Pure Care for any such "
+"damages, and will indemnify Pure Care in the event of any third-party "
+"claims against Pure Care based on or arising from my violation of the "
+"foregoing。 Additionally, Pure Care reserves the right, in its sole "
+"discretion, to immediately terminate my account from the platform without "
+"remorse and prior notice and to initiate without notice appropriate legal "
+"actions and/or proceedings to seek appropriate remedies and/or damages, "
+"including but not limited to lost revenue, repairs, legal fees and other "
+"expenses, for my misuse or suspected misuse of the platform。"
+
+msgid "14. No joint venture, agency, or employment"
+msgstr "14. No joint venture, agency, or employment"
+
+msgid ""
+"I understand that I do not have authority to enter into contracts or "
+"commitments, whether written or oral, implied or express, on behalf of Pure "
+"Care. I understand and agree that if Pure Care is found to be liable for "
+"any claim in connection with my provision of service, then I will "
+"immediately reimburse and pay to Pure Care an equivalent amount, including "
+"any interest or penalties thereon."
+msgstr ""
+"I understand that I do not have authority to enter into contracts or "
+"commitments, whether written or oral, implied or express, on behalf of Pure "
+"Care。 I understand and agree that if Pure Care is found to be liable for "
+"any claim in connection with my provision of service, then I will "
+"immediately reimburse and pay to Pure Care an equivalent amount, including "
+"any interest or penalties thereon。"
+
+msgid "15. Use of platform"
+msgstr "15. Use of platform"
+
+msgid ""
+"(a) I acknowledge and agree that the platform is for my personal use only. "
+"I undertake not to misuse or attempt to misuse or circumvent the platform, "
+"or use the platform for any unlawful, immoral, inappropriate or "
+"non-personal purposes, including but not limited to activities such as "
+"hacking, scraping content, infiltrating, fraud, advertising, jamming or "
+"spamming. I may not use the platform to recreate or compete with Pure Care, "
+"or to solicit or harass anyone, or for any other purpose not contemplated "
+"herein. I am prohibited from advertising or soliciting service not within "
+"the ambit of any of the service offered by the platform."
+msgstr ""
+"(a) I acknowledge and agree that the platform is for my personal use only。 "
+"I undertake not to misuse or attempt to misuse or circumvent the platform, "
+"or use the platform for any unlawful, immoral, inappropriate or "
+"non-personal purposes, including but not limited to activities such as "
+"hacking, scraping content, infiltrating, fraud, advertising, jamming or "
+"spamming。 I may not use the platform to recreate or compete with Pure Care, "
+"or to solicit or harass anyone, or for any other purpose not contemplated "
+"herein。 I am prohibited from advertising or soliciting service not within "
+"the ambit of any of the service offered by the platform。"
+
+msgid ""
+"(b) The platform is provided on an “as is” basis without warranties of any "
+"kind, either express or implied, including, but not limited to fitness for "
+"a particular purpose and non-infringement. Pure Care makes no warranties or "
+"representations about the accuracy or completeness of the content provided "
+"or the content of any sites linked to the service and assumes no liability "
+"or responsibility for any errors, mistakes, or inaccuracies of content."
+msgstr ""
+"(b) The platform is provided on an “as is” basis without warranties of any "
+"kind, either express or implied, including, but not limited to fitness for "
+"a particular purpose and non-infringement。 Pure Care makes no warranties or "
+"representations about the accuracy or completeness of the content provided "
+"or the content of any sites linked to the service and assumes no liability "
+"or responsibility for any errors, mistakes, or inaccuracies of content。"
+
+msgid "16. Intellectual Property Rights"
+msgstr "16. Intellectual Property Rights"
+
+msgid ""
+"(a) Pure Care owns all Proprietary Material, as well as the coordination, "
+"selection, arrangement and enhancement of such Proprietary Materials as a "
+"Collective Work under the Copyright Ordinance of Hong Kong SAR, Chapter 528 "
+"of the Laws of Hong Kong SAR (the “Ordinance”), where practicable as "
+"amended. The Proprietary Material is protected by domestic and "
+"international laws of copyright, patents, and other proprietary rights and "
+"laws. I may not copy, download, use, redesign, reconfigure, or retransmit "
+"anything from the platform without Pure Care’s express prior written "
+"consent and, if applicable, the holder of the rights to the user generated "
+"content."
+msgstr ""
+"(a) Pure Care owns all Proprietary Material, as well as the coordination, "
+"selection, arrangement and enhancement of such Proprietary Materials as a "
+"Collective Work under the Copyright Ordinance of Hong Kong SAR, Chapter 528 "
+"of the Laws of Hong Kong SAR (the “Ordinance”), where practicable as "
+"amended。 The Proprietary Material is protected by domestic and "
+"international laws of copyright, patents, and other proprietary rights and "
+"laws。 I may not copy, download, use, redesign, reconfigure, or retransmit "
+"anything from the platform without Pure Care’s express prior written "
+"consent and, if applicable, the holder of the rights to the user generated "
+"content。"
+
+msgid ""
+"(b) I understand it is Pure Care’ policy to retain the personal data until "
+"six (6) calendar months after it receives the notice in writing to "
+"terminate this Terms and Conditions with it, or as otherwise required by "
+"law."
+msgstr ""
+"(b) I understand it is Pure Care’ policy to retain the personal data until "
+"six (6) calendar months after it receives the notice in writing to "
+"terminate this Terms and Conditions with it, or as otherwise required by "
+"law。"
+
+msgid ""
+"Under the Personal Data (Privacy) Ordinance (Cap. 486, Laws of Hong Kong), "
+"I am entitled to request access to and/or correction of the personal data "
+"in relation to the registration with Pure Care. Such correction can be done "
+"through the Pure Care website after the User logs in and through contacting "
+"Pure Care."
+msgstr ""
+"Under the Personal Data (Privacy) Ordinance (Cap。 486, Laws of Hong Kong), "
+"I am entitled to request access to and/or correction of the personal data "
+"in relation to the registration with Pure Care。 Such correction can be done "
+"through the Pure Care website after the User logs in and through contacting "
+"Pure Care。"
+
+msgid ""
+"I fully understand my responsibilities in providing the service to clients "
+"referred by Pure Care."
+msgstr ""
+"I fully understand my responsibilities in providing the service to clients "
+"referred by Pure Care。"
+
+msgid ""
+"I agree to the Agreement and Terms and Conditions above and agree to comply "
+"with all applicable Hong Kong laws and regulations in order to use the "
+"platform."
+msgstr ""
+"I agree to the Agreement and Terms and Conditions above and agree to comply "
+"with all applicable Hong Kong laws and regulations in order to use the "
+"platform。"
+
+msgid ""
+"If there is any inconsistency or ambiguity between the English version and "
+"the Chinese version, the English version shall prevail."
+msgstr ""
+"If there is any inconsistency or ambiguity between the English version and "
+"the Chinese version, the English version shall prevail。"
+
+msgid " Have questions about this form? Please whatsapp"
+msgstr "對此表格有疑問?請WhatsApp"
+
+msgid "Step 7"
+msgstr "第7步"
+
+msgid "HKID Full Name"
+msgstr "香港身分證上的全名"
+
+msgid "HKID Name"
+msgstr "香港身分證上的姓名"
+
+msgid "Date"
+msgstr "日期"
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "Thank you!"
+msgstr "謝謝!"
+
+msgid "Thank you for registering with us!"
+msgstr "多謝登記!"
+
+msgid ""
+"We will review your profile in 24 hours and will whatsapp and email you "
+"once your profile is in the platform!"
+msgstr "我們會於24小時內處理，當你的個人資料上載到在平台上，我們會以WhatsApp及電郵通知你!"
+
+msgid ""
+"Please email or whatsapp the required documents (HKID, certificates and "
+"payslips) to"
+msgstr "請以電郵或WhatsApp遞交所需文件(身分證、證書、糧單)到"
+
+msgid "or"
+msgstr "或"
+
+msgid "Step 2"
+msgstr "第二步"
+
+msgid "Work Experience and Education (Chinese Only)"
+msgstr "護理工作經驗及教育 (請輸入中文)"
+
+msgid ""
+"Clients will see the years of experience and education level. If you would "
+"like to show more info, Clients can see your current and previous employers "
+"name on the platforms."
+msgstr "客戶將會看到你的工作經驗和教育程度。如果你想展示更多的資訊,客戶可以在平台上看到你的現任雇主和前任雇主的名稱。"
+
+msgid ""
+"Even if you do not prefer to show your employer names, please fill in the "
+"info below as the clients can see your years of work experience."
+msgstr "如你不希望展示雇主的名稱,請照樣輸入 以下資料來讓客戶知道你的年資"
+
+msgid ""
+"If you would like to edit work experience or education , please whatsapp or "
+"email your new contract(s) or payslip(s) to "
+msgstr "如需要更新牌照過期日期、工作經驗或學歷, 請whatsapp"
+
+msgid "or email"
+msgstr "或電郵"
+
+msgid "Please feel free to hide the salary figure. We will update it very soon!"
+msgstr "新的資料給我們。歡迎隱藏薪金。我們會盡快更新!"
+
+msgid "Licence Expiry Date"
+msgstr "牌照過期日期"
+
+msgid "For RN/EN only"
+msgstr "只適用於註冊/登記護士"
+
+msgid "Show employer name on the platform?"
+msgstr "是否於平台上展示你的雇主名稱?"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "No"
+msgstr "否"
+
+msgid "Display Employers"
+msgstr "展示雇主"
+
+msgid "Current Employer"
+msgstr "現任雇主"
+
+msgid "Remove"
+msgstr "移除"
+
+msgid "Name of Hospital/Company"
+msgstr "醫院/公司名稱"
+
+msgid "Hospital Name"
+msgstr "醫院名稱"
+
+msgid "Work Type"
+msgstr "工作類別"
+
+msgid "Full Time"
+msgstr "全職"
+
+msgid "Part Time"
+msgstr "兼職"
+
+msgid "Work type"
+msgstr "工作類別"
+
+msgid "From"
+msgstr "從"
+
+msgid "Month"
+msgstr "月份"
+
+msgid "Year"
+msgstr "年份"
+
+msgid "Years of Experience"
+msgstr "工作經驗"
+
+msgid "Years"
+msgstr "年"
+
+msgid "Months"
+msgstr "月"
+
+msgid "Previous Employer(s)"
+msgstr "前任雇主"
+
+msgid "Previous Employer(s) (List from latest to oldest)"
+msgstr "前任雇主 (由最新到最舊)"
+
+msgid "Name of Hospital/Company (Optional)"
+msgstr "醫院或公司名稱(選填項目)"
+
+msgid "To"
+msgstr "至"
+
+msgid "Add another Previous employer"
+msgstr "增加前任雇主"
+
+msgid "Education"
+msgstr "教育 (只需填護理相關)"
+
+msgid "Education (List from latest to oldest)"
+msgstr "護理相關教育 (由最新到最舊)"
+
+msgid "Name of Institution"
+msgstr "大學或學校"
+
+msgid "Degree/Programme"
+msgstr "學位/課程"
+
+msgid "Start Year"
+msgstr "開始"
+
+msgid "End Year"
+msgstr "完成"
+
+msgid "Add another Qualification"
+msgstr "加入其他學歷"
+
+msgid "Locations (Service Coverage)"
+msgstr "地方 (服務範圍)"
+
+msgid "Info"
+msgstr "資料"
+
+msgid "Skills"
+msgstr "技能"
+
+msgid "* (if present) Must be carried by nurses"
+msgstr "* (如有) 必須護理處理"
+
+msgid ","
+msgstr ","
+
+msgid "- Present"
+msgstr "- 現在"
+
+msgid "year(s)"
+msgstr "年"
+
+msgid "month(s)"
+msgstr "月"
+
+msgid "Previous Employer"
+msgstr "前任雇主"
+
+msgid "Overview"
+msgstr "概覽"
+
+msgid "Reviews"
+msgstr "評論"
+
+msgid "Rating and Reviews"
+msgstr "評分及評論"
+
+msgid "Languages"
+msgstr "語言"
+
+msgid "About me"
+msgstr "關於我"
+
+msgid "Sort"
+msgstr "按"
+
+msgid "Newest"
+msgstr "最新"
+
+msgid "Oldest"
+msgstr "最舊"
+
+msgid "Verified Client"
+msgstr "真實客戶"
+
+msgid "Positive"
+msgstr "正面"
+
+msgid "Negative"
+msgstr "負面"
+
+msgid "Load More"
+msgstr "更多"
+
+msgid "There are no reviews yet."
+msgstr "暫時沒有評論"
+
+msgid "You may select up to 3 Caregivers"
+msgstr "你可選擇最多3位護理員"
+
+msgid "The first caregiver to accept will provide services to you"
+msgstr "第1位確認的護理員將提供服務"
+
+msgid "Transport Subsidy"
+msgstr "交通津貼"
+
+msgid ""
+"If you live far away, you may want to give transport subsidy to the "
+"caregiver to increase the chances of success"
+msgstr "如住址偏遠，你可考慮給予護理員交通津貼以增加成功率。"
+
+msgid "Add"
+msgstr "增加"
+
+msgid "Sort by:"
+msgstr "排序方式:"
+
+msgid "Price"
+msgstr "價錢"
+
+msgid "High to low"
+msgstr "高至低"
+
+msgid "Low to High"
+msgstr "低至高"
+
+msgid "Experience"
+msgstr "經驗"
+
+msgid "Ratings"
+msgstr "評分"
+
+msgid "Search by Caregiver Number"
+msgstr "尋找護理員平台登記號碼"
+
+msgid "Registration Number"
+msgstr "平台登記號碼"
+
+msgid "Select caregiver type"
+msgstr "選擇護理員種類"
+
+msgid "Services"
+msgstr "服務"
+
+msgid "Residental area"
+msgstr "地區"
+
+msgid "Select Residental area"
+msgstr "選擇地區"
+
+msgid "Select Date"
+msgstr "選擇日期"
+
+msgid "Start Time"
+msgstr "時間從"
+
+msgid "Start Minute"
+msgstr "Start Minute"
+
+msgid "End Time"
+msgstr "到"
+
+msgid "End Minutes"
+msgstr "End Minutes"
+
+msgid "Minimum Years of Experience"
+msgstr "最少工作經驗 (年)"
+
+msgid "Select Experience"
+msgstr "選擇工作經驗"
+
+msgid "3+"
+msgstr "3+"
+
+msgid "5+"
+msgstr "5+"
+
+msgid "7+"
+msgstr "7+"
+
+msgid ""
+"You seem to have selected quite a few services, please ensure the caregiver "
+"has enough time to help out!"
+msgstr "你好像選擇不少服務，請確保護理員有足夠時間幫忙!"
+
+msgid ""
+"You have already five open booking pending so you are not able to do more "
+"bookings."
+msgstr "你已有5次預約，現時不能預約更多服務。"
+
+msgid "Registered Name"
+msgstr "自設名稱"
+
+msgid "Registered No."
+msgstr "平台登記號碼"
+
+msgid "("
+msgstr "("
+
+msgid "Review )"
+msgstr "評論 )"
+
+msgid "Reviews )"
+msgstr "評論 )"
+
+msgid " exp"
+msgstr "經驗"
+
+msgid "Employer Details:"
+msgstr "雇主資料:"
+
+msgid "Education Details:"
+msgstr "教育資料:"
+
+msgid "Select this caregiver"
+msgstr "選擇護理員"
+
+msgid "Price Per Hour:"
+msgstr "時薪:"
+
+msgid "Total Hours:"
+msgstr "總共:"
+
+msgid "Service Fees:"
+msgstr "平台服務費:"
+
+msgid "Free during promotion!"
+msgstr "抗疫其間免費!"
+
+msgid "Total Amount"
+msgstr "總數"
+
+msgid "(With Transport Subsidy)"
+msgstr "(包括交通津貼)"
+
+msgid ""
+"It seems that no caregivers fulfil your criteria; please modify your search "
+"and try again!"
+msgstr "沒有護理員符合你的要求; 請更改要求及再嘗試!"
+
+msgid "Book Caregiver"
+msgstr "預約護理員"
+
+msgid "Employer Details"
+msgstr "雇主資料"
+
+msgid "Full time"
+msgstr "全職"
+
+msgid "Part time"
+msgstr "兼職"
+
+msgid "Present"
+msgstr "現在"
+
+msgid "Education Details"
+msgstr "教育資料"
+
+msgid "Change Password"
+msgstr "變更密碼"
+
+msgid "Old Password"
+msgstr "舊密碼"
+
+msgid "Why Pure Care"
+msgstr "為何使用Pure Care?"
+
+msgid "Why should I use Pure Care?"
+msgstr "為何使用Pure Care?"
+
+msgid ""
+"Pure Care is the first online caregiver platform and are licensed by the "
+"Labour Department in Hong Kong."
+msgstr "Pure Care是全港首個網上謢理平台，我們受勞工處職業介紹所發牌及監管。"
+
+msgid ""
+"We provide authentic caregiver information and are impartial when it comes "
+"to displaying caregivers."
+msgstr "我們提供真實的護理員資訊及公平地顯示護理員。"
+
+msgid "Verified -"
+msgstr "核實 -"
+
+msgid ""
+" all caregiver information, including qualifications and work experience, "
+"on our platform is verified."
+msgstr "我們核實每位護理員資料包括學歷及工作經驗"
+
+msgid "Transparent -"
+msgstr "透明 -"
+
+msgid "you see full background of caregivers with verified ratings and feedback."
+msgstr "你可看到護理員資料包括真實的評分及留言"
+
+msgid "Instant -"
+msgstr "快捷 -"
+
+msgid " appointment can be confirmed as quickly as 2 hours."
+msgstr " 預約可於2小時內完成"
+
+msgid "Qualifications and Work Experience"
+msgstr "學歷及工作經驗"
+
+msgid ""
+"How do I know qualifications, work experience and ratings are all authentic "
+"on Pure Care?"
+msgstr "我如何得知Pure Care平台上護理員的學歷、工作經驗、評分留言都是真的?"
+
+msgid ""
+"Before their profiles are on Pure Care, we screen and vet all caregivers "
+"qualifications and work experience, employment contracts or payslips and "
+"licence (if any)."
+msgstr "當護理員的的個人資料出現在Pure Care平台前，我們核實所有護理員的學歷和工作經驗、合約或糧單和牌照(如有)。"
+
+msgid "Only clients who appoint the caregiver can provide ratings and feedback."
+msgstr "只有透過Pure Care使用護理員的客戶才能評分及留言。"
+
+msgid "What is the caregiver’s qualification?"
+msgstr "護理員的資歷是甚麼?"
+
+msgid "All caregivers on our platform must possess the following qualification(s):"
+msgstr "所有平台上的護理員必須擁有以下學歷:"
+
+msgid "Registered Nurse or Enrolled Nurse"
+msgstr "註冊或登記護士"
+
+msgid "- A Certificate of Registration (Part I) (Registered Nurse)"
+msgstr "- A Certificate of Registration (Part I) (註冊護士)"
+
+msgid "- A Certificate of Enrolment (Part I) (Enrolled Nurse)"
+msgstr "- A Certificate of Enrolment (Part I) (登記護士)"
+
+msgid "- A valid Practising Certificate issued by the Nursing Council of Hong Kong."
+msgstr "- 香港護士管理局發出執業證明書"
+
+msgid "Health Worker"
+msgstr "保健員"
+
+msgid "- Health Worker Training Courses approved by the Director of Social Welfare"
+msgstr "- 完成獲社會福利署署長批准的保健員訓練課程"
+
+msgid "Personal Care Worker"
+msgstr "起居照顧員"
+
+msgid ""
+"- Hold ‘Personal Care Worker’ or other relevant certificates by an "
+"accredited institution in Hong Kong"
+msgstr "持有本港機構發出的「起居照顧員」或相關護理證書"
+
+msgid "Out-Patient Escort Person"
+msgstr "陪診員"
+
+msgid ""
+"- Hold ‘Out-Patient Escort’ or other relevant by an accredited institution "
+"in Hong Kong"
+msgstr "持有本港機構發出的「陪診員基礎」或相關陪診證書或長者照顧基礎證書"
+
+msgid ""
+"If they have first-aid, Occupational Therapy or Physiotherapy Assistant "
+"Certificates, these would be shown in the education section."
+msgstr "如持有急救、職業治療助理或物理治療助理證書，學歷會顯示在護理員教育欄內。"
+
+msgid "Duties"
+msgstr "工作"
+
+msgid "Can I ask the caregiver to do housework or cook?"
+msgstr "可要求護理員做家務或煮食嗎?"
+
+msgid ""
+"For housework, this is not recommended so that the care receiver can "
+"receive 1-to-1 personal service."
+msgstr "關於家務，為令護理員可以專心照顧，我們並不建議。"
+
+msgid ""
+"For cooking, the caregiver would be happy to reheat or make simple diets "
+"such as pureed diet."
+msgstr "關於煮食，護理員可以翻熱或簡單煮食(例如碎餐)。"
+
+msgid "Can I select a male caregiver?"
+msgstr "可選擇男護理員嗎?"
+
+msgid "Of course! The gender ( ♂ or ♀) is displayed in the caregiver profile."
+msgstr "當然可以! 護理員資料上已列明性別( ♂ or ♀)。"
+
+msgid "Can the caregiver provide care that is out of the service scope?"
+msgstr "可要求護理員提供服務範圍外的工作嗎?"
+
+msgid ""
+"You may fill in requests in ‘Is there anything that you would like the "
+"caregiver to know?’. You should, however, be mindful that only Registered "
+"or Enrolled Nurses can provide all services under special care."
+msgstr "你可以在客戶登錄後受顧者病歷中的“其他”欄填寫有關要求。但是，請注意只有註冊或登記護士才能在個人和特別護理提供與護理相關的服務。"
+
+msgid ""
+"Please do not ask caregivers to provide medical care that are not within "
+"their capabilities (e.g. asking health worker to change nasogastric / "
+"gastrostomy tube), as this would put the patient and the caregiver in "
+"unnecessary risks."
+msgstr "為避免受顧者和護理員承受不必要風險，請別要求護理員提供超出其能力範圍的服務（例如要求保健員更換鼻胃管/胃造廔）。"
+
+msgid "Payment"
+msgstr "付款"
+
+msgid "How do I pay?"
+msgstr "如何付款?"
+
+msgid "1. Payme: 6364 0301 or"
+msgstr "1. Payme: 6364 0301 或"
+
+msgid "2. FPS ID: 9890211 or"
+msgstr "2. 轉數快: 9890211 或"
+
+msgid "3. Bank Transfer:"
+msgstr "3. 銀行轉賬:"
+
+msgid "Bank Name: China Citic Bank International Limited"
+msgstr "銀行名稱: 中信銀行（國際）有限公司"
+
+msgid "Bank Code: 018"
+msgstr "銀行編號: 018"
+
+msgid "Account Number: 746-2-08153900"
+msgstr "帳戶號碼: 746-2-08153900"
+
+msgid "Account Name: Pure Care Hong Kong Limited"
+msgstr "户口名稱: Pure Care Hong Kong Limited"
+
+msgid "Completed"
+msgstr "完成"
+
+msgid "Cancelled"
+msgstr "取消"
+
+msgid "Payment Status"
+msgstr "付款狀況"
+
+msgid "Status"
+msgstr "狀況"
+
+msgid "Appointment Date"
+msgstr "服務日期"
+
+msgid "Duration"
+msgstr "長度"
+
+msgid "hour(s)"
+msgstr "小時"
+
+msgid "Services Selected"
+msgstr "所需服務"
+
+msgid " appointments"
+msgstr "預約"
+
+msgid "Upcoming"
+msgstr "將來"
+
+msgid "Confirmed"
+msgstr "確認"
+
+msgid "Pending"
+msgstr "等待"
+
+msgid "Cancel Booking"
+msgstr "取消服務"
+
+msgid "Let us know your feedback!"
+msgstr "分享你的評論!"
+
+msgid "Please give us your rating"
+msgstr "請給予評分"
+
+msgid "Love It"
+msgstr "非常好"
+
+msgid "Like It"
+msgstr "好"
+
+msgid "Ok"
+msgstr "Ok"
+
+msgid "Don’t Like It"
+msgstr "不好"
+
+msgid "Hate It"
+msgstr "非常差"
+
+msgid "Positives"
+msgstr "正面"
+
+msgid "Positive Feedbacks"
+msgstr "正面評價"
+
+msgid "Negatives"
+msgstr "負面"
+
+msgid "If there is no negative feedback, please leave this blank."
+msgstr "如沒有負面評價，請留空。"
+
+msgid "Negative Feedbacks"
+msgstr "負面評價"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Accont User Info"
+msgstr "帳戶用戶資料"
+
+msgid "Please tell us a bit about yourself (Account User)"
+msgstr "請告訴我們一些資料 (帳戶用戶)"
+
+msgid ""
+"Account user refers to the person who books the appointment for care "
+"receiver. (e.g. Child of the elderly)"
+msgstr "帳戶用戶是指預約服務的人 (例如: 長者兒女或安老院負責人)"
+
+msgid "First Name"
+msgstr "名"
+
+msgid "Last Name"
+msgstr "姓"
+
+msgid "Home Telephone Number"
+msgstr "家庭電話號碼"
+
+msgid "You are the service user?"
+msgstr "你是受顧者的?"
+
+msgid "I am the service user"
+msgstr "我是受顧者"
+
+msgid "Father/Mother"
+msgstr "父親/母親"
+
+msgid "Son/Daughter"
+msgstr "兒子/女兒"
+
+msgid "Friend/Relative"
+msgstr "親戚/朋友"
+
+msgid "Relationship with service user"
+msgstr "受顧者的關係"
+
+msgid "Preferred Communication Language"
+msgstr "偏好語言"
+
+msgid "Account User Info"
+msgstr "帳戶用戶資料"
+
+msgid "Care Receiver Info"
+msgstr "受顧者資料"
+
+msgid "Care Receiver Background"
+msgstr "受顧者背景"
+
+msgid "Care Receiver Medical History"
+msgstr "受顧者病歷"
+
+msgid "Please tell us a bit about yourself (Care Receiver)"
+msgstr "請告訴我們一些資料 (受顧者)"
+
+msgid ""
+"Care Receiver refers to the end user (e.g. the elderly). No worries, we "
+"will not send the full address to the caregiver until the appointment is "
+"accepted."
+msgstr "受顧者是指需要被照顧的人 (例如:長者)。 放心,服務配對前,護理員不會得知受顧者的完整地址。"
+
+msgid "If you are unsure about it, please select year"
+msgstr "如不確定，請選1/1/1940"
+
+msgid "only e.g. 1/1/1940."
+msgstr " "
+
+msgid "Address"
+msgstr "地址"
+
+msgid "Flat"
+msgstr "室"
+
+msgid "Flat Number"
+msgstr "號碼"
+
+msgid "Floor"
+msgstr "層數"
+
+msgid "Building Name"
+msgstr "大廈名稱"
+
+msgid "Street Name and Number"
+msgstr "街道名稱及號碼"
+
+msgid "District"
+msgstr "地區"
+
+msgid "Choose District"
+msgstr "選擇地區"
+
+msgid "Account User HKID Full Name"
+msgstr "帳戶用戶身分證全名"
+
+msgid ""
+") (hereinafter referred as the platform) owned and operated by Pure Care "
+"Hong Kong Limited (hereinafter referred as Pure Care) are a platform to "
+"connect the account user and/or care receiver (hereinafter the client) with "
+"the Caregiver. Pure Care does not provide any nursing and/other related "
+"services (hereafter referred as the service) and is not an employer of any "
+"Caregiver."
+msgstr ""
+") (hereinafter referred as the platform) owned and operated by Pure Care "
+"Hong Kong Limited (hereinafter referred as Pure Care) are a platform to "
+"connect the account user and/or care receiver (hereinafter the client) with "
+"the Caregiver. Pure Care does not provide any nursing and/other related "
+"services (hereafter referred as the service) and is not an employer of any "
+"Caregiver."
+
+msgid ""
+"The client agrees to the Terms and Conditions of the Agreement below and "
+"agrees to comply with all applicable Hong Kong laws and regulations in "
+"order to use the platform."
+msgstr ""
+"The client agrees to the Terms and Conditions of the Agreement below and "
+"agrees to comply with all applicable Hong Kong laws and regulations in "
+"order to use the platform。"
+
+msgid "1. Caregiver Pre-Screening Procedures and Disclaimers"
+msgstr "1. Caregiver Pre-Screening Procedures and Disclaimers"
+
+msgid ""
+"(a) The client understands that any caregivers referred by Pure Care is not "
+"under Pure Care’s employment."
+msgstr ""
+"(a) The client understands that any caregivers referred by Pure Care is not "
+"under Pure Care’s employment."
+
+msgid ""
+"While Pure Care conducts reasonable due diligence on the caregiver, such "
+"verification is based on the information provided to Pure Care. Thus, Pure "
+"Care cannot confirm that they are who they claim to be and Pure Care cannot "
+"and does not assume any responsibility for the accuracy, completeness or "
+"reliability of their information. Additionally, the screening procedures "
+"are performed solely at the time the caregiver registers on the platform, "
+"and the information provided may change and expire over time."
+msgstr ""
+"While Pure Care conducts reasonable due diligence on the caregiver, such "
+"verification is based on the information provided to Pure Care. Thus, Pure "
+"Care cannot confirm that they are who they claim to be and Pure Care cannot "
+"and does not assume any responsibility for the accuracy, completeness or "
+"reliability of their information. Additionally, the screening procedures "
+"are performed solely at the time the caregiver registers on the platform, "
+"and the information provided may change and expire over time."
+
+msgid ""
+"(b) Pure Care expressly disclaims any and all warranties, expressed or "
+"implied, relating to information obtained in the application form and "
+"screening or verification procedures is accurate, timely or error free."
+msgstr ""
+"(b) Pure Care expressly disclaims any and all warranties, expressed or "
+"implied, relating to information obtained in the application form and "
+"screening or verification procedures is accurate, timely or error free。"
+
+msgid "2. Provision of Information to and Contact by Pure Care and the caregiver"
+msgstr "2. Provision of Information to and Contact by Pure Care and the caregiver"
+
+msgid ""
+"The client understands that all of the personal information provided to "
+"Pure Care (including but not limited to age, residential address and "
+"medical history) are accurate and complete. The client also agrees to "
+"contact Pure Care or log in the platform to update information if any of "
+"the client’s personal information changes."
+msgstr ""
+"The client understands that all of the personal information provided to "
+"Pure Care (including but not limited to age, residential address and "
+"medical history) are accurate and complete. The client also agrees to "
+"contact Pure Care or log in the platform to update information if any of "
+"the client’s personal information changes."
+
+msgid ""
+"The client understands that Pure Care reserves the right to terminate the "
+"client’s access from the platform and/or forfeits Pure Care Service Fees "
+"without prior notice if Pure Care or the caregiver suspect that any of the "
+"personal information is falsified."
+msgstr ""
+"The client understands that Pure Care reserves the right to terminate the "
+"client’s access from the platform and/or forfeits Pure Care Service Fees "
+"without prior notice if Pure Care or the caregiver suspect that any of the "
+"personal information is falsified。"
+
+msgid "(b) Contact by Pure Care"
+msgstr "(b) Contact by Pure Care"
+
+msgid ""
+"The client understands that Pure Care may disclose the client’s personal "
+"data or any part thereof to: -"
+msgstr ""
+"The client understands that Pure Care may disclose the client’s personal "
+"data or any part thereof to: -"
+
+msgid "(i) Any caregivers selected by the client to provide the service;"
+msgstr "(i) Any caregivers selected by the client to provide the service;"
+
+msgid ""
+"(ii)  Any third-party services providers who provide administrative, "
+"telecommunications, computer, or other services to Pure Care;"
+msgstr ""
+"(ii)  Any third-party services providers who provide administrative, "
+"telecommunications, computer, or other services to Pure Care;"
+
+msgid ""
+"(iii)  Any person by whom Pure Care is required by applicable legal, "
+"governmental or regulatory requirements to make disclosure;"
+msgstr ""
+"(iii)  Any person by whom Pure Care is required by applicable legal, "
+"governmental or regulatory requirements to make disclosure;"
+
+msgid ""
+"(iv) Any other person reasonably requiring the same in order for Pure Care "
+"to connect the client with the caregiver"
+msgstr ""
+"(iv) Any other person reasonably requiring the same in order for Pure Care "
+"to connect the client with the caregiver"
+
+msgid "(c) Means of Contact"
+msgstr "(c) Means of Contact"
+
+msgid ""
+"The client expressly consents to being contacted by Pure Care via phone, "
+"email, WhatsApp, SMS massaging, or any other reasonable means, at any of "
+"the contact numbers or addresses, in order that Pure Care may perform its "
+"role of connecting the client with the caregiver. For more information on "
+"use of information, please refer to Pure Care’s Privacy Policy."
+msgstr ""
+"The client expressly consents to being contacted by Pure Care via phone, "
+"email, WhatsApp, SMS massaging, or any other reasonable means, at any of "
+"the contact numbers or addresses, in order that Pure Care may perform its "
+"role of connecting the client with the caregiver。 For more information on "
+"use of information, please refer to Pure Care’s Privacy Policy。"
+
+msgid "3. Fees and Payment"
+msgstr "3. Fees and Payment"
+
+msgid "(a) The fees are comprised as follows:"
+msgstr "(a) The fees are comprised as follows:"
+
+msgid "1. Caregiver Charges: Caregiver Charges Per Hour x Service Duration"
+msgstr "1. Caregiver Charges: Caregiver Charges Per Hour x Service Duration"
+
+msgid "2. Pure Care Service Fee: 0 to 20% in addition to Caregiver Charges "
+msgstr "2. Pure Care Service Fee: 0 to 20% in addition to Caregiver Charges "
+
+msgid ""
+"3. Transport Fee: HK$150 if the service starts or finishes at midnight or "
+"before 6:30am (Excluded from Pure Care Service Fee)"
+msgstr ""
+"3. Transport Fee: HK$150 if the service starts or finishes at midnight or "
+"before 6:30am (Excluded from Pure Care Service Fee)"
+
+msgid ""
+"3. Transport Fee: HK$150 if the service starts or finishes at midnight or "
+"before 6:30pm (Excluded from Pure Care Service Fee)"
+msgstr ""
+"3. Transport Fee: HK$150 if the service starts or finishes at midnight or "
+"before 6:30pm (Excluded from Pure Care Service Fee)"
+
+msgid ""
+"4. Transport Subsidy: Optional amount given by the client (Excluded from "
+"Pure Care Service Fee)"
+msgstr ""
+"4. Transport Subsidy: Optional amount given by the client (Excluded from "
+"Pure Care Service Fee)"
+
+msgid ""
+"(b) The client is responsible for all fees incurred under the account. "
+"Appointment is not reserved until the client completes the payment "
+"successfully and receives a confirmation email from Pure Care."
+msgstr ""
+"(b) The client is responsible for all fees incurred under the account。 "
+"Appointment is not reserved until the client completes the payment "
+"successfully and receives a confirmation email from Pure Care。"
+
+msgid ""
+"(c) Pure Care reserves the right to terminate this service agreement or "
+"suspend its services, but termination of this service agreement would not "
+"prejudice the rights and/or claims by Pure Care against the client and does "
+"not exempt the client from fulfilling the obligations, including payment of "
+"all outstanding fees:"
+msgstr ""
+"(c) Pure Care reserves the right to terminate this service agreement or "
+"suspend its services, but termination of this service agreement would not "
+"prejudice the rights and/or claims by Pure Care against the client and does "
+"not exempt the client from fulfilling the obligations, including payment of "
+"all outstanding fees:"
+
+msgid "(i) where any fees or payments become overdue;"
+msgstr "(i) where any fees or payments become overdue;"
+
+msgid "(ii) where the client breaches any of the terms of this service agreement;"
+msgstr "(ii) where the client breaches any of the terms of this service agreement;"
+
+msgid ""
+"(iii) any information stated by the client is found to be untrue or "
+"misleading."
+msgstr ""
+"(iii) any information stated by the client is found to be untrue or "
+"misleading。"
+
+msgid "4. Book an Appointment"
+msgstr "4. Book an Appointment"
+
+msgid ""
+"The client understands that the client would have to book an appointment "
+"for the service through the platform and have to pay the fees in advance."
+msgstr ""
+"The client understands that the client would have to book an appointment "
+"for the service through the platform and have to pay the fees in advance."
+
+msgid ""
+"By booking an appointment, the client submits an offer to the caregiver for "
+"the service. Pure Care or the caregiver expressly reserve the right to "
+"decline the appointment. Pure Care also does not guarantee that the "
+"caregiver will be punctual, or will attend any appointment."
+msgstr ""
+"By booking an appointment, the client submits an offer to the caregiver for "
+"the service. Pure Care or the caregiver expressly reserve the right to "
+"decline the appointment. Pure Care also does not guarantee that the "
+"caregiver will be punctual, or will attend any appointment."
+
+msgid ""
+"The Caregiver is eligible for a 30-min meal for 8 hours and a 60-min meal "
+"for 12 hours of the service. The meal is prepared by the caregiver but "
+"eating the meal is counted in the service time."
+msgstr ""
+"The Caregiver is eligible for a 30-min meal for 8 hours and a 60-min meal "
+"for 12 hours of the service。 The meal is prepared by the caregiver but "
+"eating the meal is counted in the service time。"
+
+msgid "5. Prohibition of Direct/Indirect Engagement by Caregiver"
+msgstr "5. Prohibition of Direct/Indirect Engagement by Caregiver"
+
+msgid ""
+"I acknowledge and fully understand that after my registration with Pure "
+"Care, written consent must be obtained from Pure Care before giving any "
+"offer(s) to, and/or engage (regardless of whether exists any employment "
+"relationship), directly or indirectly, with any Pure Care’s caregivers "
+"(regardless of whether caregivers are acting for themselves or acting for "
+"and on behalf of other companies or organisations, including its affiliated "
+"companies or agents) introduced to me by Pure Care, in connection with "
+"provision of the service or work in similar nature. Otherwise I shall be "
+"liable for all losses and/or damages and/or administrative costs suffered "
+"by Pure Care."
+msgstr ""
+"I acknowledge and fully understand that after my registration with Pure "
+"Care, written consent must be obtained from Pure Care before giving any "
+"offer(s) to, and/or engage (regardless of whether exists any employment "
+"relationship), directly or indirectly, with any Pure Care’s caregivers "
+"(regardless of whether caregivers are acting for themselves or acting for "
+"and on behalf of other companies or organisations, including its affiliated "
+"companies or agents) introduced to me by Pure Care, in connection with "
+"provision of the service or work in similar nature。 Otherwise I shall be "
+"liable for all losses and/or damages and/or administrative costs suffered "
+"by Pure Care。"
+
+msgid ""
+"This prohibition shall subsist or shall be valid at all times until the "
+"expiry of half year from the caregiver’s last day of work with the client "
+"introduced by Pure Care."
+msgstr ""
+"This prohibition shall subsist or shall be valid at all times until the "
+"expiry of half year from the caregiver’s last day of work with the client "
+"introduced by Pure Care."
+
+msgid "6. Extreme Weather"
+msgstr "6. Extreme Weather"
+
+msgid ""
+"The service will be suspended during typhoon number 8 or above or black "
+"rainstorm. Please reschedule the service with the caregiver. Pure Care "
+"would pay the caregiver after the client informs us the new date and time "
+"and the caregiver completes the service."
+msgstr ""
+"The service will be suspended during typhoon number 8 or above or black "
+"rainstorm。 Please reschedule the service with the caregiver。 Pure Care "
+"would pay the caregiver after the client informs us the new date and time "
+"and the caregiver completes the service。"
+
+msgid "7. Cancellation Charges"
+msgstr "7. Cancellation Charges"
+
+msgid ""
+"(a) If the client intends to cancel the service before payment, the client "
+"may do so. However, if the client would not be able to cancel the service "
+"after payment."
+msgstr ""
+"(a) If the client intends to cancel the service before payment, the client "
+"may do so。 However, if the client would not be able to cancel the service "
+"after payment。"
+
+msgid ""
+"(b)\tIf the client requests to shorten the service because of any reasons, "
+"any unused time will be forfeited by Pure Care and the fee will not be "
+"refunded."
+msgstr ""
+"(b)\tIf the client requests to shorten the service because of any reasons, "
+"any unused time will be forfeited by Pure Care and the fee will not be "
+"refunded。"
+
+msgid "8. Disclaimer of Liability"
+msgstr "8. Disclaimer of Liability"
+
+msgid ""
+"(a) any of the client’s injury or death because of the provision of the "
+"service; or"
+msgstr ""
+"(a) any of the client’s injury or death because of the provision of the "
+"service; or"
+
+msgid "(b) any loss of or damage to any of the client’s property"
+msgstr "(b) any loss of or damage to any of the client’s property"
+
+msgid "9. Ratings and Reviews"
+msgstr "9. Ratings and Reviews"
+
+msgid ""
+"Pure Care does not assume responsibility or liability for any ratings and "
+"reviews on the platform."
+msgstr ""
+"Pure Care does not assume responsibility or liability for any ratings and "
+"reviews on the platform。"
+
+msgid "10. Privacy"
+msgstr "10. Privacy"
+
+msgid ""
+"(a) The client agrees not to take any photographs or record audio or video "
+"of the caregiver."
+msgstr ""
+"(a) The client agrees not to take any photographs or record audio or video "
+"of the caregiver。"
+
+msgid ""
+"(b) All caregiver information is confidential, and the client may not "
+"publish any personally identifiable data outside the platform including but "
+"not limited to names or other account information."
+msgstr ""
+"(b) All caregiver information is confidential, and the client may not "
+"publish any personally identifiable data outside the platform including but "
+"not limited to names or other account information。"
+
+msgid ""
+"(c) The client acknowledges that a violation of the foregoing could result "
+"in significant damages, and the client agrees that the client is liable to "
+"Pure Care for any such damages, and will indemnify Pure Care in the event "
+"of any third-party claims against Pure Care based on or arising from the "
+"violation of the foregoing. Additionally, Pure Care reserves the right, in "
+"its sole discretion, to immediately remove the client’s profile from the "
+"platform without remorse and prior notice and to initiate without notice "
+"appropriate legal actions or proceedings to seek appropriate remedies "
+"and/or damages, including but not limited to lost revenue, repairs, legal "
+"fees, costs and expenses, and to seek injunctions or other equitable "
+"remedies, for the client’s misuse or suspected misuse of the platform."
+msgstr ""
+"(c) The client acknowledges that a violation of the foregoing could result "
+"in significant damages, and the client agrees that the client is liable to "
+"Pure Care for any such damages, and will indemnify Pure Care in the event "
+"of any third-party claims against Pure Care based on or arising from the "
+"violation of the foregoing。 Additionally, Pure Care reserves the right, in "
+"its sole discretion, to immediately remove the client’s profile from the "
+"platform without remorse and prior notice and to initiate without notice "
+"appropriate legal actions or proceedings to seek appropriate remedies "
+"and/or damages, including but not limited to lost revenue, repairs, legal "
+"fees, costs and expenses, and to seek injunctions or other equitable "
+"remedies, for the client’s misuse or suspected misuse of the platform。"
+
+msgid "11. Use of platform"
+msgstr "11. Use of platform"
+
+msgid ""
+"(a) The client acknowledges and agrees that the platform is for the "
+"client’s personal use only. The client undertakes not to misuse or attempt "
+"to misuse or circumvent the platform, or uses the platform for any "
+"unlawful, immoral, inappropriate or non-personal purposes, including but "
+"not limited to activities such as hacking, scraping content, infiltrating, "
+"fraud, advertising, jamming or spamming. The client may not use the "
+"platform to recreate or compete with Pure Care, or to solicit or harass "
+"anyone, or for any other purpose not contemplated herein."
+msgstr ""
+"(a) The client acknowledges and agrees that the platform is for the "
+"client’s personal use only。 The client undertakes not to misuse or attempt "
+"to misuse or circumvent the platform, or uses the platform for any "
+"unlawful, immoral, inappropriate or non-personal purposes, including but "
+"not limited to activities such as hacking, scraping content, infiltrating, "
+"fraud, advertising, jamming or spamming。 The client may not use the "
+"platform to recreate or compete with Pure Care, or to solicit or harass "
+"anyone, or for any other purpose not contemplated herein。"
+
+msgid ""
+"(b)\tThe platform is provided on an “as is” basis without warranties of any "
+"kind, either express or implied, including, but not limited to, warranties "
+"of merchantability, fitness for a particular purpose and non-infringement. "
+"Pure Care makes no warranties or representations about the accuracy or "
+"completeness of the content provided or the content of any sites linked to "
+"the service and assumes no liability or responsibility for any errors, "
+"mistakes, or inaccuracies of content."
+msgstr ""
+"(b)\tThe platform is provided on an “as is” basis without warranties of any "
+"kind, either express or implied, including, but not limited to, warranties "
+"of merchantability, fitness for a particular purpose and non-infringement。 "
+"Pure Care makes no warranties or representations about the accuracy or "
+"completeness of the content provided or the content of any sites linked to "
+"the service and assumes no liability or responsibility for any errors, "
+"mistakes, or inaccuracies of content。"
+
+msgid "12. User Content"
+msgstr "12. User Content"
+
+msgid ""
+"(a)\tThe client agrees that all of the content and information posted by "
+"the client or designees, with the exception of certain Personal Data as "
+"specified on Pure Care’s Privacy Policy, on the platform, including but not "
+"limited to:"
+msgstr ""
+"(a)\tThe client agrees that all of the content and information posted by "
+"the client or designees, with the exception of certain Personal Data as "
+"specified on Pure Care’s Privacy Policy, on the platform, including but not "
+"limited to:"
+
+msgid ""
+"1. Ratings & Reviews may be viewed by the general public and will not be "
+"treated as private, proprietary or confidential."
+msgstr ""
+"1. Ratings & Reviews may be viewed by the general public and will not be "
+"treated as private, proprietary or confidential。"
+
+msgid ""
+"(b)\tPure Care reserves the right, but not the obligation, to edit or "
+"abridge, or to refuse to post, or to remove any feedback that the client "
+"posts on the platform, at any time and without prior notice."
+msgstr ""
+"(b)\tPure Care reserves the right, but not the obligation, to edit or "
+"abridge, or to refuse to post, or to remove any feedback that the client "
+"posts on the platform, at any time and without prior notice。"
+
+msgid "13. Intellectual Property Rights"
+msgstr "13. Intellectual Property Rights"
+
+msgid ""
+"(a)\tPure Care owns all Proprietary Material, as well as the coordination, "
+"selection, arrangement and enhancement of such Proprietary Materials as a "
+"Collective Work under the Copyright Ordinance of Hong Kong SAR, Chapter 528 "
+"of the Laws of Hong Kong SAR (the “Ordinance”), where practicable as "
+"amended. The Proprietary Material is protected by domestic and "
+"international laws of copyright, patents, and other proprietary rights and "
+"laws. The client may not copy, download, use, redesign, reconfigure, or "
+"retransmit anything from the platform without Pure Care’s express prior "
+"written consent and, if applicable, the holder of the rights to the client "
+"generated content. Any use of such Proprietary Material, other than as "
+"permitted herein, is expressly prohibited without the prior permission of "
+"Pure Care and, if applicable, the holder of the rights to the client "
+"generated content."
+msgstr ""
+"(a)\tPure Care owns all Proprietary Material, as well as the coordination, "
+"selection, arrangement and enhancement of such Proprietary Materials as a "
+"Collective Work under the Copyright Ordinance of Hong Kong SAR, Chapter 528 "
+"of the Laws of Hong Kong SAR (the “Ordinance”), where practicable as "
+"amended。 The Proprietary Material is protected by domestic and "
+"international laws of copyright, patents, and other proprietary rights and "
+"laws。 The client may not copy, download, use, redesign, reconfigure, or "
+"retransmit anything from the platform without Pure Care’s express prior "
+"written consent and, if applicable, the holder of the rights to the client "
+"generated content。 Any use of such Proprietary Material, other than as "
+"permitted herein, is expressly prohibited without the prior permission of "
+"Pure Care and, if applicable, the holder of the rights to the client "
+"generated content。"
+
+msgid ""
+"(b)\tThe client understands it is Pure Care’ policy to retain the personal "
+"data until six (6) calendar months after it receives the notice in writing "
+"to terminate this Terms and Conditions with it, or as otherwise required by "
+"law."
+msgstr ""
+"(b)\tThe client understands it is Pure Care’ policy to retain the personal "
+"data until six (6) calendar months after it receives the notice in writing "
+"to terminate this Terms and Conditions with it, or as otherwise required by "
+"law。"
+
+msgid ""
+"Under the Personal Data (Privacy) Ordinance (Cap. 486, Laws of Hong Kong), "
+"the client is entitled to request access to and/or correction of the "
+"personal data in relation to the registration with Pure Care. Such "
+"correction can be done through the Pure Care website after the client logs "
+"in and through contacting Pure Care."
+msgstr ""
+"Under the Personal Data (Privacy) Ordinance (Cap。 486, Laws of Hong Kong), "
+"the client is entitled to request access to and/or correction of the "
+"personal data in relation to the registration with Pure Care。 Such "
+"correction can be done through the Pure Care website after the client logs "
+"in and through contacting Pure Care。"
+
+msgid ""
+"Your registration is completed! We will re-direct you to the main page and "
+"you can start booking caregivers!"
+msgstr "完成登記! 我們會於10秒後將你送到主頁，你可以開始選擇護理員!"
+
+msgid ""
+"We will share this page with the caregivers after you book them in the "
+"appointment."
+msgstr "當你選擇護理員後,我們會與護理員分享本頁資料以提供更好服務。"
+
+msgid "Others"
+msgstr "其他"
+
+msgid "Dialect Language"
+msgstr "方言"
+
+msgid "Weight (kg)"
+msgstr "重量 (kg)"
+
+msgid "Weight"
+msgstr "重量"
+
+msgid "Height (cm)"
+msgstr "高度 (cm)"
+
+msgid "Height"
+msgstr "高度"
+
+msgid "Diet"
+msgstr "飲食"
+
+msgid "Choose Diet"
+msgstr "請選擇"
+
+msgid "Normal Diet"
+msgstr "正常飯餸"
+
+msgid "Minced Diet"
+msgstr "碎餐"
+
+msgid "Pureed Diet"
+msgstr "糊餐"
+
+msgid "Physical Ability"
+msgstr "Physical Ability"
+
+msgid "Choose Physical Ability"
+msgstr "Choose Physical Ability"
+
+msgid "Eyesight"
+msgstr "視力"
+
+msgid "Choose Eyesight"
+msgstr "選擇視力"
+
+msgid "Normal Eyesight"
+msgstr "正常視力"
+
+msgid "Partially visually impaired"
+msgstr "部分視力受損"
+
+msgid "Complete visually impaired"
+msgstr "全部視力受損"
+
+msgid "Assistive and Walking Devices (Optional)"
+msgstr "Assistive and Walking Devices (Optional)"
+
+msgid "Choose Assisting Devices"
+msgstr "選擇輔助器材"
+
+msgid "Crouches"
+msgstr "枵杖"
+
+msgid "Quadripods"
+msgstr "四腳拐杖"
+
+msgid "Walker"
+msgstr "助步車"
+
+msgid "Wheel Chair"
+msgstr "輪椅"
+
+msgid "Bed Bound"
+msgstr "臥床 "
+
+msgid "Assisting Devices"
+msgstr "輔助器材"
+
+msgid "Hearing"
+msgstr "聽力"
+
+msgid "Choose Hearing"
+msgstr "選擇聽力"
+
+msgid "Normal"
+msgstr "正常"
+
+msgid "Partially impaired"
+msgstr "部份失聰"
+
+msgid "Complete impaired"
+msgstr "完全失聰"
+
+msgid "Lifting"
+msgstr "攙扶"
+
+msgid "Choose Lifting"
+msgstr "請選擇"
+
+msgid "No Lifting Required"
+msgstr "不需攙扶"
+
+msgid "One Person Lifting Required"
+msgstr "一人攙扶"
+
+msgid "Two People Lifting Required"
+msgstr "二人攙扶"
+
+msgid "Lifting Devices Needed"
+msgstr "需要輔助器"
+
+msgid "Lifting Device"
+msgstr "輔助器"
+
+msgid "Lower Limb Mobility (0 no strength and 5 with strength)"
+msgstr "下肢活動能力 (0完全無力到5有力)"
+
+msgid "Left Leg"
+msgstr "左腳"
+
+msgid "Right Leg"
+msgstr "右腳"
+
+msgid "Hand Mobility (0 no strength and 5 with strength)"
+msgstr "手部活動能力 (0完全無力到5有力)"
+
+msgid "Left Hand"
+msgstr "左手"
+
+msgid "Right Hand"
+msgstr "右手"
+
+msgid "Others (Optional)"
+msgstr "其他 (選填項目)"
+
+msgid "Specific Drug"
+msgstr "指定藥物"
+
+msgid "Self-Care Ability"
+msgstr "自理能力"
+
+msgid ""
+"1. If your required services are not in our standard services, please tell "
+"us below."
+msgstr "1.如所需服務不在已列明的服務提供，請於下方列明"
+
+msgid "Only nurses can carry out nursing related duties."
+msgstr "只有護士才能執行護士相關工作。"
+
+msgid "2. If you need an Out-patient escort, please tell us"
+msgstr "2. 如需要陪診員,請告訴我們"
+
+msgid ""
+"a) Appointment Date and Time b) Appointment Address c) Doctor's Name (if "
+"known)"
+msgstr "a) 覆診日期及時間 b) 覆診地址 c) 醫生姓名 (如有)"
+
+msgid "Your relationship with service user"
+msgstr "你與受顧者的關係"
+
+msgid "Father"
+msgstr "父親"
+
+msgid "Mother"
+msgstr "母親"
+
+msgid "Relative"
+msgstr "親戚"
+
+msgid "Friend"
+msgstr "朋友"
+
+msgid "Account User Information"
+msgstr "帳戶用戶資料"
+
+msgid "Care Receiver Information"
+msgstr "受顧者資料"
+
+msgid "Your referral bonus details"
+msgstr "你的獎賞錢"
+
+msgid "Assisting Devices (Optional)"
+msgstr "輔助器材 (選填項目)"
+
+msgid "Free client and caregiver registration!"
+msgstr "免費客戶和護理員登記!"
+
+msgid "I need a caregiver"
+msgstr "需要護理員"
+
+msgid "Free search for the care you need"
+msgstr "免費搜尋上門護理員"
+
+msgid "Start your free search for care"
+msgstr "免費尋找護理員"
+
+msgid "in your area."
+msgstr "在你地區"
+
+msgid "Find Care"
+msgstr "預約護理員"
+
+msgid "I want a care job"
+msgstr "需要護理工作"
+
+msgid "Create a free profile and let jobs find you"
+msgstr "免費註冊讓工作主動找你"
+
+msgid "Create a free profile and search"
+msgstr "免費註冊並開始搜尋"
+
+msgid "for jobs."
+msgstr "工作"
+
+msgid "Find Jobs"
+msgstr "搜尋護理工作"
+
+msgid "Search by"
+msgstr "搜尋"
+
+msgid "Caregiver Registered No."
+msgstr "護理員平台登記號碼"
+
+msgid "Choose Date"
+msgstr "選擇日期"
+
+msgid "HH"
+msgstr "HH"
+
+msgid "MM"
+msgstr "MM"
+
+msgid "00"
+msgstr "00"
+
+msgid "Start Minutes"
+msgstr "Start Minutes"
+
+msgid "Search Caregiver"
+msgstr "搜尋護理員"
+
+msgid "Back"
+msgstr "返回"
+
+msgid "Hong Kong's"
+msgstr "香港"
+
+msgid " Online Caregiver Platform"
+msgstr "網上護理平台"
+
+msgid ""
+"We are here to connect those who need home care with those who wish to "
+"provide healthcare services."
+msgstr "我們致力為需要上門護理及護理員配對。"
+
+msgid ""
+"From now until XYZ, clients and caregivers can use the platform for free.  "
+"It only takes 10 minutes to register."
+msgstr "同現在到XYZ，免收客户及護理員平台服務費。只需10鍾登記。"
+
+msgid ""
+"From now until 31 August, clients and caregivers can use the platform for "
+"free! It only takes 10 minutes to register. Yes, it is that simple."
+msgstr "由現在到8月31日，客戶及護理員免費使用平台! 只需10分鐘登記。沒錯，就是這麼簡單。"
+
+msgid "About Us"
+msgstr "關於我們"
+
+msgid "All Caregivers verified"
+msgstr "核實所有護理員"
+
+msgid "We verify work experience and education of all caregivers."
+msgstr "我們核實每位護理員資料包括   學歷及工作經驗"
+
+msgid "Transparent Caregiver Background"
+msgstr "透明背景"
+
+msgid ""
+"You will see full background of caregivers with verified ratings and "
+"services."
+msgstr "你可看到護理員資料包括核實的 評分及留言"
+
+msgid "Quick Appointment Confirmation"
+msgstr "快捷確認預約"
+
+msgid "Appointment can be confirmed as quickly as 2 hours."
+msgstr "預約最快2小時確認"
+
+msgid "Which type of caregiver should I choose?"
+msgstr "應該選擇那一類護理員?"
+
+msgid "Registered or Enrolled Nurse"
+msgstr "註冊或登記護士"
+
+msgid ""
+"Registered Nurse: At least 3 years | Enrolled Nurse: At least 2 years of "
+"full-time nursing training"
+msgstr "註冊護士: 最少3年 | 登記護士: 最少2年全職護理訓練"
+
+msgid "Must be registered and enrolled under the Nursing Council of Hong Kong"
+msgstr "必須於香港護士管理局註冊"
+
+msgid ""
+"Must have completed at least a Health Worker training course approved by "
+"the Social and Welfare Department"
+msgstr "完成獲社會福利署批准的保健員訓練課程"
+
+msgid ""
+"Must have completed at least a Personal Care Worker course approved by a "
+"recognised institute"
+msgstr "持有本港機構發出的「起居照顧員」或相關護理證書"
+
+msgid ""
+"Must have completed at least an Out-Patient Escort course approved by a "
+"recognised institute"
+msgstr "持有本港機構發出的「陪診員基礎」或相關陪診證書或長者照顧基礎證書"
+
+msgid "Click to show all"
+msgstr "顯示全部"
+
+msgid "Show less"
+msgstr "顯示更少"
+
+msgid "After you register"
+msgstr "註冊後"
+
+msgid "Search and Appoint"
+msgstr "搜尋並預約"
+
+msgid ""
+"Select caregiver type, services, date and time to find the caregiver who "
+"match your needs"
+msgstr "選擇護理員種類、服務、日期及時間去尋找合適的護理員。"
+
+msgid "Transer funds to PureCare to confirm appointment with caregiver."
+msgstr "轉帳給Pure Care以確認預約。"
+
+msgid "Service and Feedback"
+msgstr "服務及意見"
+
+msgid ""
+"Caregiver comes to provide service and you can provide ratings and reviews "
+"after the service."
+msgstr "護理員提供上門服務，你之後可為該護理員評分及留言。"
+
+msgid "Loved by Our Clients"
+msgstr "客戶評價"
+
+msgid "Eva Wong"
+msgstr "Eva Wong"
+
+msgid "Accountant"
+msgstr "會計師"
+
+msgid ""
+"The registration is quick and easy! I created the account in less than 10 "
+"mins and can select a good caregiver! Loved it!"
+msgstr "登記快捷方便! 我只需要少於10分鐘登記便可找到好的護理員! 正!"
+
+msgid "Frank Ching"
+msgstr "Frank Ching"
+
+msgid "Teacher"
+msgstr "教師"
+
+msgid ""
+"I can view the caregiver background and review! I know you vet all "
+"caregivers thoroughly before you get them onboarded."
+msgstr "我可看到護理員的資訊及評分留言! 我知在護理員在平台前，你詳細核實護理員資料。"
+
+msgid "Joey Su"
+msgstr "Joey Su"
+
+msgid "Lawyer"
+msgstr "律師"
+
+msgid ""
+"It only took Pure Care 2 hours to match me with the caregiver and the "
+"customer service was great too - answered my questions immediately!"
+msgstr "整個預約過程只少於2小時! 客戶服務非常好並立即回答我問題!"
+
+msgid "Top Cloud Provider"
+msgstr "尖端雲計算供應商"
+
+msgid ""
+"Pure Care’s platform is run on Digital Ocean cloud to give you a high level "
+"of security and stabillty."
+msgstr "Pure Care平台使用Digital Ocean雲端運算服務去提供高保安水平及穩定。"
+
+msgid "Highest Security"
+msgstr "最嚴謹保安"
+
+msgid ""
+"Pure Care adheres to the highest security standards to ensure clients and "
+"caregivers data are stored securely."
+msgstr "Pure Care採用最高保安水平以確保客戶及護理員資料儲存安全。"
+
+msgid "Dementia"
+msgstr "腦退化症"
+
+msgid ""
+"From patients with early signs of dementia to patients in more progressive "
+"stages, there are drug and non- drug therapies that may alleviate some of "
+"their symptoms. If patients are taken care of well, their progression of "
+"dementia can be slowed down."
+msgstr "藥物和非藥物治療方法能減輕初期和中期腦退化症患者的症狀。如處理得宜，患者的腦退化症速度得以減慢。"
+
+msgid ""
+"Our caregivers are here to provide scare to patients with dementia so that "
+"they would feel safe, secure and comfortable."
+msgstr "我們的謢理員能提供謢理服務予腦退化症患者，確保他們的安全和舒適。"
+
+msgid "Our Services"
+msgstr "我們的服務"
+
+msgid "Accompany to Walk Around / Do Mild Exercise"
+msgstr "陪伴散步 / 輕鬆運動"
+
+msgid "Bathing"
+msgstr "協助洗澡"
+
+msgid "Toileting / Change Diapers / Clean Up Excretion"
+msgstr "協助如廁 / 換尿片 / 清理大小便"
+
+msgid "Feeding (Non-tube feeding)"
+msgstr "餵食 (非以管餵食)"
+
+msgid "Feed Medicine"
+msgstr "餵藥"
+
+msgid "Oral Care"
+msgstr "口腔清潔"
+
+msgid "Cut Nails"
+msgstr "剪指腳甲"
+
+msgid ""
+"Accompany to see Doctor / Pick up at Home / Lend an Arm / Registration / "
+"Booking / Collect Medicine"
+msgstr "陪診 / 上門接送 / 攙扶、登記、預約及排隊取藥"
+
+msgid "Emotional and Speech Care"
+msgstr "情緒及言語護理"
+
+msgid "Memory Training / Cognitive Training / Behavioural Treatment"
+msgstr "記憶力訓練 / 認知訓練 / 行為治療"
+
+msgid "Which type of caregivers should I choose?"
+msgstr "我應該選擇那類護理員?"
+
+msgid ""
+"(for patients who only need being accompanied to work around / do mild "
+"exercise/ fed/ cut nails)"
+msgstr "(只需要陪伴散步 / 輕鬆運動 / 餵食 / 剪指腳甲)"
+
+msgid "(for visiting the doctor only)"
+msgstr "(只看醫生)"
+
+msgid "Why use"
+msgstr "為何使用"
+
+msgid "Pure Care"
+msgstr "Pure Care"
+
+msgid "Pure Care is Hong Kong’s "
+msgstr "Pure Care 是全港"
+
+msgid "online caregiver platform;"
+msgstr "網上護理平台"
+
+msgid ""
+"we verify all caregivers including certificates and work experience before "
+"they are on our platform."
+msgstr "我們核實每位護理員資料，包括學歷及工作經驗。"
+
+msgid ""
+"By clicking just a few buttons, they would visit the care receiver’s home "
+"and provide the services needed with the knowledge of the care receiver’s "
+"medical background."
+msgstr "彈指之間, 護理員會事先了解所需服務及受顧者病歷,然後去受顧者家中提供服務。"
+
+msgid "Diabetes"
+msgstr "糖尿病"
+
+msgid ""
+"The major goal in treating diabetes is to control blood sugar levels so "
+"that they are within the normal rage. Diabetes is treated with insulin or "
+"non-insulin medications, exercise and dietary changes."
+msgstr "管理糖尿病的目標是控制血糖水平至合適水平。"
+
+msgid ""
+"Our caregivers can assist in managing the diabetes in order to control "
+"blood sugar levels."
+msgstr "透過胰島素或非胰島素藥物、運動及飲食，我們的謢理員能協助糖尿病者控制血糖水平。"
+
+msgid "Measure Weight / Blood Pressure / Body Temperature"
+msgstr "磅重 / 量血壓 / 測體溫"
+
+msgid "Measure Blood glucose / Cholesterol / Triglyceride"
+msgstr "驗血糖 /膽固醇 / 三酸甘油脂"
+
+msgid "Injection (Insulin)"
+msgstr "打糖尿針"
+
+msgid "Wound Care"
+msgstr "傷口護理"
+
+msgid "Any other on the list"
+msgstr "還有其他"
+
+msgid "Why use "
+msgstr "為何使用 "
+
+msgid "?"
+msgstr "?"
+
+msgid "Mentally Challenged"
+msgstr "精神障礙"
+
+msgid ""
+"Mentally challenged patients require intensive care and efforts. Indeed, "
+"taking care of them are often physically demanding. Our caregivers can "
+"alleviate your workload to assist them from walking around to taking care "
+"of the wound."
+msgstr ""
+"精神障礙患者需要悉心照顧。確實，照顧他們通常需要不少體力。從陪伴散步到傷口護理，護理員可以幫你減輕工作量\n"
+"。"
+
+msgid "Search Caregiver "
+msgstr "搜尋護理員"
+
+msgid "Palliative"
+msgstr "舒緩照顧"
+
+msgid ""
+"Palliative care makes you as comfortable as possible by managing your pain "
+"and other distressing symptoms."
+msgstr "舒緩照顧有助改善病症和其他困擾的症狀令你更加舒適。"
+
+msgid ""
+"From heart failure to cancer patients, our caregivers will walk you through "
+"every stage of treatment and provide medical and emotional support to you "
+"and the family."
+msgstr "由心臟衰竭至癌症患者，我們的謢理員在不同層面上提供醫謢和情緒支援予你和你的家人。"
+
+msgid "Any on the list"
+msgstr "任何相關謢理"
+
+msgid "Post Surgery"
+msgstr "手術後護理"
+
+msgid ""
+"Post surgery is often about wound care and pain management. Apart from "
+"following doctor’s instruction, healing quickly requires hard work and "
+"adequate care of others around the patient."
+msgstr "手術後護理通常是關於傷口護理及痛楚管理。除了跟蹤醫生指示，手術後快速康復需要適當照顧患者。"
+
+msgid ""
+"Our caregivers are to help in every step of the way from accompanying the "
+"patient to see doctor to cleaning the wound."
+msgstr "從陪伴患者應診到清理傷口，護理員可一步一步幫助患者的康復。"
+
+msgid "Stroke"
+msgstr "中風"
+
+msgid ""
+"After stroke, it is vital to provide on-going support to the patient to "
+"help them in the recovery process. The care focuses on assisting daily "
+"activities, providing medical care and offering emotional and speech "
+"therapy. If we manage the recovery process well, the patient can regain a "
+"significant level of functional activities."
+msgstr ""
+"中風後，持續為患者給予支持以幫助他們康復至關重要。護理的重點是協助日常活動，提供醫療護理以及提供情感和言語治療。如果康復過程良好，患者可以大大回復以往功"
+"能。"
+
+msgid ""
+"Regardless of whether the patient has stroke first or several times, is "
+"functional or bed-bound or has complications, our caregivers are to listen, "
+"help and support."
+msgstr "無論是第一次還是數次中風，功能正常或臥床或有併發症，護理人員都細聽，幫助和支持。"
+
+msgid "Nasogastric Tube Feeding"
+msgstr "鼻胃管餵食"
+
+msgid "PEG Feeding / Gauze and Tape Dressing"
+msgstr "胃造廔(PEG)餵食 / 更換紗布"
+
+msgid "Tracheostomy Care*"
+msgstr "氣管造口護理*"
+
+msgid "Change Nasogastric / Gastrostomy Tube*"
+msgstr "更換鼻胃管 / 胃造廔(PEG)*"
+
+msgid ""
+"Infection prevention, further damage minimization and wound caring are the "
+"3 main aspects in wound care."
+msgstr "預防感染，減少創傷和傷口謢理是三大要素。"
+
+msgid ""
+"The patient would experience symptoms such as pain, swelling, redness, "
+"infection or fever. Our caregivers will apply strict measures in wound "
+"dressing, change patient position regularly where necessary and avoid "
+"excessive pressure and friction on the wound."
+msgstr "患者或有以下症狀，例如：疼痛、腫脹、發紅、發炎或發燒。我們的謢理員會嚴謹地清洗傷口，協助患者定時轉換坐/睡姿以謢理傷口。"
+
+msgid "Services Description"
+msgstr "服務簡介"
+
+msgid ""
+"We know some medical terms may be confusing. Don’t worry, let us walk you "
+"through and explain what they mean."
+msgstr ""
+"We know some medical terms may be confusing。 Don’t worry, let us walk you "
+"through and explain what they mean。"
+
+msgid "Triglyceride"
+msgstr "Triglyceride"
+
+msgid "1."
+msgstr "1."
+
+msgid "What is it?"
+msgstr "What is it?"
+
+msgid "A form of fat produced in the body."
+msgstr "A form of fat produced in the body。"
+
+msgid "2."
+msgstr "2."
+
+msgid "Patients:"
+msgstr "Patients:"
+
+msgid ""
+"People with heart disease and / or diabetes are often found with high "
+"levels of triglyceride."
+msgstr ""
+"People with heart disease and / or diabetes are often found with high "
+"levels of triglyceride。"
+
+msgid "Causes:"
+msgstr "Causes:"
+
+msgid ""
+"Overweight or obese, lack of exercise, smoking, excessive drinking, and "
+"carbohydrate accounts for a very high proportion in diets (60% or above of "
+"total calories)."
+msgstr ""
+"Overweight or obese, lack of exercise, smoking, excessive drinking, and "
+"carbohydrate accounts for a very high proportion in diets (60% or above of "
+"total calories)。"
+
+msgid "Source:"
+msgstr "Source:"
+
+msgid "The Nethersole School of Nursing, Chinese University of Hong Kong"
+msgstr "The Nethersole School of Nursing, Chinese University of Hong Kong"
+
+msgid "(Chinese only)"
+msgstr "(Chinese only)"
+
+msgid "Stoma"
+msgstr "Stoma"
+
+msgid ""
+"After removing parts of the colon or rectum from surgery, stoma is an "
+"artificial opening created to release fasces or urine from the intestine or "
+"urethra."
+msgstr ""
+"After removing parts of the colon or rectum from surgery, stoma is an "
+"artificial opening created to release fasces or urine from the intestine or "
+"urethra。"
+
+msgid ""
+"Given that the patient cannot control excretion, it is necessary to place "
+"an ostomy bag on the stoma in order to collect excretion."
+msgstr ""
+"Given that the patient cannot control excretion, it is necessary to place "
+"an ostomy bag on the stoma in order to collect excretion。"
+
+msgid "Users:"
+msgstr "Users:"
+
+msgid "Commonly in patients with colorectal cancer."
+msgstr "Commonly in patients with colorectal cancer."
+
+msgid ""
+"Common in patients who have a malignant tumor in rectum or anus; the "
+"rectum, anus, and sphincter have to be removed as a result."
+msgstr ""
+"Common in patients who have a malignant tumor in rectum or anus; the "
+"rectum, anus, and sphincter have to be removed as a result。"
+
+msgid "Hospital Authority"
+msgstr "Hospital Authority"
+
+msgid "(Chinese only), "
+msgstr "(Chinese only), "
+
+msgid "Hong Kong Stoma Association"
+msgstr "Hong Kong Stoma Association"
+
+msgid "(Chinese only) and"
+msgstr "(Chinese only) and"
+
+msgid "Colopast"
+msgstr "Colopast"
+
+msgid ""
+"Tube filled with liquid diet to provide calories, nutrition and medicine to "
+"the patient."
+msgstr ""
+"Tube filled with liquid diet to provide calories, nutrition and medicine to "
+"the patient。"
+
+msgid "Commonly used in patients with stroke and nasopharyngeal cancer."
+msgstr "Commonly used in patients with stroke and nasopharyngeal cancer。"
+
+msgid "3."
+msgstr "3."
+
+msgid ""
+"Unable to eat or have swallow difficulties or have specific "
+"gastrointestinal disorders."
+msgstr ""
+"Unable to eat or have swallow difficulties or have specific "
+"gastrointestinal disorders。"
+
+msgid "Department of Health"
+msgstr "Department of Health"
+
+msgid "PEG feeding"
+msgstr "胃造廔(PEG)餵食"
+
+msgid ""
+"A gastrostomy is a procedure to create an artificial stoma on the stomach "
+"and abdominal wall, allowing the gastrostomy tube to be inserted directly "
+"into the stomach through the abdominal wall. The tube can then transport "
+"fluid directly to the stomach through nose and gullet."
+msgstr ""
+"A gastrostomy is a procedure to create an artificial stoma on the stomach "
+"and abdominal wall, allowing the gastrostomy tube to be inserted directly "
+"into the stomach through the abdominal wall。 The tube can then transport "
+"fluid directly to the stomach through nose and gullet。"
+
+msgid "Pressure Sore Care"
+msgstr "Pressure Sore Care"
+
+msgid "An ulcerated area of skin over bony prominences."
+msgstr "An ulcerated area of skin over bony prominences。"
+
+msgid ""
+"Chronically ill and bedridden. Urinary or faecal incontinent. Overweight or "
+"underweight"
+msgstr ""
+"Chronically ill and bedridden。 Urinary or faecal incontinent。 Overweight or "
+"underweight"
+
+msgid ""
+"Parts of the body are under continuous pressure, blood supply to that area "
+"is hindered and a pressure sore develop as a consequence."
+msgstr ""
+"Parts of the body are under continuous pressure, blood supply to that area "
+"is hindered and a pressure sore develop as a consequence。"
+
+msgid "Oxygen therapy"
+msgstr "氧氣治療"
+
+msgid ""
+"Provide extra oxygen to reduce heart load. It reduces discomfort and out of "
+"breadth caused by lack of oxygen, thereby helping to improve mobility, "
+"reduce number of hospital admission, and live longer."
+msgstr ""
+"Provide extra oxygen to reduce heart load。 It reduces discomfort and out of "
+"breadth caused by lack of oxygen, thereby helping to improve mobility, "
+"reduce number of hospital admission, and live longer。"
+
+msgid "Commonly for patients with chronic obstructive pulmonary disease (COPD)"
+msgstr "Commonly for patients with chronic obstructive pulmonary disease (COPD)"
+
+msgid "Memory Training / Cognitive Training / Behavourial Therapy"
+msgstr "記憶力訓練 / 認知訓練 / 行為治療"
+
+msgid "Memory training: Activities such as recall and recitation to improve memory."
+msgstr "Memory training: Activities such as recall and recitation to improve memory。"
+
+msgid ""
+"Cognitive training: Activities such as reading newspapers and playing games "
+"to improve concentration, memory and problem solving skills."
+msgstr ""
+"Cognitive training: Activities such as reading newspapers and playing games "
+"to improve concentration, memory and problem solving skills。"
+
+msgid ""
+"Behavourial Therapy: Activities such as understanding the causes of "
+"negative thoughts and providing positive comments to help people with "
+"depression."
+msgstr ""
+"Behavourial Therapy: Activities such as understanding the causes of "
+"negative thoughts and providing positive comments to help people with "
+"depression。"
+
+msgid ""
+"Commonly used with patients with brain degeneration (such as Alzheimer’s "
+"disease) and depression."
+msgstr ""
+"Commonly used with patients with brain degeneration (such as Alzheimer’s "
+"disease) and depression。"
+
+msgid "(Chinese only),"
+msgstr "(Chinese only),"
+
+msgid " and"
+msgstr " 至"
+
+msgid "The Hong Kong Council of Social Service"
+msgstr "The Hong Kong Council of Social Service"
+
+msgid "Change SPC (Supra-pubic Catheter)"
+msgstr "更換恥骨上導尿管(SPC)"
+
+msgid ""
+"Insert the catheter into the bladder to allow urine to flow into the urine "
+"bag."
+msgstr ""
+"Insert the catheter into the bladder to allow urine to flow into the urine "
+"bag。"
+
+msgid ""
+"Commonly used for patients with urinary incontinence, spinal injuries and "
+"lower paralysis."
+msgstr ""
+"Commonly used for patients with urinary incontinence, spinal injuries and "
+"lower paralysis。"
+
+msgid "Email address is already registered in the system."
+msgstr "電郵地址已登記。"
+
+msgid "Caregiver registered successfully."
+msgstr "護理員登記成功。"
+
+msgid "Client registered successfully."
+msgstr "客戶登記成功。"
+
+msgid "Your Email has been confirmed"
+msgstr "你的電郵地址已確認。"
+
+msgid "Invalid confirmation link"
+msgstr "確認連結失效"
+
+msgid "Email is already confirmed"
+msgstr "電郵地址已確認。"
+
+msgid "Your Password Updated Successfully"
+msgstr "密碼已更新"
+
+msgid "Login successful."
+msgstr "成功登入"
+
+msgid "User not found"
+msgstr "找不到用戶"
+
+msgid "Email ID is not registered with us."
+msgstr "電郵地址沒有登記"
+
+msgid "Please activate your account"
+msgstr "請激活帳戶"
+
+msgid "Password is incorrect"
+msgstr "密碼不正確"
+
+msgid "Session expired"
+msgstr "你的使用期限已過"
+
+msgid "Invalid reset password link"
+msgstr "重設密碼失效"
+
+msgid "You are not allowed to use this"
+msgstr "抱歉，你並不許可使用"
+
+msgid "You are trying to pay more amount than due amount"
+msgstr "你嘗試為付更多的到期金額"
+
+msgid ""
+"Wrong email address/password. Try again or click Forgot password to reset "
+"it."
+msgstr "不正確電郵/密碼. 請再試或點選忘記密碼。"
+
+msgid "Booking not found"
+msgstr "找不到預約服務"
+
+msgid "Booking already"
+msgstr "預約服務已準備"
+
+msgid "caregivers not accepted your booking"
+msgstr "護理員婉拒你的預約服務"
+
+msgid "Booking already accepted by the caregiver"
+msgstr "有護理員已接受預約服務"
+
+msgid "You have already accepted this booking"
+msgstr "你已接受預約"
+
+msgid "Booking already rejected by the caregiver"
+msgstr "護理員婉拒預約"
+
+msgid "You have already rejected this booking"
+msgstr "你已婉拒預約"
+
+msgid "Sorry, you are already booked for this duration"
+msgstr "對不起，你已於此時段預約服務"
+
+msgid "Booking for this service is not accepted by the caregiver yet"
+msgstr "暫未有護理員接受預約服務"
+
+msgid ""
+"In order to help the caregiver get prepared, please book at least 6 hours "
+"before the service starts!"
+msgstr "為令護理員有足夠時間準備，請於服務最少6小時前預約服務!"
+
+msgid "Sorry, It's too late you can't accept this service request now!"
+msgstr "對不起，現在距離預約時間太近，你不能按受預約服務!"
+
+msgid "You cannot cancel this service as it is already confirmed."
+msgstr "你不能取消已確認的預約服務。"
+
+msgid "Caregiver payment updated successfully."
+msgstr "已更新護理員付款"
+
+msgid "Your appointment cancelled successfully."
+msgstr "成功取消預約服務"
+
+msgid "Caregiver not found"
+msgstr "找不到護理員"
+
+msgid "Personal info added successfully"
+msgstr "成功加入個人資料"
+
+msgid "Work experience and education added successfully"
+msgstr "成功加入學歷及教育"
+
+msgid "Skillset added successfully"
+msgstr "成功加入技能"
+
+msgid "Availability added successfully"
+msgstr "成功加入服務時間"
+
+msgid "Conflict in availability hours"
+msgstr "服務時間有沖突"
+
+msgid "Charges added successfully"
+msgstr "成功加入收費"
+
+msgid "Email address does not exists in our system."
+msgstr "電郵地址沒有於Pure Care登記"
+
+msgid "Client not found"
+msgstr "找不到客戶"
+
+msgid "Clientfeedback not found"
+msgstr "找不到客戶意見"
+
+msgid "Account user info added successfully"
+msgstr "成功加入帳戶用戶資料"
+
+msgid "Care receiver info added successfully"
+msgstr "成功加入受顧者資料"
+
+msgid "Care receiver background added successfully"
+msgstr "成功加入受顧者背景"
+
+msgid "Care receiver medical history added successfully"
+msgstr "成功加入受顧者病歷"
+
+msgid "Please complete your profile before booking appointment"
+msgstr "預約服務前，請先完成填寫個人資料"
+
+msgid "Maximum open appointment limit has been reached"
+msgstr "已達最多預約服務次數"
+
+msgid "Thank you for your valuable feedback"
+msgstr "多謝你的寶貴意見"
+
+msgid "You have already submited feedback for this booking service"
+msgstr "已提交服務意見"
+
+msgid "Something went wrong with sending email"
+msgstr "寄電郵出錯"
+
+msgid "Minced"
+msgstr "碎餐"
+
+msgid "Pureed"
+msgstr "糊餐"
+
+msgid "Dialect"
+msgstr "方言"
+
+msgid "Wear Pacemaker"
+msgstr "裝有心律調節器"
+
+msgid "Hard to swallow"
+msgstr "吞嚥困難"
+
+msgid "Incontinence"
+msgstr "便秘"
+
+msgid "Drug Allergy - Please specify"
+msgstr "藥物敏感 - 請註明"
+
+msgid "Violence"
+msgstr "暴力"
+
+msgid "Bed_bound"
+msgstr "臥床"
+
+msgid "Registered Nurse"
+msgstr "註冊護士"
+
+msgid "Enrolled Nurse"
+msgstr "登記護士"
+
+msgid "Personal care worker"
+msgstr "起居照顧員"
+
+msgid "Outpatient escort person"
+msgstr "陪診員"
+
+msgid "Central and Western (Hong Kong Island)"
+msgstr "中西區"
+
+msgid "Eastern (Hong Kong Island)"
+msgstr "東區"
+
+msgid "Southern (Hong Kong Island)"
+msgstr "南區"
+
+msgid "Wan Chai (Hong Kong Island)"
+msgstr "灣仔"
+
+msgid "Sham Shu Po (Kowloon)"
+msgstr "深水埗"
+
+msgid "Kowloon City (Kowloon)"
+msgstr "九龍城"
+
+msgid "Kwun Tong (Kowloon)"
+msgstr "觀塘"
+
+msgid "Wong Tai Sin (Kowloon)"
+msgstr "黃大仙"
+
+msgid "Yau Tsim Mong (Kowloon)"
+msgstr "油尖旺"
+
+msgid "Islands (New Territories)"
+msgstr "離島"
+
+msgid "Kwai Tsing (New Territories)"
+msgstr "葵青"
+
+msgid "North (New Territories)"
+msgstr "北區"
+
+msgid "Sai Kung (New Territories)"
+msgstr "西貢"
+
+msgid "Sha Tin (New Territories)"
+msgstr "沙田"
+
+msgid "Tai Po (New Territories)"
+msgstr "大埔"
+
+msgid "Tsuen Wan (New Territories)"
+msgstr "荃灣"
+
+msgid "Tuen Mun (New Territories)"
+msgstr "屯門"
+
+msgid "Yuen Long (New Territories)"
+msgstr "元朗"
+
+msgid "Toileting / Change Diaper / Clean Up Excertion"
+msgstr "協助如廁 / 換尿片 / 清理大小便"
+
+msgid "Measure Blood glucose / Cholestrol / Triglyceride"
+msgstr "驗血糖 / 膽固醇 / 三酸甘油脂"
+
+msgid "Insulin injection"
+msgstr "打糖尿針"
+
+msgid "Injection* (Intramuscular / Intravenous)"
+msgstr "注射藥物 * (肌肉 / 靜脈注射)"
+
+msgid "Oxygen Therapy"
+msgstr "氧氣治療"
+
+msgid "Change Urine Bags / Fecal Bags"
+msgstr "更換尿袋 / 便袋"
+
+msgid "Stoma Care"
+msgstr "造口護理"
+
+msgid "Peritoneal Dialysis / Catheter (Soft Tube) Care"
+msgstr "腹膜透析 (洗肚 / 洗肚管護理)"
+
+msgid "Change Foley Catheter*"
+msgstr "更換尿喉*"
+
+msgid "Change SPC (Supra-pubic Catheter)*"
+msgstr "更換恥骨上導尿管(SPC)*"
+
+msgid "Sputum Suction*"
+msgstr "抽痰*"
+
+msgid "Use Ventilator*"
+msgstr "協助使用呼吸機*"
+
+msgid "No help needed"
+msgstr "不需幫助"
+
+msgid "Need help"
+msgstr "要幫助"
+
+msgid "Use commode chair"
+msgstr "要座廁椅"
+
+msgid "Use potty"
+msgstr "要便壺"
+
+msgid "Need to change diapers"
+msgstr "更換尿片"
+
+msgid "Need to change foley catheter"
+msgstr "要換尿喉"
+
+msgid "Use bath chair"
+msgstr "用洗澡椅"
+
+msgid "Asthma"
+msgstr "哮喘"
+
+msgid "Cancer"
+msgstr "癌症"
+
+msgid "Dementia other than Alzheimer’s Disease"
+msgstr "認知障礙症 (除阿茲海默症)"
+
+msgid "Epilepsy"
+msgstr "癲癇症"
+
+msgid "Fracture"
+msgstr "骨折"
+
+msgid "Wrist"
+msgstr "手腕"
+
+msgid "Finger"
+msgstr "手指"
+
+msgid "Upper Arm"
+msgstr "上臂"
+
+msgid "Lower Arm"
+msgstr "下臂"
+
+msgid "Lower Body"
+msgstr "下半身"
+
+msgid "Feet"
+msgstr "腳"
+
+msgid "Gout"
+msgstr "痛風"
+
+msgid "Heart Failure"
+msgstr "心臟衰竭"
+
+msgid "Hepatitis"
+msgstr "肝炎"
+
+msgid "Type A"
+msgstr "甲形"
+
+msgid "Type B"
+msgstr "乙形"
+
+msgid "Type C"
+msgstr "丙形"
+
+msgid "Do not know"
+msgstr "不知道"
+
+msgid "Parkinsonism"
+msgstr "柏金遜症"
+
+msgid "Scabies"
+msgstr "疥瘡"
+
+msgid "Total Knee Replacement"
+msgstr "膝關節置換手術"
+
+msgid "Hong Kong Island"
+msgstr "香港島"
+
+msgid "Central and Western"
+msgstr "中西區"
+
+msgid "Eastern"
+msgstr "東區"
+
+msgid "Southern"
+msgstr "南區"
+
+msgid "Wan Chai"
+msgstr "灣仔"
+
+msgid "Kwun Tong"
+msgstr "觀塘"
+
+msgid "Wong Tai Sin"
+msgstr "黃大仙"
+
+msgid "Yau Tsim Mong"
+msgstr "油尖旺"
+
+msgid "New Territories"
+msgstr "新界"
+
+msgid "Islands"
+msgstr "離島"
+
+msgid "Kwai Tsing"
+msgstr "葵青"
+
+msgid "North"
+msgstr "北區"
+
+msgid "Sai Kung"
+msgstr "西貢"
+
+msgid "Sha Tin"
+msgstr "沙田"
+
+msgid "Tai Po"
+msgstr "大埔"
+
+msgid "Tsuen Wan"
+msgstr "荃灣"
+
+msgid "Tuen Mun"
+msgstr "屯門"
+
+msgid "Yuen Long"
+msgstr "元朗"
+
+msgid "Toileting"
+msgstr "如廁"
+
+msgid "Toileting Equipment"
+msgstr "如廁工具"
+
+msgid "Shower"
+msgstr "協助如廁"
+
+msgid "Insulin Injection"
+msgstr "打糖尿針"
+
+msgid "None"
+msgstr "沒有"
+
+msgid "between"
+msgstr "由"
+
+msgid "and"
+msgstr "至"
+
+msgid "Drug Allergy"
+msgstr "藥物敏感"
+
+msgid "Floor Number"
+msgstr "層"
+
+msgid "Sunday"
+msgstr "日"
+
+msgid "Monday"
+msgstr "一"
+
+msgid "Tuesday"
+msgstr "二"
+
+msgid "Wednesday"
+msgstr "三"
+
+msgid "Thursday"
+msgstr "四"
+
+msgid "Friday"
+msgstr "五"
+
+msgid "Saturday"
+msgstr "六"
+
+msgid "January"
+msgstr "一月"
+
+msgid "February"
+msgstr "二月"
+
+msgid "March"
+msgstr "三月"
+
+msgid "April"
+msgstr "四月"
+
+msgid "May"
+msgstr "五月"
+
+msgid "June"
+msgstr "六月"
+
+msgid "July"
+msgstr "七月"
+
+msgid "August"
+msgstr "八月"
+
+msgid "September"
+msgstr "九月"
+
+msgid "October"
+msgstr "十月"
+
+msgid "November"
+msgstr "十一月"
+
+msgid "December"
+msgstr "十二月"
+
+msgid "Password does not match"
+msgstr "密碼不正確"
+
+msgid "If you need an Out-patient escort, please tell us"
+msgstr "如需要陪診員,請告訴我們"
+
+msgid "There are no completed appointments"
+msgstr "沒有完成預約"
+
+msgid "There are no cancelled appointments"
+msgstr "沒有取消預約"
+
+msgid "There are no confirmed appointments"
+msgstr "沒有確認預約"
+
+msgid "There are no pending appointments"
+msgstr "沒有等待預約"
+
+msgid "To be paid"
+msgstr "待付款"
+
+msgid "Admin"
+msgstr "Pure Care"
+
+msgid "Cancelled by Admin"
+msgstr "被管理員取消"
+
+msgid "Cancelled by Caregiver"
+msgstr "被護理員取消"
+
+msgid "Cancelled by Client"
+msgstr "被客戶取消"
+
+msgid "Application Received Message"
+msgstr "Application Received Message"
+
+msgid "Status Message"
+msgstr "Status Message"
+
+msgid "Service Completed Message"
+msgstr "Service Completed Message"
+
+msgid "Success!"
+msgstr "Success!"
+
+msgid "Error!"
+msgstr "Error!"
+
+msgid "Info!"
+msgstr "Info!"
+
+msgid "Result not found!"
+msgstr "Result not found!"
+
+msgid "Not allowed to access!"
+msgstr "Not allowed to access!"
+
+msgid "Feild should not be empty!"
+msgstr "不能空白!"
+
+msgid "Name is required."
+msgstr "需要姓名"
+
+msgid "Field is required."
+msgstr "Field is required."
+
+msgid ""
+"Unfortunately, this address wasn't found. Please double-check it and try "
+"again."
+msgstr ""
+"Unfortunately, this address wasn't found. Please double-check it and try "
+"again."
+
+msgid "Length must be less then or equal to 150."
+msgstr "長度少於或等同150字符"
+
+msgid "Length must be less then or equal to"
+msgstr "長度少於或等同"
+
+msgid "Must be valid email."
+msgstr "必須是正確電郵"
+
+msgid "Access code must be at least 6 characters long."
+msgstr "Access code must be at least 6 characters long."
+
+msgid "Updated Successfully."
+msgstr "成功更新"
+
+msgid "All boxes numeric required."
+msgstr "需要數字"
+
+msgid "Service ID must be 10 characters long."
+msgstr "Service ID must be 10 characters long."
+
+msgid "Start Date of First PP cannot be less than the Service Loaded Date."
+msgstr "Start Date of First PP cannot be less than the Service Loaded Date."
+
+msgid ""
+"Please save changes before switching to other service otherwise all changs "
+"will be discarded."
+msgstr ""
+"Please save changes before switching to other service otherwise all changs "
+"will be discarded."
+
+msgid "Service must contain not more than 10 PPs."
+msgstr "Service must contain not more than 10 PPs."
+
+msgid "Please write input for single hour rate"
+msgstr "請填寫時薪"
+
+msgid "Please select a payment method"
+msgstr "請選擇收費方法"
+
+msgid "Please enter Start Time"
+msgstr "請輸入開始時間"
+
+msgid "Maximum service allowed for 12 hours only."
+msgstr "預約最長只可以12小時"
+
+msgid "End time should be larger than From time"
+msgstr "完成時間應遲於開始時間"
+
+msgid "Please enter Transport subsidy amount"
+msgstr "請輸入交通津貼金額"
+
+msgid "Please select services to book caregiver"
+msgstr "請選擇服務"
+
+msgid "Please select date to book caregiver"
+msgstr "請選擇日期"
+
+msgid "Please select Start and End time to book caregiver"
+msgstr "請選擇開始及完成時間"
+
+msgid "From time should be smaller than To Time"
+msgstr "開始時間應早於完成時間"
+
+msgid "Please select up to 3 Caregivers"
+msgstr "請選擇最多3位護理員"
+
+msgid "Please complete onboarding steps to book caregiver"
+msgstr "請完成登記步驟以預約護理員"
+
+msgid "Please login to book caregiver"
+msgstr "請登入以預約護理員"
+
+msgid "Please choose rating"
+msgstr "請選擇評分"
+
+msgid "Please select at least 1 language"
+msgstr "請選擇最少一種語言"
+
+msgid "Please select at least 1 self-care ability"
+msgstr "請選擇最少一種自理能力"
+
+msgid "Something went wrong, Please try again."
+msgstr "有一些問題，請再嘗試"
+
+msgid "Please Login to continue."
+msgstr "請登入"
+
+msgid "Please specify your cancer."
+msgstr "請列明癌症種類"
+
+msgid "Please specify your fracture."
+msgstr "請列明骨折位置"
+
+msgid "Please select atleast one option from fracture."
+msgstr "請選擇最少一項"
+
+msgid "Please select atleast one option from hepatitis."
+msgstr "請選擇最少一項"
+
+msgid "Maximum 5 locations are allowed."
+msgstr "最多只能選擇5個地方"
+
+msgid "Please select at least one location."
+msgstr "請選擇最少一個地方"
+
+msgid "Please check your internet connection."
+msgstr "請檢查網路連線"
+
+msgid "Connected to internet! You are online"
+msgstr "網路連線成功!"
+
+msgid "Please enter time between 1 to 12"
+msgstr "請選擇1至12小時"
+
+msgid ""
+"Seems like other caregiver has logged in , please logout and login with "
+"your details for accepting the booking."
+msgstr "看來已有護理員登入，請登出並使用你的登入以按受預約"
+
+msgid "Please enter start and end time"
+msgstr "請輸入開始及完成時間"
+
+msgid "Please enter transport subsidy amount between 1 and 500"
+msgstr "交通津貼為$1至$500之間"
+
+msgid "This user is no longer available in the system"
+msgstr "使用者不再於系統內"
+
+msgid "Please select To Day value greter then From Day value"
+msgstr "完成日期應遲於開始日期"
+
+msgid "Please select future date and time to book caregiver."
+msgstr "請選擇將來日期及時間"
+
+msgid "Please select any one payment method."
+msgstr "請選擇其中一種收費方法."
+
+msgid "Please select atleast one skill."
+msgstr "請選擇最少一項技能"
+
+msgid "Work experience is overlapping."
+msgstr "工作經驗有衝突"
+
+msgid "From date should be Smaller then To Date"
+msgstr "開始日期應早於完成日期"
+
+msgid "Please select From & To Dates"
+msgstr "請選擇開始及完成日期"
+
+msgid "From Year should be Smaller then To Year"
+msgstr "開始年份應早於完成年份"
+
+msgid "Please select From & To Years"
+msgstr "請選擇開始及完成年份"
+
+msgid "Please select Month & Year"
+msgstr "請選擇年份及月份"
+
+msgid "Please select proper dates"
+msgstr "請選擇正確日期"
+
+msgid "Please Fill all the fileds"
+msgstr "Please Fill all the fileds"
+
+msgid "Name of Hospital/Company is required"
+msgstr "需要醫院/公司名稱"
+
+msgid "Work Type is required"
+msgstr "需要工作種類"
+
+msgid "Month is required"
+msgstr "需要月份"
+
+msgid "Year is required"
+msgstr "需要年份"
+
+msgid "Please book appointment on an hourly basis."
+msgstr "預約需要每小時計"
+
+msgid "Don't Like It"
+msgstr "不喜歡"
+
+msgid "Nurses"
+msgstr "護士"
+
+msgid "RN"
+msgstr "註冊護士"
+
+msgid "EN"
+msgstr "登記護士"
+
+msgid "Support"
+msgstr "支援"
+
+msgid "HW"
+msgstr "保健員"
+
+msgid "PCW"
+msgstr "起居照顧員"
+
+msgid "Out-Patient Escort"
+msgstr "陪診員"
+
+msgid "Measure Blood glucose"
+msgstr "驗血糖"
+
+msgid "EA Licence No: 61164"
+msgstr "職業介紹所牌照號碼: 61164"
+
+msgid "Our Caregivers"
+msgstr "護理員"
+
+msgid "Care Receivers"
+msgstr "受顧者"
+
+msgid "Wound"
+msgstr "傷口"
+
+msgid "About"
+msgstr "關於"
+
+msgid "FAQs"
+msgstr "問與答"
+
+msgid "Privacy"
+msgstr "私隱"
+
+msgid "Get in touch"
+msgstr "聯絡我們"
+
+msgid "Hong Kong"
+msgstr "香港"
+
+msgid "489-491 Castle Peak Road, Kowloon"
+msgstr "九龍荔枝角青山道489-491號"
+
+msgid "Hong Kong Industrial Centre"
+msgstr "香港工業中心C座"
+
+msgid "Flat/Room 15, 1/F Block C"
+msgstr "1樓15室"
+
+msgid "2020 PureCare | All rights reserved"
+msgstr "2020 Pure Care | 版權所有"
+
+msgid "Client"
+msgstr "客戶"
+
+msgid "Caregiver"
+msgstr "護理員"
+
+msgid "Contact Us"
+msgstr "聯絡我們"
+
+msgid "Onboard"
+msgstr "登記中"
+
+msgid "My Profile"
+msgstr "我的帳戶"
+
+msgid "Appointments"
+msgstr "服務"
+
+msgid "Past"
+msgstr "過往"
+
+msgid "Register"
+msgstr "登記"
+
+msgid "Call 6364 0301"
+msgstr "致電 6364 0301"
+
+msgid "Find Caregiver"
+msgstr "搜尋護理員"
+
+msgid "Guest"
+msgstr "訪客"
+
+msgid "Logout"
+msgstr "登出"

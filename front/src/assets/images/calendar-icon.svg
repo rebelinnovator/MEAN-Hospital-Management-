@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="23px" viewBox="0 0 22 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>calendar</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Onboarding-Process" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Caregiver---Onboarding-Process-Step-1" transform="translate(-1040.000000, -697.000000)" fill="#E6EBF2" fill-rule="nonzero">
+            <g id="calendar" transform="translate(1040.000000, 697.500000)">
+                <path d="M19.421875,1.71875 L18.390625,1.71875 L18.390625,0 L16.671875,0 L16.671875,1.71875 L5.328125,1.71875 L5.328125,0 L3.609375,0 L3.609375,1.71875 L2.578125,1.71875 C1.15654688,1.71875 0,2.87529688 0,4.296875 L0,19.421875 C0,20.8434531 1.15654688,22 2.578125,22 L19.421875,22 C20.8434531,22 22,20.8434531 22,19.421875 L22,4.296875 C22,2.87529688 20.8434531,1.71875 19.421875,1.71875 Z M20.28125,19.421875 C20.28125,19.8957344 19.8957344,20.28125 19.421875,20.28125 L2.578125,20.28125 C2.10426563,20.28125 1.71875,19.8957344 1.71875,19.421875 L1.71875,8.078125 L20.28125,8.078125 L20.28125,19.421875 Z M20.28125,6.359375 L1.71875,6.359375 L1.71875,4.296875 C1.71875,3.82301562 2.10426563,3.4375 2.578125,3.4375 L3.609375,3.4375 L3.609375,5.15625 L5.328125,5.15625 L5.328125,3.4375 L16.671875,3.4375 L16.671875,5.15625 L18.390625,5.15625 L18.390625,3.4375 L19.421875,3.4375 C19.8957344,3.4375 20.28125,3.82301562 20.28125,4.296875 L20.28125,6.359375 Z" id="Shape"></path>
+                <rect id="Rectangle" x="3.265625" y="9.8828125" width="1.71875" height="1.71875"></rect>
+                <rect id="Rectangle" x="6.703125" y="9.8828125" width="1.71875" height="1.71875"></rect>
+                <rect id="Rectangle" x="10.140625" y="9.8828125" width="1.71875" height="1.71875"></rect>
+                <rect id="Rectangle" x="13.578125" y="9.8828125" width="1.71875" height="1.71875"></rect>
+                <rect id="Rectangle" x="17.015625" y="9.8828125" width="1.71875" height="1.71875"></rect>
+                <rect id="Rectangle" x="3.265625" y="13.3203125" width="1.71875" height="1.71875"></rect>
+                <rect id="Rectangle" x="6.703125" y="13.3203125" width="1.71875" height="1.71875"></rect>
+                <rect id="Rectangle" x="10.140625" y="13.3203125" width="1.71875" height="1.71875"></rect>
+                <rect id="Rectangle" x="13.578125" y="13.3203125" width="1.71875" height="1.71875"></rect>
+                <rect id="Rectangle" x="3.265625" y="16.7578125" width="1.71875" height="1.71875"></rect>
+                <rect id="Rectangle" x="6.703125" y="16.7578125" width="1.71875" height="1.71875"></rect>
+                <rect id="Rectangle" x="10.140625" y="16.7578125" width="1.71875" height="1.71875"></rect>
+                <rect id="Rectangle" x="13.578125" y="16.7578125" width="1.71875" height="1.71875"></rect>
+                <rect id="Rectangle" x="17.015625" y="13.3203125" width="1.71875" height="1.71875"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
